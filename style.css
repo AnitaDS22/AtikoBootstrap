@@ -1,0 +1,56 @@
+#bodycompleto{
+    background-image: url("./images/BG\ 01.jpg");
+   font-family: "Basquerville", "arial";
+   font-style: bold;
+}
+
+#barraNav li a{
+    color: blanchedalmond;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    transition: padding 0.5s; font-size: medium 0.5s;
+
+}
+
+#barraNav li a:hover{
+    color: blanchedalmond;
+    text-decoration: none;
+    font-weight: bold;
+    border: none #ccc;
+    padding: 0.8em;
+    font-size: 1.5em;        
+}
+#barraNav li{
+    font-size: 20px;
+
+}
+.divlogo img{ 
+    width: 120px;
+    height: 85px;
+    margin-left: 480px;
+   } 
+
+ .tituloImagenPrincipal {
+    font-family: "Basquerville", "arial";
+   font-style: bold;
+   font-size: 50px;
+   color: blanchedalmond;
+ position: absolute;
+}
+
+.tituloImagenPrincipal h1 {
+    margin-left: 0px;
+    margin-right: 120px;
+    row-gap: 0.1em;   
+}
+.design h1{
+    margin-top: 5px;
+    margin-inline: 200px;
+
+}  
+
+
+
+
