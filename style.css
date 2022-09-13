@@ -10,7 +10,7 @@
     font-weight: bold;
     font-size: 20px;
     border: none;
-    transition: padding 0.5s; font-size: medium 0.5s;
+    transition: padding 2s; font-size: medium 2s;
 
 }
 
@@ -29,8 +29,8 @@
 .divlogo img{ 
     width: 120px;
     height: 85px;
-    margin-left: 480px;
    } 
+
 main {
     width: 100%;
     max-height: 450px;
@@ -44,22 +44,29 @@ main {
         max-height: 440px;
 }
 
+.fotosCarrusel {
+    position: relative;
+}
 
  .tituloImagenPrincipal {
     font-family: "Basquerville", "arial";
    font-style: bold;
    font-size: 50px;
    color: blanchedalmond;
+   position: absolute;
+   margin-left: 100px;
+   margin-bottom: 1200px;
 }
 
 .tituloImagenPrincipal h1 {
     margin-left: 0px;
-    margin-right: 120px;
+    margin-right: 1200px;
     row-gap: 0.1em;   
 }
 .design h1{
     margin-top: 5px;
     margin-inline: 200px;
+    margin-bottom: 900px;
 
 }  
 
@@ -67,51 +74,41 @@ footer {
     width: 1225;
     height: 100px;
     font-size: 25px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "redesicons contactoGral"
 
     }
     
     .redesicons {
-    grid-area: footer;
     list-style: none;
     gap: 1em;
     }
     
-    .redesicons a img {
-        width: 40px;
-        height: 40px;
-        margin: 3px;
-        border-radius: 15px;
+    footer a img {  
+        width: 30px;  
+        height: 30px;
+    border-radius: 15px;
         list-style: none;
-        transition: padding 0.5s; size: 1em 0.5s;
+        transition: padding 2s; size: 1em 2s;
     }
     
-    .redesicons a img:hover {
+    footer a img:hover {
+        width: 50px;  
+        height: 50px;
         padding: 0em;
-        width: 70px;
-        height: 70px;
+
     
     }
     
     .contactoGral {
-        grid-area: footer;
-        display: flex;
-        height: 120px;
-        max-width: 100%;
-        max-height: 100px;
-        margin-left: 760px;
-        padding: 1em;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
         
-    
     }
     
     .contactoGral p {
         font-family: "Basquerville", "arial";
         color:  blanchedalmond;
-        font-size: 14px;
+        font-size: 10px;
     
     }    
     
