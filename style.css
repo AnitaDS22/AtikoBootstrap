@@ -2,6 +2,7 @@
     background-image: url("./images/BG\ 01.jpg");
    font-family: "Basquerville", "arial";
    font-style: bold;
+   max-width: 100%;
 }
 
 #barraNav li a{
@@ -10,9 +11,15 @@
     font-weight: bold;
     font-size: 20px;
     border: none;
-    transition: padding 0.5s; font-size: medium 0.5s;
+    transition: padding 2s; font-size: medium 2s;
 
 }
+
+   /* <div class="tituloImagenPrincipal">
+      <h1> .MOTIONGRAPHER  </h1>
+       <h1 class="design"> DESIGNER </h1>
+       
+       </div> */
 
 #barraNav li a:hover{
     color: blanchedalmond;
@@ -29,28 +36,101 @@
 .divlogo img{ 
     width: 120px;
     height: 85px;
-    margin-left: 480px;
+    display: flex;
+    justify-content: flex-end;
    } 
 
- .tituloImagenPrincipal {
+main {
+    width: 100%;
+    max-height: 450px;
+    margin-bottom: 3px;
+}
+#carouselExampleControls {
+    max-height: 440px;
+}
+.carousel-inner {
+    width: 100%;
+        max-height: 440px;
+}
+
+.fotosCarrusel {
+    position: relative;
+}
+
+.tituloImagen{
     font-family: "Basquerville", "arial";
    font-style: bold;
    font-size: 50px;
    color: blanchedalmond;
- position: absolute;
+   position: absolute;
+   margin-left: 100px;
+   margin-bottom: 1200px;
 }
 
-.tituloImagenPrincipal h1 {
+.card-motiongrapher h1 {
+    font-family: "Basquerville", "arial";
+   font-style: bold;
+   font-size: 45px;
+   color: blanchedalmond;
     margin-left: 0px;
-    margin-right: 120px;
+    margin-right: 1200px;
     row-gap: 0.1em;   
 }
-.design h1{
-    margin-top: 5px;
-    margin-inline: 200px;
 
-}  
+footer {
+    width: 1225;
+    height: 100px;
+    font-size: 25px;
 
+    }
+    
+    .redesicons {
+    list-style: none;
+    gap: 1em;
+    }
+    
+    footer a img {  
+        width: 30px;  
+        height: 30px;
+    border-radius: 15px;
+        list-style: none;
+        transition: padding 2s; size: 1em 2s;
+    }
+    
+    footer a img:hover {
+        width: 50px;  
+        height: 50px;
+        padding: 0em;
 
+    
+    }
+    
+    .contactoGral {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+        
+    }
+    
+    .contactoGral p {
+        font-family: "Basquerville", "arial";
+        color:  blanchedalmond;
+        font-size: 10px;
+    
+    }    
+    
+    /* about Me*/
 
+.card-body{
+    background-image: linear-gradient(to left, rgb(227, 118, 34),#914a56,#ac273d, #4d0511);
+    padding: 1em;
+    height: 100%;
+    font-family: "Basquerville", "arial";
+    color:  blanchedalmond;
+    font-size: 20px;
+}
 
+.aboutmeimg img{
+width: 360px;
+height: 203px;
+}
