@@ -5,52 +5,47 @@
    max-width: 100%;
 }
 
-#barraNav li a{
+#barraNav {
+li {
     color: blanchedalmond;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    transition: padding 2s; font-size: medium 2s;
+
+    a{  text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        transition: padding 2s; font-size: medium 2s;    
+
+    }
+
+    a:hover{
+        color: blanchedalmond;
+        text-decoration: none;
+        font-weight: bold;
+        border: none #ccc;
+        padding: 0.8em;
+        font-size: 1.5em;        
+    }
 
 }
-/* <div class="card-img-overlay" class="tituloImagenPrincipal">
-            <h5 class="card-motion" class="tituloImagen">.MOTIONGRAPHER</h5>
-            <h1 class="card-motiongrapher">DESIGNER</h1>
-          </div>*/
-
-
-
-   /* <div class="tituloImagenPrincipal">
-      <h1> .MOTIONGRAPHER  </h1>
-       <h1 class="design"> DESIGNER </h1>
-       
-       </div> */
-
-#barraNav li a:hover{
-    color: blanchedalmond;
-    text-decoration: none;
-    font-weight: bold;
-    border: none #ccc;
-    padding: 0.8em;
-    font-size: 1.5em;        
-}
-#barraNav li{
-    font-size: 20px;
 
 }
-.divlogo img{ 
-    width: 120px;
-    height: 85px;
-    display: flex;
-    justify-content: flex-end;
-   } 
+
+.divlogo { 
+
+    img{
+        width: 120px;
+        height: 85px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
 
 main {
     width: 100%;
     max-height: 450px;
     margin-bottom: 3px;
 }
+
 #carouselExampleControls {
     max-height: 440px;
 }
@@ -73,7 +68,8 @@ main {
    margin-bottom: 1200px;
 }
 
-.card-motiongrapher h1 {
+.card-motiongrapher {
+    h1{
     font-family: "Basquerville", "arial";
    font-style: bold;
    font-size: 45px;
@@ -82,50 +78,52 @@ main {
     margin-right: 1200px;
     row-gap: 0.1em;   
 }
+}
 
 footer {
     width: 1225;
     height: 100px;
     font-size: 25px;
 
-    }
-    
     .redesicons {
-    list-style: none;
-    gap: 1em;
-    }
-    
-    footer a img {  
-        width: 30px;  
-        height: 30px;
-    border-radius: 15px;
         list-style: none;
-        transition: padding 2s; size: 1em 2s;
+        gap: 1em;
+        }
+       a {
+        img {  
+            width: 30px;  
+            height: 30px;
+        border-radius: 15px;
+            list-style: none;
+            transition: padding 2s; size: 1em 2s;
+        }
     }
+        
+        footer a img:hover {
+            width: 50px;  
+            height: 50px;
+            padding: 0em;
     
-    footer a img:hover {
-        width: 50px;  
-        height: 50px;
-        padding: 0em;
+        
+        }
 
-    
-    }
-    
-    .contactoGral {
+}
+
+.contactoGral {
     display: flex;
     justify-content: center;
     padding: 1em;
-        
-    }
-    
-    .contactoGral p {
+
+    p {
         font-family: "Basquerville", "arial";
         color:  blanchedalmond;
         font-size: 10px;
     
     }    
-    
-    /* about Me*/
+        
+    }
+
+      /* about Me*/
 
 .card-body{
     background-image: linear-gradient(to left, rgb(227, 118, 34),#914a56,#ac273d, #4d0511);
@@ -139,4 +137,7 @@ footer {
 .aboutmeimg img{
 width: 360px;
 height: 203px;
+
 }
+
+    
