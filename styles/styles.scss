@@ -1,29 +1,34 @@
 #bodycompleto{
-    background-image: url("./Images/bg01.jpg");
+    background-image: url("../Images/bg01.jpg");
    font-family: "Basquerville", "arial";
    font-style: bold;
    max-width: 100%;
 }
 
+$colorText: blanchedalmond;
+
+
 #barraNav {
 li {
-    color: blanchedalmond;
+    color: $colorText;
 
     a{  text-decoration: none;
         font-weight: bold;
         font-size: 20px;
         border: none;
-        transition: padding 2s; font-size: medium 2s;    
-
+        transition: padding 2s; font-size: medium 2s;   
+        background-color: none; 
+        color: $colorText;
     }
 
     a:hover{
-        color: blanchedalmond;
+        color: $colorText;
         text-decoration: none;
         font-weight: bold;
         border: none #ccc;
-        padding: 0.8em;
-        font-size: 1.5em;        
+        padding: 0.6em;
+        font-size: 1.5em;   
+        background-color: black;     
     }
 
 }
@@ -58,26 +63,11 @@ main {
     position: relative;
 }
 
-.tituloImagen{
-    font-family: "Basquerville", "arial";
+.card-title{
+   font-family: "Basquerville", "arial";
    font-style: bold;
    font-size: 50px;
    color: blanchedalmond;
-   position: absolute;
-   margin-left: 100px;
-   margin-bottom: 1200px;
-}
-
-.card-motiongrapher {
-    h1{
-    font-family: "Basquerville", "arial";
-   font-style: bold;
-   font-size: 45px;
-   color: blanchedalmond;
-    margin-left: 0px;
-    margin-right: 1200px;
-    row-gap: 0.1em;   
-}
 }
 
 footer {
@@ -97,30 +87,26 @@ footer {
             list-style: none;
             transition: padding 2s; size: 1em 2s;
         }
-    }
-        
-        footer a img:hover {
+    } 
+footer a img:hover {
             width: 50px;  
             height: 50px;
-            padding: 0em;
+            padding: 0.6em;
     
-        
         }
-
 }
 
 .contactoGral {
+    color: $colorText;
     display: flex;
-    justify-content: center;
     padding: 1em;
 
     p {
         font-family: "Basquerville", "arial";
         color:  blanchedalmond;
-        font-size: 10px;
-    
+        font-size: 20px;
+        justify-content: flex-end;
     }    
-        
     }
 
       /* about Me*/
