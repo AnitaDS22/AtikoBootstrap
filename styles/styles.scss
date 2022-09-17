@@ -1,13 +1,17 @@
+
 @import "./partials/footer";
-@import "./partials/header";
 @import "./partials/_mainInicial";
 
 #bodycompleto{
     background-image: url("../Images/bg01.jpg");
    font-family: "Basquerville", "arial";
    font-style: bold;
-   max-width: 100%;
-}
+   max-width: 100%;}
+
+   @import "./partials/header";
+
+
+
 
 
 $colorText: blanchedalmond;

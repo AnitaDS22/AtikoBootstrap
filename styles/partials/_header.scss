@@ -1,36 +1,48 @@
-#barraNav {
+
+
+.elementosCabecera{
+    max-height: 200px;
+
+    .row {
+    
+        ul{
+
     li {
-        color: $colorText;
-    
-        a{  text-decoration: none;
-            font-weight: bold;
-            font-size: 20px;
-            border: none;
-            transition: padding 2s; font-size: medium 2s;   
-            background-color: none; 
-            color: $colorText;
-        }
-    
-        a:hover{
-            color: $colorText;
-            text-decoration: none;
-            font-weight: bold;
-            border: none #ccc;
-            padding: 0.6em;
-            font-size: 1.5em;   
-            background-color: black;     
-        }
-    
+        color: blanchedalmond;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+
+    a{
+        transition: padding 2s; font-size: medium 2s;
+    &:hover { 
+        color: blanchedalmond;
+    text-decoration: none;
+    font-weight: bold;
+    border: none #ccc;
+    padding: 0.8em;
+    font-size: 1.5em; 
+
     }
-    
+
+
     }
-    
-    .divlogo { 
-    
-        img{
-            width: 120px;
-            height: 85px;
-            display: flex;
-            justify-content: flex-end;
-        }
     }
+}
+}
+
+.divlogo {
+    display: flex;
+    justify-content: flex-end;
+
+img{ 
+    width: 120px;
+    height: 85px;
+    display: flex;
+    justify-content: flex-end;
+   } 
+}
+
+
+}
