@@ -1,6 +1,6 @@
-@import "./partials/header";
 @import "./partials/footer";
-@import "./partials/mainInicial";
+@import "./partials/header";
+@import "./partials/_mainInicial";
 
 #bodycompleto{
     background-image: url("../Images/bg01.jpg");
@@ -9,72 +9,10 @@
    max-width: 100%;
 }
 
+
 $colorText: blanchedalmond;
 
 
-main {
-    width: 100%;
-    max-height: 450px;
-    margin-bottom: 3px;
-}
-
-#carouselExampleControls {
-    max-height: 440px;
-}
-.carousel-inner {
-    width: 100%;
-        max-height: 440px;
-}
-
-.fotosCarrusel {
-    position: relative;
-}
-
-.card-title{
-   font-family: "Basquerville", "arial";
-   font-style: bold;
-   font-size: 50px;
-   color: blanchedalmond;
-}
-
-footer {
-    width: 1225;
-    height: 100px;
-    font-size: 25px;
-
-    .redesicons {
-        list-style: none;
-        gap: 1em;
-        }
-       a {
-        img {  
-            width: 30px;  
-            height: 30px;
-        border-radius: 15px;
-            list-style: none;
-            transition: padding 2s; size: 1em 2s;
-        }
-    } 
-footer a img:hover {
-            width: 50px;  
-            height: 50px;
-            padding: 0.6em;
-    
-        }
-}
-
-.contactoGral {
-    color: $colorText;
-    display: flex;
-    padding: 1em;
-
-    p {
-        font-family: "Basquerville", "arial";
-        color:  blanchedalmond;
-        font-size: 20px;
-        justify-content: flex-end;
-    }    
-    }
 
       /* about Me*/
 
