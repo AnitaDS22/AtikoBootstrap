@@ -1,4 +1,4 @@
-
+@import "./partials/header";
 @import "./partials/footer";
 @import "./partials/_mainInicial";
 
@@ -8,41 +8,7 @@
    font-style: bold;
    max-width: 100%;
 
-   header {
-    background-color: black;
-   
-   
-   #barraNav {
-
-
-    color: blanchedalmond;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    
-    li { 
-        
-        a{
-    color: blanchedalmond;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    transition: padding 2s; font-size: medium 2s;
-
- &:hover {
-
-    border: none #ccc;
-    padding: 0.8em;
-    font-size: 1.5em;  
- }
- }
-}
-   }
-    
-
-    }
+  
 
       /* about Me
 
