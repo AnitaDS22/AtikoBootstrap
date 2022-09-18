@@ -8,21 +8,26 @@ footer {
         gap: 1em;
         }
        a {
-        img {  
+
+        img {
             width: 30px;  
             height: 30px;
         border-radius: 15px;
             list-style: none;
             transition: padding 2s; size: 1em 2s;
-        }
-    } 
-footer a img:hover {
-            width: 50px;  
-            height: 50px;
-            padding: 0.6em;
-    
-        }
+        
+&:hover {
+    img{
+        width: 50px;  
+        height: 50px;
+        padding: 0.6em;
+
+    }
+
 }
+
+    } 
+
 
 .contactoGral {
     color: blanchedalmond;
@@ -36,3 +41,5 @@ footer a img:hover {
         justify-content: flex-end;
     }    
     }
+}
+}
