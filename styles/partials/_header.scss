@@ -60,15 +60,16 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-items: center;
 
     ul {
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 
 .nav-item{
  font-size: 15px;
+
 
   } 
 .divlogo {
@@ -77,10 +78,5 @@
 }
 
 }
-
-
-
-
- 
-    
+     
 }

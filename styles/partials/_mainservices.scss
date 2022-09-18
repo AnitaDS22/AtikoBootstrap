@@ -1,0 +1,25 @@
+.servicesBody {
+    color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+
+.textoServices{
+  font-family: "Basquerville", "arial";
+    font-style: bold;
+    color: blanchedalmond;
+    font-size: 3em; 
+    display: flex;
+    justify-items: flex-start;
+
+}
+
+.servicesBody iframe {
+    display: flex;
+    justify-items: center;
+    padding: 1em;
+
+}
+}

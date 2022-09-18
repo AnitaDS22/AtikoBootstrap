@@ -43,11 +43,11 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-items: center;
   }
   .elementosCabecera ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
   .elementosCabecera .nav-item {
     font-size: 15px;
@@ -278,6 +278,26 @@ main {
   margin-right: 0px;
   width: 360px;
   height: 203px;
+}
+
+.servicesBody {
+  color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.servicesBody .textoServices {
+  font-family: "Basquerville", "arial";
+  font-style: bold;
+  color: blanchedalmond;
+  font-size: 3em;
+  display: flex;
+  justify-items: flex-start;
+}
+.servicesBody .servicesBody iframe {
+  display: flex;
+  justify-items: center;
+  padding: 1em;
 }
 
 #bodycompleto {
