@@ -43,7 +43,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
   }
   .elementosCabecera ul {
     display: flex;
@@ -53,6 +52,10 @@
   .elementosCabecera .nav-item {
     font-size: 15px;
   }
+  .elementosCabecera .divlogo {
+    display: flex;
+    justify-content: center;
+  }
 }
 footer {
   width: 1225;
@@ -60,6 +63,7 @@ footer {
   font-size: 25px;
 }
 footer .redesicons {
+  grid-area: redesicons;
   list-style: none;
   gap: 1em;
 }
@@ -78,6 +82,7 @@ footer a img:hover img {
 }
 footer a .contactoGral {
   color: blanchedalmond;
+  grid-area: contactoGral;
   display: flex;
   padding: 1em;
 }
@@ -86,6 +91,14 @@ footer a .contactoGral p {
   color: blanchedalmond;
   font-size: 20px;
   justify-content: flex-end;
+}
+@media screen and (max-width: 478px) {
+  footer {
+    grid-area: footer;
+    grid-template-rows: repeat(2, 1fr);
+    height: 40px;
+    grid-template-areas: "redesicons" "contactoGral";
+  }
 }
 
 main {
@@ -175,29 +188,44 @@ main {
 @media screen and (max-width: 578px) {
   .ContactForm {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 2fr);
-    grid-template-areas: "formularioIzq formularioDerecho";
+    grid-template-areas: "formularioIzq" "formularioDerecho";
   }
 }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  list-style: none;
+}
+.gallery img {
+  width: 590px;
+  height: 300px;
+}
+.gallery img:hover {
+  text-decoration: none;
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
 #bodycompleto {
   background-image: url("../Images/bg01.jpg");
   font-family: "Basquerville", "arial";
   font-style: bold;
   max-width: 100%;
-  /* about Me
+}
 
-  .card-body{
-      background-image: linear-gradient(to left, rgb(227, 118, 34),#914a56,#ac273d, #4d0511);
-      padding: 1em;
-      height: 100%;
-      font-family: "Basquerville", "arial";
-      color:  blanchedalmond;
-      font-size: 20px;
+@media screen and (max-width: 478px) {
+  #bodycompleto {
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "header" "main" "footer" header;
+    grid-template-areas-grid-area: header;
   }
-
-  .aboutmeimg img{
-  width: 360px;
-  height: 203px;
-
-  }*/
+  #bodycompleto main {
+    grid-area: main;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -76,6 +76,7 @@ margin-top: 15px;
 @media screen and (max-width: 578px){
     .ContactForm {
         display: grid;
+grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 2fr);
         grid-template-areas: 
         "formularioIzq"

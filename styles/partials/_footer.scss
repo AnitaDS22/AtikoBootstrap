@@ -4,6 +4,7 @@ footer {
     font-size: 25px;
 
     .redesicons {
+        grid-area: redesicons;
         list-style: none;
         gap: 1em;
         }
@@ -31,6 +32,7 @@ footer {
 
 .contactoGral {
     color: blanchedalmond;
+    grid-area: contactoGral;
     display: flex;
     padding: 1em;
 
@@ -42,4 +44,14 @@ footer {
     }    
     }
 }
-}
+
+@media screen and (max-width: 478px) {
+    grid-area: footer;
+    grid-template-rows: repeat(2, 1fr);
+        height: 40px;
+        grid-template-areas: 
+        "redesicons"
+        "contactoGral"
+        }
+
+    }

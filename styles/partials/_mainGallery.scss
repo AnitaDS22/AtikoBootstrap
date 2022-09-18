@@ -1,0 +1,22 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    list-style: none;
+
+ img{
+    width: 590px;
+    height: 300px; 
+
+ &:hover{
+    text-decoration: none;
+    filter: brightness(0.9);
+    cursor: pointer; 
+} 
+ }
+
+}
+
+
+@media screen and (max-width: 578px){
+}
