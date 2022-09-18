@@ -93,20 +93,4 @@ main {
   font-family: "Basquerville", "arial";
   font-style: bold;
   max-width: 100%;
-  /* about Me
-
-  .card-body{
-      background-image: linear-gradient(to left, rgb(227, 118, 34),#914a56,#ac273d, #4d0511);
-      padding: 1em;
-      height: 100%;
-      font-family: "Basquerville", "arial";
-      color:  blanchedalmond;
-      font-size: 20px;
-  }
-
-  .aboutmeimg img{
-  width: 360px;
-  height: 203px;
-
-  }*/
-}/*# sourceMappingURL=styles.css.map */
+}
