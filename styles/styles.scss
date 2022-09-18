@@ -3,6 +3,7 @@
 @import "./partials/_mainInicial";
 @import "./partials/mainContact";
 @import "./partials/mainGallery";
+@import "./partials/mainAboutme";
 
 #bodycompleto{
     background-image: url("../Images/bg01.jpg");
@@ -16,11 +17,13 @@
     #bodycompleto{ 
         height: auto;
         display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 1fr;
         grid-template-areas: 
 "header"
 "main"
-"footer"
+"footer";
+    
 
 header {
     grid-area: header;
@@ -35,4 +38,4 @@ main {
     }
 
     }
-   }
+}

@@ -1,4 +1,4 @@
- 
+
  
 .contactTitulo {
     font-family: "Basquerville", "arial";
@@ -21,6 +21,7 @@
 .formularioIzq {
     grid-area: formularioIzq;
     padding-bottom: 10px;
+    padding-right: 5px;
 
     input {
         width: 500px;
@@ -73,7 +74,7 @@ margin-top: 15px;
 }
 }
 
-@media screen and (max-width: 578px){
+@media screen and (max-width: 478px){
     .ContactForm {
         display: grid;
 grid-template-columns: 1fr;
@@ -81,7 +82,6 @@ grid-template-columns: 1fr;
         grid-template-areas: 
         "formularioIzq"
         "formularioDerecho"
-
 
 }
 }
