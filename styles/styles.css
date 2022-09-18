@@ -298,8 +298,18 @@ main {
   display: flex;
   justify-items: center;
   padding: 1em;
+  justify-items: center;
 }
 
+@media screen and (max-width: 478px) {
+  .servicesBody {
+    width: 100%;
+  }
+  .servicesBody .textoServices {
+    font-size: 2em;
+    justify-items: center;
+  }
+}
 #bodycompleto {
   background-image: url("../Images/bg01.jpg");
   font-family: "Basquerville", "arial";
