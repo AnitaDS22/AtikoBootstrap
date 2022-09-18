@@ -7,29 +7,32 @@ footer {
     .redesicons {
         grid-area: redesicons;
         list-style: none;
-        gap: 1em;
-        }
+        gap: 1em;   
+        grid-template-columns: repeat(4 1fr);
+        grid-template-areas: 
+        "img img img img";  
+    
 
        a {
 
         img {
+            grid-area: img;
             width: 30px;  
             height: 30px;
         border-radius: 15px;
-            list-style: none;
-            transition: padding 2s; size: 1em 2s;
+            list-style: none; 
         
 &:hover {
-    img{
-        width: 50px;  
-        height: 50px;
-        padding: 0.6em;
+width: 50px;
+height: 50px;
+}
 
+}
     }
 
 }
 
-    } 
+
 
 
 .contactoGral {
@@ -37,6 +40,7 @@ footer {
     grid-area: contactoGral;
     display: flex;
     padding: 1em;
+    padding-top: 5px;
 
     p {
         font-family: "Basquerville", "arial";
@@ -45,7 +49,7 @@ footer {
         justify-content: flex-end;
     }    
     }
-}
+
 
 @media screen and (max-width: 478px) {
     grid-area: footer;
@@ -53,7 +57,8 @@ footer {
         height: 40px;
         grid-template-areas: 
         "redesicons"
-        "contactoGral"
+        "contactoGral";
         }
 
+    
     }

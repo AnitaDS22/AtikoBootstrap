@@ -4,18 +4,29 @@
     align-items: stretch;
     list-style: none;
 
+
  img{
     width: 590px;
     height: 300px; 
+    transition: width 1s;
 
  &:hover{
     text-decoration: none;
     filter: brightness(0.9);
     cursor: pointer; 
+    width: 720px;
+    height: 366px;
+
+
+
+      
+    }
+
+
 } 
- }
 
 }
+
 
 
 @media screen and (max-width: 478px){
