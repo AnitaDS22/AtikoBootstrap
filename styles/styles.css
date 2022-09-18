@@ -3,6 +3,7 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
+  padding-bottom: 1em;
 }
 .elementosCabecera ul .nav-item {
   color: blanchedalmond;
@@ -23,10 +24,36 @@
 .elementosCabecera ul .nav-item a:hover {
   background-color: black;
   border: none #ccc;
-  padding: 0.8em;
-  font-size: 1.5em;
+  padding: 0.6em;
+  font-size: 1.3em;
+}
+.elementosCabecera .divlogo a img {
+  width: 50px;
+  height: 50px;
+  transition-delay: padding 2s;
+}
+.elementosCabecera .divlogo a:hover {
+  background-color: antiquewhite;
+  transform: scale 2, 2;
+  padding: 1em;
 }
 
+@media screen and (max-width: 578px) {
+  .elementosCabecera {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .elementosCabecera ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .elementosCabecera .nav-item {
+    font-size: 15px;
+  }
+}
 footer {
   width: 1225;
   height: 100px;
@@ -44,18 +71,17 @@ footer a img {
   transition: padding 2s;
   size: 1em 2s;
 }
-footer footer a img:hover {
+footer a img:hover img {
   width: 50px;
   height: 50px;
   padding: 0.6em;
 }
-
-.contactoGral {
+footer a .contactoGral {
   color: blanchedalmond;
   display: flex;
   padding: 1em;
 }
-.contactoGral p {
+footer a .contactoGral p {
   font-family: "Basquerville", "arial";
   color: blanchedalmond;
   font-size: 20px;
@@ -88,9 +114,90 @@ main {
   color: blanchedalmond;
 }
 
+.contactTitulo {
+  font-family: "Basquerville", "arial";
+  font-style: bold;
+  color: blanchedalmond;
+  font-size: 70px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 40px;
+}
+
+.ContactForm {
+  font-size: 20px;
+  margin-left: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-areas: "formularioIzq formularioDerecho";
+}
+.ContactForm .formularioIzq {
+  grid-area: formularioIzq;
+  padding-bottom: 10px;
+}
+.ContactForm .formularioIzq input {
+  width: 500px;
+  height: 25px;
+  padding-bottom: 5px;
+}
+.ContactForm .formularioIzq input textarea {
+  width: 500px;
+  height: 150px;
+}
+.ContactForm .formularioDerecho {
+  grid-area: formularioDerecho;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+  margin-left: none;
+}
+.ContactForm .formularioDerecho input #website {
+  width: 200px;
+  height: 70px;
+  padding-bottom: 5px;
+}
+.ContactForm .formularioDerecho textarea {
+  height: 150px;
+  padding-bottom: 5px;
+}
+.ContactForm .formularioDerecho .SubmitEnviar {
+  border: none;
+}
+.ContactForm .formularioDerecho .SubmitEnviar input {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 340px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 578px) {
+  .ContactForm {
+    display: grid;
+    grid-template-rows: repeat(2, 2fr);
+    grid-template-areas: "formularioIzq formularioDerecho";
+  }
+}
 #bodycompleto {
   background-image: url("../Images/bg01.jpg");
   font-family: "Basquerville", "arial";
   font-style: bold;
   max-width: 100%;
-}
+  /* about Me
+
+  .card-body{
+      background-image: linear-gradient(to left, rgb(227, 118, 34),#914a56,#ac273d, #4d0511);
+      padding: 1em;
+      height: 100%;
+      font-family: "Basquerville", "arial";
+      color:  blanchedalmond;
+      font-size: 20px;
+  }
+
+  .aboutmeimg img{
+  width: 360px;
+  height: 203px;
+
+  }*/
+}/*# sourceMappingURL=styles.css.map */
