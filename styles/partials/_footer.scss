@@ -1,7 +1,4 @@
 footer {
-    width: 1225;
-    height: 100px;
-    font-size: 15px;
     color: antiquewhite;
     display: grid;
 grid-template-columns: repeat(2, 1fr);
@@ -15,6 +12,8 @@ grid-template-areas:
 
     .redesiconos {
         grid-area: footer;
+
+    li {    
         display: flex;
 flex-wrap: nowrap;
 flex-direction: row;
@@ -44,7 +43,7 @@ flex-direction: row;
 
     }
 
-
+}
     
 
 
