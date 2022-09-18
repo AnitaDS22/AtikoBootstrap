@@ -60,7 +60,8 @@
 footer {
   width: 1225;
   height: 100px;
-  font-size: 25px;
+  font-size: 15px;
+  color: antiquewhite;
 }
 footer .redesicons {
   grid-area: redesicons;
