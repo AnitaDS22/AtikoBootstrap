@@ -213,6 +213,7 @@ main {
   cursor: pointer;
   width: 720px;
   height: 366px;
+  row-gap: 5px;
 }
 
 .aboutMe {
