@@ -66,30 +66,40 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "redesicons contactoGral";
 }
-footer .redesiconos {
-  grid-area: redesicons;
+footer .footerElementos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footerElementos .redesiconos {
+  grid-area: footer;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
   list-style: none;
   gap: 1em;
-  display: flex;
-  flex-direction: row-reverse;
-  /*  grid-template-columns: repeat(4 1fr);
-    grid-template-areas: 
-    "img img img img";  */
 }
-footer .redesiconos a img {
-  grid-area: img;
+footer .footerElementos a {
+  list-style: none;
+}
+footer .footerElementos a img {
   width: 30px;
   height: 30px;
   border-radius: 15px;
   list-style: none;
+  transition: padding 0.5s;
+  size: 1em 0.5s;
 }
-footer .redesiconos a img:hover {
+footer .footerElementos a:hover {
   width: 50px;
   height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 footer .contactoGral {
   color: blanchedalmond;
-  grid-area: contactoGral;
+  grid-area: footer;
   display: flex;
   padding: 1em;
   padding-top: 5px;
