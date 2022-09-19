@@ -62,26 +62,26 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "redesicons contactoGral";
+  /*.footerElementos{
+      display: flex;
+      flex-direction: row;
+     justify-content: space-between;
+     height: 100px;*/
 }
-footer .footerElementos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+footer ul {
+  grid-area: redesicons;
 }
-footer .footerElementos .redesiconos {
-  grid-area: footer;
-}
-footer .footerElementos .redesiconos li {
+footer ul li {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   list-style: none;
   gap: 1em;
 }
-footer .footerElementos .redesiconos a {
+footer ul li a {
   list-style: none;
 }
-footer .footerElementos .redesiconos a img {
+footer ul li a img {
   width: 30px;
   height: 30px;
   border-radius: 15px;
@@ -89,7 +89,7 @@ footer .footerElementos .redesiconos a img {
   transition: padding 0.5s;
   size: 1em 0.5s;
 }
-footer .footerElementos .redesiconos a:hover {
+footer ul li a:hover {
   width: 50px;
   height: 50px;
   display: flex;
@@ -98,7 +98,7 @@ footer .footerElementos .redesiconos a:hover {
 }
 footer .contactoGral {
   color: blanchedalmond;
-  grid-area: footer;
+  grid-area: contactoGral;
   display: flex;
   padding: 1em;
   padding-top: 5px;
@@ -109,15 +109,14 @@ footer .contactoGral p {
   font-size: 20px;
   justify-content: flex-end;
 }
+
 @media screen and (max-width: 478px) {
   footer {
-    grid-area: footer;
     grid-template-rows: repeat(2, 1fr);
     height: 40px;
     grid-template-areas: "redesicons" "contactoGral";
   }
 }
-
 main {
   width: 100%;
   height: 100%;
@@ -228,7 +227,6 @@ main {
   cursor: pointer;
   width: 720px;
   height: 366px;
-  row-gap: 5px;
 }
 
 .aboutMe {
