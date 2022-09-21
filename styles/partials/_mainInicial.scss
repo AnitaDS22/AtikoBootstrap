@@ -22,3 +22,15 @@ main {
    font-size: 50px;
    color: blanchedalmond;
 }
+
+@media screen and (max-width: 768px) {
+
+    
+}
+    
+@media screen and (max-width: 476px) {
+    .card-title{ 
+        font-size: 1em;
+
+}
+}  

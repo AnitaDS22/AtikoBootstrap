@@ -67,16 +67,9 @@ height: 50px;
 
     footer {
     grid-template-rows: repeat(2, 1fr);
-        height: 40px;
         grid-template-areas: 
         "redesicons"
         "contactoGral";
-    
-        li {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
     
     }
 
