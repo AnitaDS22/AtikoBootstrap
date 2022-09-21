@@ -1,7 +1,7 @@
 footer {
     color: antiquewhite;
     display: grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: 2fr 1fr;
 grid-template-areas: 
 "redesicons contactoGral";
 
@@ -51,7 +51,7 @@ height: 50px;
     color: blanchedalmond;
     grid-area: contactoGral;
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
     padding: 1em;
     padding-top: 5px;
 

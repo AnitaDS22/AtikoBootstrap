@@ -5,12 +5,16 @@
 @import "./partials/mainGallery";
 @import "./partials/mainAboutme";
 @import "./partials/mainservices";
+@import "./partials/variables";
 
 #bodycompleto{
     background-image: url("../Images/bg01.jpg");
    font-family: "Basquerville", "arial";
    font-style: bold;
-   max-width: 100%;
+   width: 100vw;
+   height: 100vh;
+   overflow-x: hidden;
+
 }
 
    @media screen and (max-width: 478px) and (orientation: landscape) {

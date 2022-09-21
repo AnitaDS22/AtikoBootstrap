@@ -38,16 +38,33 @@
   padding: 0.8em;
 }
 
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 768px) {
   .elementosCabecera {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-items: center;
   }
   .elementosCabecera ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .elementosCabecera .nav-item {
+    font-size: 15px;
+  }
+  .elementosCabecera .divlogo {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 476px) {
+  .elementosCabecera {
     display: flex;
     flex-direction: column;
+    justify-items: center;
+  }
+  .elementosCabecera ul {
+    flex-direction: column;
+    justify-content: center;
   }
   .elementosCabecera .nav-item {
     font-size: 15px;
@@ -60,26 +77,31 @@
 footer {
   color: antiquewhite;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
   grid-template-areas: "redesicons contactoGral";
-  /*.footerElementos{
-      display: flex;
-      flex-direction: row;
-     justify-content: space-between;
-     height: 100px;*/
 }
 footer ul {
   grid-area: redesicons;
+  display: flex;
+  list-style-type: none;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
 }
 footer ul li {
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: row;
+  align-items: center;
   list-style: none;
+  justify-content: space-between;
+  align-items: center;
   gap: 1em;
 }
 footer ul li a {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 footer ul li a img {
   width: 30px;
@@ -92,34 +114,36 @@ footer ul li a img {
 footer ul li a:hover {
   width: 50px;
   height: 50px;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
 }
 footer .contactoGral {
   color: blanchedalmond;
   grid-area: contactoGral;
   display: flex;
+  justify-content: flex-end;
   padding: 1em;
   padding-top: 5px;
 }
 footer .contactoGral p {
   font-family: "Basquerville", "arial";
   color: blanchedalmond;
-  font-size: 20px;
-  justify-content: flex-end;
+  font-size: 15px;
 }
 
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 478px) and (orientation: landscape) {
   footer {
     grid-template-rows: repeat(2, 1fr);
     height: 40px;
     grid-template-areas: "redesicons" "contactoGral";
   }
+  footer li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 main {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 450px;
   margin-bottom: 3px;
 }
 
@@ -219,7 +243,7 @@ main {
 .gallery img {
   width: 590px;
   height: 300px;
-  transition: width 1s;
+  transition: width 0.4s;
 }
 .gallery img:hover {
   text-decoration: none;
@@ -319,7 +343,7 @@ main {
   justify-items: center;
 }
 
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 478px) and (orientation: landscape) {
   .servicesBody {
     width: 100%;
   }
@@ -332,10 +356,12 @@ main {
   background-image: url("../Images/bg01.jpg");
   font-family: "Basquerville", "arial";
   font-style: bold;
-  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 478px) and (orientation: landscape) {
   #bodycompleto {
     height: auto;
     display: grid;

@@ -54,17 +54,16 @@
 
  }
 
- @media screen and (max-width: 478px) and (orientation: landscape) {
+ @media screen and (max-width: 768px) {
 
 .elementosCabecera{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-items: center;
 
     ul {
-        display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
 .nav-item{
@@ -79,4 +78,31 @@
 
 }
      
+}
+
+@media screen and (max-width: 476px) {
+
+    .elementosCabecera{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    
+        ul {
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+    .nav-item{
+     font-size: 15px;
+    
+    
+      } 
+    .divlogo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    }
+
+    
 }
