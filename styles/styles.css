@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .elementosCabecera {
   color: blanchedalmond;
   text-decoration: none;
@@ -76,6 +77,8 @@
 }
 footer {
   color: antiquewhite;
+  width: 100% vw;
+  height: 100% vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "redesicons contactoGral";
@@ -132,18 +135,10 @@ footer .contactoGral p {
 @media screen and (max-width: 478px) and (orientation: landscape) {
   footer {
     grid-template-rows: repeat(2, 1fr);
-    height: 40px;
     grid-template-areas: "redesicons" "contactoGral";
-  }
-  footer li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
 }
 main {
-  width: 100vw;
-  height: 450px;
   margin-bottom: 3px;
 }
 
@@ -167,6 +162,11 @@ main {
   color: blanchedalmond;
 }
 
+@media screen and (max-width: 476px) {
+  .card-title {
+    font-size: 1em;
+  }
+}
 .contactTitulo {
   font-family: "Basquerville", "arial";
   font-style: bold;
@@ -253,6 +253,24 @@ main {
   height: 366px;
 }
 
+@media screen and (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5px;
+    width: 100% vw;
+    height: 100% vh;
+  }
+  .gallery img {
+    width: 100% vw;
+    height: 100% vh;
+  }
+}
+@media screen and (max-width: 476px) and (orientation: landscape) {
+  .card-title {
+    font-size: 1em;
+  }
+}
 .aboutMe {
   margin: 3px 3px 3px 0px;
   padding-top: 15px;
@@ -352,6 +370,10 @@ main {
     justify-items: center;
   }
 }
+/*$textogralfont: basquerville;
+$tamañochico: 15px;
+$colortext: antiquewhite;
+*/
 #bodycompleto {
   background-image: url("../Images/bg01.jpg");
   font-family: "Basquerville", "arial";
@@ -375,7 +397,7 @@ main {
   #bodycompleto main {
     grid-area: main;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
 }/*# sourceMappingURL=styles.css.map */
