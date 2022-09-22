@@ -17,7 +17,7 @@
 
 }
 
-   @media screen and (max-width: 478px) and (orientation: landscape) {
+   @media screen and (max-width: 478px) {
 
     #bodycompleto{ 
         height: auto;
@@ -38,9 +38,14 @@ main {
     grid-area: main;
     justify-content: center;
     width: 100vw;
- height: 100vh;
+ height: fit-content;
 
     }
+footer {
+    grid-area: footer;
+    width: 100 vw;
+    height: 100vh;
+}
 
     }
 }
