@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .elementosCabecera {
   color: blanchedalmond;
   text-decoration: none;
@@ -129,21 +130,39 @@ footer .contactoGral p {
   font-size: 15px;
 }
 
-@media screen and (max-width: 478px) and (orientation: landscape) {
-  footer {
+@media screen and (max-width: 768px) {
+  .footerElementos {
+    background-color: black;
+    display: grid;
     grid-template-rows: repeat(2, 1fr);
-    height: 40px;
     grid-template-areas: "redesicons" "contactoGral";
   }
-  footer li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .footerElementos ul {
+    grid-area: redesicons;
+  }
+  .footerElementos .contactoGral {
+    grid-area: contactoGral;
+  }
+}
+@media screen and (max-width: 478px) {
+  footer {
+    display: grid;
+    background-color: red;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "redesicons" "contactoGral";
+  }
+  footer ul {
+    grid-area: redesicons;
+  }
+  footer .contactoGral {
+    grid-area: contactoGral;
   }
 }
 main {
   width: 100vw;
-  height: 450px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-bottom: 3px;
 }
 
@@ -167,6 +186,11 @@ main {
   color: blanchedalmond;
 }
 
+@media screen and (max-width: 476px) {
+  .card-title {
+    font-size: 1em;
+  }
+}
 .contactTitulo {
   font-family: "Basquerville", "arial";
   font-style: bold;
@@ -239,11 +263,14 @@ main {
   flex-wrap: wrap;
   align-items: stretch;
   list-style: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .gallery img {
   width: 590px;
   height: 300px;
-  transition: width 0.4s;
+  transition: width 0.4s opacity 0.4s;
 }
 .gallery img:hover {
   text-decoration: none;
@@ -251,8 +278,38 @@ main {
   cursor: pointer;
   width: 720px;
   height: 366px;
+  opacity: 0.5;
 }
 
+@media screen and (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5px;
+    width: 100% vw;
+    height: 100% vh;
+  }
+  .gallery img {
+    width: 100% vw;
+    height: 100% vh;
+  }
+}
+@media screen and (max-width: 476px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5px;
+    width: 100% vw;
+    height: 100% vh;
+  }
+  .gallery img {
+    width: 100% vw;
+    height: 100% vh;
+  }
+  .card-title {
+    font-size: 1em;
+  }
+}
 .aboutMe {
   margin: 3px 3px 3px 0px;
   padding-top: 15px;
@@ -352,6 +409,10 @@ main {
     justify-items: center;
   }
 }
+/*$textogralfont: basquerville;
+$tamañochico: 15px;
+$colortext: antiquewhite;
+*/
 #bodycompleto {
   background-image: url("../Images/bg01.jpg");
   font-family: "Basquerville", "arial";
@@ -361,7 +422,7 @@ main {
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 478px) and (orientation: landscape) {
+@media screen and (max-width: 478px) {
   #bodycompleto {
     height: auto;
     display: grid;
@@ -375,7 +436,14 @@ main {
   #bodycompleto main {
     grid-area: main;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #bodycompleto footer {
+    grid-area: footer;
+    width: 100 vw;
+    height: 100vh;
   }
 }/*# sourceMappingURL=styles.css.map */
