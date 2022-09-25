@@ -8,13 +8,18 @@
     margin-top: 5px;
     padding-bottom: 5px;
     margin-left: 40px;
+
+    &:hover {
+        color: black;
+    }
+
 }
 
 .ContactForm {
     font-size: 20px;
-    margin-left: 25px;
+    width: fit-content;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "formularioIzq formularioDerecho";
 
@@ -76,9 +81,8 @@ margin-top: 15px;
 
 @media screen and (max-width: 478px){
     .ContactForm {
-        display: grid;
 grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
         "formularioIzq"
         "formularioDerecho"

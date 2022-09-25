@@ -9,14 +9,12 @@
  img{
     width: 590px;
     height: 300px; 
-    transition: width 0.4s opacity 0.4s;
+    transition: opacity 0.4s;
 
  &:hover{
     text-decoration: none;
     filter: brightness(0.9);
     cursor: pointer; 
-    width: 720px;
-    height: 366px;
     opacity: 0.5;
 
       
