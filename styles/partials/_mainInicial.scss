@@ -3,7 +3,7 @@ main {
     width: 100vw;
  height: fit-content;
     margin-bottom:3px;
-}
+
 
 #carouselExampleControls {
     max-height: 440px;
@@ -17,10 +17,23 @@ main {
     position: relative;
 }
 
+.tituloImagen{
+
 .card-title{
 font-family: map-get($cardtitleimportant, font-family );
-color: map-get($cardtitleimportant, color);
+color: map-get($cardtitleimportant, $colorPrincipal);
+font-size: 70px;
+    display: flex;
+    align-items: center;
+
+ &:hover { 
+    color: $colortextHover;
+
+ }   
+
 }
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -33,3 +46,4 @@ color: map-get($cardtitleimportant, color);
 
 }
 }  
+}

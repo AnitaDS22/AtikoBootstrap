@@ -2,6 +2,7 @@
 /*colores */ 
 $colortextHover: black; 
 $colorPrincipal: blanchedalmond;
+$colorCardsfondo: rgb(23, 23, 65);
 /*tamaños*/
 
 
@@ -17,7 +18,8 @@ $cardtitleimportant: (
     font-family: "Basquerville",
     font-style: bold,
     font-size: 50px,
-    color: $colorPrincipal,
+    $colorPrincipal: blanchedalmond,
+    $colorHover: black,
 );
 
 
