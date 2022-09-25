@@ -1,4 +1,4 @@
-.aboutMe {
+/*.aboutMe {
 margin: 3px 3px 3px 0px;
 padding-top: 15px;
 display: grid;
@@ -7,7 +7,7 @@ grid-template-rows: 1fr;
 grid-template-areas: 
 "asideIzq asideDer";
 
-/*
+
  .asideIzq {
     grid-area: asideIzq;
     width: 500px;
@@ -67,7 +67,7 @@ grid-template-areas:
  
 }
 */
-.card {
+.cardabout {
 
 background-color: $colorCardsfondo;
 
@@ -89,4 +89,3 @@ background-color: $colorCardsfondo;
     
     }
     }
-}

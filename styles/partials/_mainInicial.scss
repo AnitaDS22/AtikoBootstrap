@@ -17,24 +17,6 @@ main {
     position: relative;
 }
 
-.tituloImagen{
-
-.card-title{
-font-family: map-get($cardtitleimportant, font-family );
-color: map-get($cardtitleimportant, $colorPrincipal);
-font-size: 70px;
-    display: flex;
-    align-items: center;
-
- &:hover { 
-    color: $colortextHover;
-
- }   
-
-}
-}
-
-
 @media screen and (max-width: 768px) {
 
     
