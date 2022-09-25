@@ -1,7 +1,7 @@
 
 /*colores */ 
 $colortextHover: black; 
-
+$colorPrincipal: blanchedalmond;
 /*tamaños*/
 
 
@@ -12,10 +12,12 @@ $radiusBotComun: 15px;
 /*transiciones*/
 $transitionlenta: all 0.5s ease;
 
-/*maps 
 
-$botoneswebcomunes {
-border-radius: radiusBotComun;
+$cardtitleimportant: (
+    font-family: "Basquerville",
+    font-style: bold,
+    font-size: 50px,
+    color: $colorPrincipal,
+);
 
-}
-*/
+

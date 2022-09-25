@@ -1,3 +1,4 @@
+
 main {
     width: 100vw;
  height: fit-content;
@@ -17,10 +18,8 @@ main {
 }
 
 .card-title{
-   font-family: "Basquerville", "arial";
-   font-style: bold;
-   font-size: 50px;
-   color: blanchedalmond;
+font-family: map-get($cardtitleimportant, font-family );
+color: map-get($cardtitleimportant, color);
 }
 
 @media screen and (max-width: 768px) {
