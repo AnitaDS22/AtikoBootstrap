@@ -7,6 +7,7 @@ grid-template-rows: 1fr;
 grid-template-areas: 
 "asideIzq asideDer";
 
+/*
  .asideIzq {
     grid-area: asideIzq;
     width: 500px;
@@ -59,7 +60,7 @@ grid-template-areas:
     grid-area: img;
 }
 
-/*.aboutMe img {
+.aboutMe img {
     margin-right:0px;
    width: 360px;
    height: 203px;
