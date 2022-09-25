@@ -5,10 +5,7 @@ display: grid;
 grid-template-columns: 1fr 2fr;
 grid-template-rows: 1fr;
 grid-template-areas: 
-"asideIzq asideDer"
-
-} 
-
+"asideIzq asideDer";
 
  .asideIzq {
     grid-area: asideIzq;
@@ -62,9 +59,33 @@ grid-template-areas:
     grid-area: img;
 }
 
-.aboutMe img {
+/*.aboutMe img {
     margin-right:0px;
    width: 360px;
    height: 203px;
  
+}
+*/
+.card {
+
+background-color: $colorCardsfondo;
+
+}
+
+.tituloImagen{
+
+    .card-title{
+    font-family: map-get($cardtitleimportant, font-family );
+    color: map-get($cardtitleimportant, $colorPrincipal);
+    font-size: 70px;
+        display: flex;
+        align-items: center;
+    
+     &:hover { 
+        color: $colortextHover;
+    
+     }   
+    
+    }
+    }
 }
