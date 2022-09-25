@@ -78,7 +78,7 @@
   }
 }
 footer {
-  color: antiquewhite;
+  color: blanchedalmond;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "redesicons contactoGral";
@@ -422,9 +422,16 @@ main {
     justify-items: center;
   }
 }
-/*$textogralfont: basquerville;
-$tamañochico: 15px;
-$colortext: antiquewhite;
+/*colores */
+/*tamaños*/
+/*botones*/
+/*transiciones*/
+/*maps 
+
+$botoneswebcomunes {
+border-radius: radiusBotComun;
+
+}
 */
 #bodycompleto {
   background-image: url("../Images/bg01.jpg");
