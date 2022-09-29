@@ -7,9 +7,7 @@
 
 
 .textoServices{
-  font-family: "Basquerville", "arial";
-    font-style: bold;
-    color: blanchedalmond;
+    @extend %textcomun;
     font-size: 3em; 
     display: flex;
     justify-items: flex-start;

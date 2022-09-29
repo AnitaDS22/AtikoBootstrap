@@ -71,6 +71,11 @@ grid-template-areas:
 
 background-color: $colorCardsfondo;
 
+.aboutStory {
+    @extend %textcomun;
+    font-size: 30px;
+}
+
 }
 
 .tituloImagen{

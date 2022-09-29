@@ -1,8 +1,9 @@
 
 main {
-    width: 100vw;
+    width: fit-content;
  height: fit-content;
     margin-bottom:3px;
+    size: 50%;
 
 
 #carouselExampleControls {
@@ -11,21 +12,35 @@ main {
 .carousel-inner {
     width: 100%;
         max-height: 440px;
+
+        
 }
 
 .fotosCarrusel {
     position: relative;
 }
 
-@media screen and (max-width: 768px) {
+.card-title {
+    color: map-get($colorespagina, colorPrincipal ); 
+    font-size: map-get($tamañospagina, fontsizeprincipal );
 
-    
+ &:hover {
+color: map-get($colorespagina, colortextsecundario );
+
+ }   
+  }
+
+
+@media screen and (max-width: 768px) {
+   
+ .card-title{ 
+    font-size: map-get($tamañospagina, fontsizesecundario );
+ }
 }
     
 @media screen and (max-width: 476px) {
     .card-title{ 
-        font-size: 1em;
-
+        font-size: map-get($tamañospagina, fontsizetercera );
 }
 }  
 }

@@ -1,9 +1,11 @@
 footer {
-    color: blanchedalmond;
+    color: map-get($colorespagina, colorPrincipal);
     display: grid;
 grid-template-columns: 2fr 1fr;
 grid-template-areas: 
 "redesicons contactoGral";
+background-color: black;
+size: 20%;
 
 ul {
     grid-area: redesicons;
@@ -60,9 +62,11 @@ height: 50px;
         font-family: "Basquerville", "arial";
         color:  blanchedalmond;
         font-size: 15px;
+        transition: map-get($transicionespagina, transitionsecundaria );
    
 &:hover {
-    color: black;
+    color: map-get($colorespagina, colortextsecundario);
+    font-size: map-get($tamañospagina, fontsizehover)
 }
    
     }    
@@ -72,7 +76,7 @@ height: 50px;
 
 @media screen and (max-width: 768px) {
     .footerElementos {
-        width: fit-content;
+        width: 100%;
         background-color: black;
         display: grid;
         grid-template-rows: repeat(2, 1fr);

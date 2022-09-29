@@ -13,6 +13,7 @@
         color: $colortextHover;
     
      }  
+     
 
 
 }
@@ -75,8 +76,18 @@ width: 200px;
    margin-left: 340px;
 margin-top: 15px;
 
-   
+
 }
+.botonesprincipal {
+    background-color: black;
+    color: blanchedalmond;
+
+   &:hover {
+color: map-get($colorespagina, colortextsecundario )
+
+   } 
+}  
+
         
 }
 }
