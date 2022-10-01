@@ -31,14 +31,31 @@ height: fit-content;
 
  
 .card-header {
-    font-size: 20px;
-    color: black;
+    @include cardloca ($bground: #e91e40, $color1: $colorPrincipal );
+    font-size: 30px;
     font-family: "Basquerville", "arial";
     font-style: bold;
+    
 }
 
 .card-body {
-    font-size: medium;
+
+    h5 {
+    font-size: large;
+    color: $colortextsecundario;
+    &:hover {
+        color: black;
+    }
+    }
+p {
+color: black;
+
+&:hover {
+    color: $colortextsecundario;
+}
+
+}
+
 }
 
 

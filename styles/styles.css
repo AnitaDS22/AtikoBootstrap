@@ -398,13 +398,25 @@ main .card-title:hover {
   height: fit-content;
 }
 .servicesBody .cardoptionatiko .card-header {
-  font-size: 20px;
-  color: black;
+  background-color: #e91e40;
+  border-radius: 5px;
+  color: blanchedalmond;
+  font-size: 30px;
   font-family: "Basquerville", "arial";
   font-style: bold;
 }
-.servicesBody .cardoptionatiko .card-body {
-  font-size: medium;
+.servicesBody .cardoptionatiko .card-body h5 {
+  font-size: large;
+  color: #d0485e;
+}
+.servicesBody .cardoptionatiko .card-body h5:hover {
+  color: black;
+}
+.servicesBody .cardoptionatiko .card-body p {
+  color: black;
+}
+.servicesBody .cardoptionatiko .card-body p:hover {
+  color: #d0485e;
 }
 
 @media screen and (max-width: 478px) and (orientation: landscape) {

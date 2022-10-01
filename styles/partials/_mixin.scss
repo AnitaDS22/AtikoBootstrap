@@ -1,0 +1,6 @@
+@mixin cardloca ($bground, $color1){
+    background-color: $bground;
+    border-radius: 5px;
+    color: $color1;
+
+}
