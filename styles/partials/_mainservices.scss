@@ -5,6 +5,7 @@
     justify-content: flex-start;
     height: fit-content;
 
+
 .textoServices{
     @extend %textcomun;
     font-size: 3em; 
@@ -24,7 +25,8 @@
 .cardoptionatiko {
     @extend %flexRowComun;
 background-color: black;
-height: fit-content;
+padding: auto;
+height: max-content;
 
 
 .card {

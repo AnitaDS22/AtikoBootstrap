@@ -392,9 +392,10 @@ main .card-title:hover {
 }
 .servicesBody .cardoptionatiko {
   background-color: black;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  padding: auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 .servicesBody .cardoptionatiko .card {
   width: 290px;
