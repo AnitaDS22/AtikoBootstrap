@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    height: fit-content;
 
 .textoServices{
     @extend %textcomun;
@@ -21,7 +22,15 @@
 }
 
 .cardoptionatiko {
-    @extend %flexRowComun
+    @extend %flexRowComun;
+background-color: black;
+height: fit-content;
+
+
+.card {
+    width: 290px;
+    height: 150px;
+}
 }
 
 

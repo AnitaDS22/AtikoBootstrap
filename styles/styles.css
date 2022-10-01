@@ -3,10 +3,17 @@
 /*tamaños*/
 /*botones*/
 /*transiciones*/
-.servicesBody .textoServices, .cardabout .aboutStory {
+.servicesBody .textoServices, .cardabout .aboutStory, .contactTitulo {
   font-family: "Basquerville", "arial";
   font-style: bold;
   color: blanchedalmond;
+}
+
+.servicesBody .cardoptionatiko {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .elementosCabecera {
@@ -221,9 +228,6 @@ main .card-title:hover {
 }
 
 .contactTitulo {
-  font-family: "Basquerville", "arial";
-  font-style: bold;
-  color: blanchedalmond;
   font-size: 70px;
   margin-top: 5px;
   padding-bottom: 5px;
@@ -371,6 +375,9 @@ main .card-title:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .servicesBody .textoServices {
   font-size: 3em;
@@ -382,6 +389,16 @@ main .card-title:hover {
   justify-items: center;
   padding: 1em;
   justify-items: center;
+}
+.servicesBody .cardoptionatiko {
+  background-color: black;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.servicesBody .cardoptionatiko .card {
+  width: 290px;
+  height: 150px;
 }
 
 @media screen and (max-width: 478px) and (orientation: landscape) {
