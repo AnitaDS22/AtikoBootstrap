@@ -26,18 +26,30 @@
     @extend %flexRowComun;
 background-color: black;
 padding: auto;
-height: max-content;
+height: fit-content;
 
 
-.card {
-    width: 290px;
-    height: 150px;
+ 
+.card-header {
+    font-size: 20px;
+    color: black;
+    font-family: "Basquerville", "arial";
+    font-style: bold;
+}
+
+.card-body {
+    font-size: medium;
+}
+
+
+
+
 }
 }
 
 
 
-}
+
 
 @media screen and (max-width: 478px) and (orientation: landscape)  {
     .servicesBody {

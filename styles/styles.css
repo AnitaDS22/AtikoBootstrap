@@ -393,13 +393,18 @@ main .card-title:hover {
 .servicesBody .cardoptionatiko {
   background-color: black;
   padding: auto;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-.servicesBody .cardoptionatiko .card {
-  width: 290px;
-  height: 150px;
+.servicesBody .cardoptionatiko .card-header {
+  font-size: 20px;
+  color: black;
+  font-family: "Basquerville", "arial";
+  font-style: bold;
+}
+.servicesBody .cardoptionatiko .card-body {
+  font-size: medium;
 }
 
 @media screen and (max-width: 478px) and (orientation: landscape) {
