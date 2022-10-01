@@ -1,9 +1,7 @@
 
  
 .contactTitulo {
-    font-family: "Basquerville", "arial";
-    font-style: bold;
-    color: blanchedalmond;
+    @extend %textcomun;
     font-size: 70px;
     margin-top: 5px;
     padding-bottom: 5px;

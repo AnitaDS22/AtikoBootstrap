@@ -4,8 +4,6 @@
     flex-direction: column;
     justify-content: flex-start;
 
-
-
 .textoServices{
     @extend %textcomun;
     font-size: 3em; 
@@ -21,6 +19,13 @@
     justify-items: center;
 
 }
+
+.cardoptionatiko {
+    @extend %flexRowComun
+}
+
+
+
 }
 
 @media screen and (max-width: 478px) and (orientation: landscape)  {
