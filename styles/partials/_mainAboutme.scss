@@ -1,12 +1,32 @@
+.aboutcentral{
+background-color: none ;
+}
+
+.card-body {
+    @include cardloca ($bground: black, $color1: colorPrincipal);
+    width: 28em;
+    height: 8em;
+
+img {
+ height: 1em;
+}
+
+}
 
 .cardabout {
 
-background-color: $colorCardsfondo;
+background-color: none;
 
 .aboutStory {
     @extend %textcomun;
-    font-size: 30px;
+    font-size: xx-large;
+    
 }
+.card-text {
+    color: blanchedalmond;
+    font-size:large;
+}
+
 
 }
 

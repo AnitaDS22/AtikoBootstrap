@@ -352,11 +352,33 @@ main .card-title:hover {
     font-size: 1em;
   }
 }
+.aboutcentral {
+  background-color: none;
+}
+
+.card-body {
+  background-color: black;
+  border-radius: 10px;
+  color: colorPrincipal;
+  font-size: 30px;
+  font-family: "Basquerville", "arial";
+  font-style: bold;
+  width: 28em;
+  height: 8em;
+}
+.card-body img {
+  height: 1em;
+}
+
 .cardabout {
-  background-color: rgb(214, 71, 227);
+  background-color: none;
 }
 .cardabout .aboutStory {
-  font-size: 30px;
+  font-size: xx-large;
+}
+.cardabout .card-text {
+  color: blanchedalmond;
+  font-size: large;
 }
 
 .tituloImagen .card-title {
