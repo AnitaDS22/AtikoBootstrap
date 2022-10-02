@@ -14,15 +14,13 @@
 
 }
 
-.formuflex {
-    display: flex;
-    justify-content: center;
-    
 .ContactForm {
     font-size: 20px;
     width: fit-content;
     display: grid;
+    padding-left: 3em;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
     grid-template-areas: 
     "formularioIzq formularioDerecho";
 
@@ -91,7 +89,22 @@ color: map-get($colorespagina, colortextsecundario )
         
 }
 }
-}
+
+
+
+@media screen and (max-width: 768px) {
+    .ContactForm {
+        width: fit-content;
+        height: fit-content;
+        grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-areas: 
+                "formularioIzq"
+                "formularioDerecho";
+        
+        }
+
+
 }
 
 @media screen and (max-width: 478px){
@@ -100,7 +113,8 @@ grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
         "formularioIzq"
-        "formularioDerecho"
+        "formularioDerecho";
 
+}
 }
 }

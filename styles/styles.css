@@ -236,34 +236,32 @@ main .card-title:hover {
 .contactMain .contactTitulo:hover {
   color: black;
 }
-.contactMain .formuflex {
-  display: flex;
-  justify-content: center;
-}
-.contactMain .formuflex .ContactForm {
+.contactMain .ContactForm {
   font-size: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: grid;
+  padding-left: 3em;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
   grid-template-areas: "formularioIzq formularioDerecho";
 }
-.contactMain .formuflex .ContactForm .formularioIzq {
+.contactMain .ContactForm .formularioIzq {
   grid-area: formularioIzq;
   padding-bottom: 10px;
   padding-right: 5px;
 }
-.contactMain .formuflex .ContactForm .formularioIzq input {
+.contactMain .ContactForm .formularioIzq input {
   width: 500px;
   height: 25px;
   padding-bottom: 5px;
 }
-.contactMain .formuflex .ContactForm .formularioIzq input textarea {
+.contactMain .ContactForm .formularioIzq input textarea {
   width: 500px;
   height: 150px;
 }
-.contactMain .formuflex .ContactForm .formularioDerecho {
+.contactMain .ContactForm .formularioDerecho {
   grid-area: formularioDerecho;
   display: flex;
   flex-direction: column;
@@ -271,40 +269,53 @@ main .card-title:hover {
   padding-bottom: 10px;
   margin-left: none;
 }
-.contactMain .formuflex .ContactForm .formularioDerecho input #website {
+.contactMain .ContactForm .formularioDerecho input #website {
   width: 200px;
   height: 70px;
   padding-bottom: 5px;
 }
-.contactMain .formuflex .ContactForm .formularioDerecho textarea {
+.contactMain .ContactForm .formularioDerecho textarea {
   height: 150px;
   padding-bottom: 5px;
 }
-.contactMain .formuflex .ContactForm .formularioDerecho .SubmitEnviar {
+.contactMain .ContactForm .formularioDerecho .SubmitEnviar {
   border: none;
 }
-.contactMain .formuflex .ContactForm .formularioDerecho .SubmitEnviar input {
+.contactMain .ContactForm .formularioDerecho .SubmitEnviar input {
   width: 150px;
   height: 50px;
   border-radius: 10px;
   margin-left: 340px;
   margin-top: 15px;
 }
-.contactMain .formuflex .ContactForm .formularioDerecho .botonesprincipal {
+.contactMain .ContactForm .formularioDerecho .botonesprincipal {
   background-color: black;
   color: blanchedalmond;
 }
-.contactMain .formuflex .ContactForm .formularioDerecho .botonesprincipal:hover {
+.contactMain .ContactForm .formularioDerecho .botonesprincipal:hover {
   color: #d0485e;
 }
-
-@media screen and (max-width: 478px) {
-  .ContactForm {
+@media screen and (max-width: 768px) {
+  .contactMain .ContactForm {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "formularioIzq" "formularioDerecho";
   }
 }
+@media screen and (max-width: 478px) {
+  .contactMain .ContactForm {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "formularioIzq" "formularioDerecho";
+  }
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
