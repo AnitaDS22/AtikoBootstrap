@@ -1,11 +1,11 @@
 footer {
-    color: antiquewhite;
-    width: 100%vw;
-    height: 100%vh;
+    color: map-get($colorespagina, colorPrincipal);
     display: grid;
 grid-template-columns: 2fr 1fr;
 grid-template-areas: 
 "redesicons contactoGral";
+background-color: black;
+size: 20%;
 
 ul {
     grid-area: redesicons;
@@ -36,7 +36,7 @@ gap: 1em;
         border-radius: 15px;
             list-style: none; 
             transition: padding 0.5s; size: 1em 0.5s;
-}
+
         
 &:hover {
 width: 50px;
@@ -44,6 +44,7 @@ height: 50px;
 
 }
         }
+}
 
     }
 
@@ -61,17 +62,61 @@ height: 50px;
         font-family: "Basquerville", "arial";
         color:  blanchedalmond;
         font-size: 15px;
+        transition: map-get($transicionespagina, transitionsecundaria );
+   
+&:hover {
+    color: map-get($colorespagina, colortextsecundario);
+    font-size: map-get($tamañospagina, fontsizehover)
+}
+   
     }    
     }
 
 }
-@media screen and (max-width: 478px) and (orientation: landscape)  {
+
+@media screen and (max-width: 768px) {
+    .footerElementos {
+        width: 100%;
+        background-color: black;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: 
+            "redesicons"
+            "contactoGral";
+     ul{
+         grid-area: redesicons;
+         display: flex;
+justify-content: space-between;
+align-content: center;
+                        }
+                
+.contactoGral{
+          grid-area: contactoGral;
+                        }
+        }
+
+
+}
+
+
+@media screen and (max-width: 478px){
 
     footer {
+        display: grid;
+        background-color: red;
     grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
         "redesicons"
         "contactoGral";
+
+        ul{
+
+grid-area: redesicons;            
+        }
+
+        .contactoGral{
+            grid-area: contactoGral;
+        }
     
     }
 

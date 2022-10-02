@@ -1,20 +1,26 @@
-
+.contactMain{
  
 .contactTitulo {
-    font-family: "Basquerville", "arial";
-    font-style: bold;
-    color: blanchedalmond;
+    @extend %textcomun;
     font-size: 70px;
     margin-top: 5px;
     padding-bottom: 5px;
     margin-left: 40px;
+  
+    &:hover { 
+        color: $colortextHover;
+    
+     }  
+
 }
 
 .ContactForm {
     font-size: 20px;
-    margin-left: 25px;
+    width: fit-content;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    padding-left: 3em;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
     grid-template-areas: 
     "formularioIzq formularioDerecho";
 
@@ -68,20 +74,47 @@ width: 200px;
    margin-left: 340px;
 margin-top: 15px;
 
-   
+
 }
+.botonesprincipal {
+    background-color: black;
+    color: blanchedalmond;
+
+   &:hover {
+color: map-get($colorespagina, colortextsecundario )
+
+   } 
+}  
+
         
 }
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .ContactForm {
+        width: fit-content;
+        height: fit-content;
+        grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-areas: 
+                "formularioIzq"
+                "formularioDerecho";
+        
+        }
+
+
+}
+
 @media screen and (max-width: 478px){
     .ContactForm {
-        display: grid;
 grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
         "formularioIzq"
-        "formularioDerecho"
+        "formularioDerecho";
 
+}
 }
 }

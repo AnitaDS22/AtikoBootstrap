@@ -1,3 +1,7 @@
+@import "./partials/variables";
+@import "./partials/maps";
+@import "./partials/extends";
+@import "./partials/mixin";
 @import "./partials/header";
 @import "./partials/footer";
 @import "./partials/_mainInicial";
@@ -5,7 +9,6 @@
 @import "./partials/mainGallery";
 @import "./partials/mainAboutme";
 @import "./partials/mainservices";
-@import "./partials/variables";
 
 #bodycompleto{
     background-image: url("../Images/bg01.jpg");
@@ -17,7 +20,7 @@
 
 }
 
-   @media screen and (max-width: 478px) and (orientation: landscape) {
+   @media screen and (max-width: 478px) {
 
     #bodycompleto{ 
         height: auto;
@@ -38,9 +41,14 @@ main {
     grid-area: main;
     justify-content: center;
     width: 100vw;
- height: 100vh;
+ height: fit-content;
 
     }
+footer {
+    grid-area: footer;
+    width: 100 vw;
+    height: 100vh;
+}
 
     }
 }

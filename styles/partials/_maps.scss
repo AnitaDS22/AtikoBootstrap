@@ -1,0 +1,34 @@
+$cardtitleimportant: (
+    font-family: "Basquerville",
+    font-style: bold,
+    font-size: 50px,
+    $colorPrincipal: blanchedalmond,
+
+);
+
+$root: (
+fontsizeprincipal: 1rem,
+paddingprincipal: 10px
+);
+
+$colorespagina: (
+colortextHover:black,
+colorPrincipal:blanchedalmond,
+colorCardsfondo: rgb(23, 23, 65),
+colortextsecundario: #d0485e
+);
+
+$tamañospagina: (
+    radiusBotComun: 15px,
+    fontsizehover: 16px,
+    fontsizeprincipal: 80px,
+    fontsizesecundario: 40px,
+    fontsizetercera:20px
+    
+);
+
+$transicionespagina: (
+    transitionprincipal: all 0.5s ease,
+    transitionsecundaria: all 2s ease,
+);
+
