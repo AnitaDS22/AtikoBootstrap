@@ -245,6 +245,7 @@ main .card-title:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "formularioIzq formularioDerecho";
+  grid-column-start: auto;
 }
 .ContactForm .formularioIzq {
   grid-area: formularioIzq;
@@ -432,20 +433,26 @@ main .card-title:hover {
   font-size: 30px;
   font-family: "Basquerville", "arial";
   font-style: bold;
+  font-size: large;
 }
 .servicesBody .cardoptionatiko .card-header:hover {
   color: black;
   background-color: antiquewhite;
 }
+.servicesBody .cardoptionatiko .card-body {
+  height: 100%;
+  width: 100%;
+}
 .servicesBody .cardoptionatiko .card-body h5 {
-  font-size: large;
+  font-size: 0.5em;
   color: #d0485e;
 }
 .servicesBody .cardoptionatiko .card-body h5:hover {
   color: black;
 }
 .servicesBody .cardoptionatiko .card-body p {
-  color: black;
+  color: antiquewhite;
+  font-size: small;
 }
 .servicesBody .cardoptionatiko .card-body p:hover {
   color: #d0485e;

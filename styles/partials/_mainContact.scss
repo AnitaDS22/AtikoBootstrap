@@ -23,6 +23,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "formularioIzq formularioDerecho";
+    grid-column-start: auto;
 
 .formularioIzq {
     grid-area: formularioIzq;

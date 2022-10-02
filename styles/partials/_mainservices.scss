@@ -33,7 +33,8 @@ border-radius: 40px;
  
 .card-header {
     @include cardloca ($bground: #e91e40, $color1: $colorPrincipal );
-  
+  font-size: large;
+
     &:hover {
         color:black;
         background-color: antiquewhite;
@@ -41,16 +42,19 @@ border-radius: 40px;
 }
 
 .card-body {
+height: 100%;
+width: 100%;
 
     h5 {
-    font-size: large;
+    font-size: 0.5em;
     color: $colortextsecundario;
     &:hover {
         color: black;
     }
     }
 p {
-color: black;
+color:antiquewhite;
+font-size: small;
 
 &:hover {
     color: $colortextsecundario;
