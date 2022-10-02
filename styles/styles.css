@@ -391,11 +391,11 @@ main .card-title:hover {
   justify-items: center;
 }
 .servicesBody .cardoptionatiko {
-  background-color: black;
-  padding: auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  background-color: black;
+  opacity: 0.5px;
 }
 .servicesBody .cardoptionatiko .card-header {
   background-color: #e91e40;
@@ -404,6 +404,9 @@ main .card-title:hover {
   font-size: 30px;
   font-family: "Basquerville", "arial";
   font-style: bold;
+}
+.servicesBody .cardoptionatiko .card-header:hover {
+  color: black;
 }
 .servicesBody .cardoptionatiko .card-body h5 {
   font-size: large;
@@ -419,6 +422,18 @@ main .card-title:hover {
   color: #d0485e;
 }
 
+@media screen and (max-width: 768px) {
+  .servicesBody {
+    width: 100%;
+  }
+  .servicesBody .textoServices {
+    font-size: 2em;
+    justify-items: center;
+  }
+  .servicesBody .cardoptionatiko {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 478px) and (orientation: landscape) {
   .servicesBody {
     width: 100%;
@@ -426,6 +441,9 @@ main .card-title:hover {
   .servicesBody .textoServices {
     font-size: 2em;
     justify-items: center;
+  }
+  .servicesBody .cardoptionatiko {
+    flex-direction: column;
   }
 }
 #bodycompleto {

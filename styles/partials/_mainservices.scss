@@ -24,9 +24,10 @@
 
 .cardoptionatiko {
     @extend %flexRowComun;
-background-color: black;
-padding: auto;
 height: fit-content;
+background-color: black;
+opacity: 0.5px;
+
 
 
  
@@ -35,7 +36,10 @@ height: fit-content;
     font-size: 30px;
     font-family: "Basquerville", "arial";
     font-style: bold;
-    
+  
+    &:hover {
+        color:black;
+    }    
 }
 
 .card-body {
@@ -56,17 +60,34 @@ color: black;
 
 }
 
-}
-
-
-
 
 }
+
+
+}
 }
 
+@media screen and (max-width: 768px) {
+    .servicesBody {
+        width: 100%;
+        
+        
+                .textoServices{
+                    font-size: 2em; 
+                    justify-items: center;
+        
+        
+                }
+                .cardoptionatiko {
+                    flex-direction: column;
+        
+        
+        
+        
+                }
+            }
 
-
-
+}
 
 @media screen and (max-width: 478px) and (orientation: landscape)  {
     .servicesBody {
@@ -79,6 +100,12 @@ width: 100%;
 
 
         }
+        .cardoptionatiko {
+            flex-direction: column;
 
+
+
+
+        }
     }
 }
