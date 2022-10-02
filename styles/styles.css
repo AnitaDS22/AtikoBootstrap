@@ -374,32 +374,38 @@ main .card-title:hover {
   color: blanchedalmond;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 .servicesBody .textoServices {
   font-size: 3em;
-  display: flex;
   justify-items: flex-start;
 }
-.servicesBody .servicesBody iframe {
+.servicesBody .vimeo {
   display: flex;
-  justify-items: center;
-  padding: 1em;
-  justify-items: center;
+  justify-content: center;
 }
 .servicesBody .cardoptionatiko {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: black;
-  opacity: 0.5px;
+  padding: 10px;
+  border-radius: 40px;
+}
+.servicesBody .cardoptionatiko .card.text-bg-dark.mb-3 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 .servicesBody .cardoptionatiko .card-header {
   background-color: #e91e40;
-  border-radius: 5px;
+  border-radius: 10px;
   color: blanchedalmond;
   font-size: 30px;
   font-family: "Basquerville", "arial";
@@ -407,6 +413,7 @@ main .card-title:hover {
 }
 .servicesBody .cardoptionatiko .card-header:hover {
   color: black;
+  background-color: antiquewhite;
 }
 .servicesBody .cardoptionatiko .card-body h5 {
   font-size: large;
