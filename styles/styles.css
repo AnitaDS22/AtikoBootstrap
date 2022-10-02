@@ -3,7 +3,7 @@
 /*tamaños*/
 /*botones*/
 /*transiciones*/
-.servicesBody .textoServices, .cardabout .aboutStory, .contactTitulo {
+.servicesBody .textoServices, .cardabout .aboutStory, .contactMain .contactTitulo {
   font-family: "Basquerville", "arial";
   font-style: bold;
   color: blanchedalmond;
@@ -227,17 +227,20 @@ main .card-title:hover {
   }
 }
 
-.contactTitulo {
+.contactMain .contactTitulo {
   font-size: 70px;
   margin-top: 5px;
   padding-bottom: 5px;
   margin-left: 40px;
 }
-.contactTitulo:hover {
+.contactMain .contactTitulo:hover {
   color: black;
 }
-
-.ContactForm {
+.contactMain .formuflex {
+  display: flex;
+  justify-content: center;
+}
+.contactMain .formuflex .ContactForm {
   font-size: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -245,23 +248,22 @@ main .card-title:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "formularioIzq formularioDerecho";
-  grid-column-start: auto;
 }
-.ContactForm .formularioIzq {
+.contactMain .formuflex .ContactForm .formularioIzq {
   grid-area: formularioIzq;
   padding-bottom: 10px;
   padding-right: 5px;
 }
-.ContactForm .formularioIzq input {
+.contactMain .formuflex .ContactForm .formularioIzq input {
   width: 500px;
   height: 25px;
   padding-bottom: 5px;
 }
-.ContactForm .formularioIzq input textarea {
+.contactMain .formuflex .ContactForm .formularioIzq input textarea {
   width: 500px;
   height: 150px;
 }
-.ContactForm .formularioDerecho {
+.contactMain .formuflex .ContactForm .formularioDerecho {
   grid-area: formularioDerecho;
   display: flex;
   flex-direction: column;
@@ -269,30 +271,30 @@ main .card-title:hover {
   padding-bottom: 10px;
   margin-left: none;
 }
-.ContactForm .formularioDerecho input #website {
+.contactMain .formuflex .ContactForm .formularioDerecho input #website {
   width: 200px;
   height: 70px;
   padding-bottom: 5px;
 }
-.ContactForm .formularioDerecho textarea {
+.contactMain .formuflex .ContactForm .formularioDerecho textarea {
   height: 150px;
   padding-bottom: 5px;
 }
-.ContactForm .formularioDerecho .SubmitEnviar {
+.contactMain .formuflex .ContactForm .formularioDerecho .SubmitEnviar {
   border: none;
 }
-.ContactForm .formularioDerecho .SubmitEnviar input {
+.contactMain .formuflex .ContactForm .formularioDerecho .SubmitEnviar input {
   width: 150px;
   height: 50px;
   border-radius: 10px;
   margin-left: 340px;
   margin-top: 15px;
 }
-.ContactForm .formularioDerecho .botonesprincipal {
+.contactMain .formuflex .ContactForm .formularioDerecho .botonesprincipal {
   background-color: black;
   color: blanchedalmond;
 }
-.ContactForm .formularioDerecho .botonesprincipal:hover {
+.contactMain .formuflex .ContactForm .formularioDerecho .botonesprincipal:hover {
   color: #d0485e;
 }
 
