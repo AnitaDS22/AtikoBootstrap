@@ -5,7 +5,7 @@ grid-template-columns: 2fr 1fr;
 grid-template-areas: 
 "redesicons contactoGral";
 background-color: black;
-size: 20%;
+size: 30%;
 
 ul {
     grid-area: redesicons;
@@ -76,13 +76,15 @@ height: 50px;
 
 @media screen and (max-width: 768px) {
     .footerElementos {
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
         background-color: black;
         display: grid;
         grid-template-rows: repeat(2, 1fr);
             grid-template-areas: 
             "redesicons"
             "contactoGral";
+
      ul{
          grid-area: redesicons;
          display: flex;
@@ -102,6 +104,8 @@ align-content: center;
 @media screen and (max-width: 478px){
 
     footer {
+        width: 100vw;
+        height: 100vh;
         display: grid;
         background-color: red;
     grid-template-rows: repeat(2, 1fr);
