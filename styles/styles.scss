@@ -14,8 +14,6 @@
     background-image: url("../Images/bg01.jpg");
    font-family: "Basquerville", "arial";
    font-style: bold;
-   width: 100vw;
-   height: 100vh;
    overflow-x: hidden;
 
 }
@@ -23,7 +21,6 @@
    @media screen and (max-width: 478px) {
 
     #bodycompleto{ 
-        height: auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 1fr;
@@ -40,14 +37,11 @@ header {
 main {
     grid-area: main;
     justify-content: center;
-    width: 100vw;
- height: fit-content;
 
     }
 footer {
     grid-area: footer;
-    width: 100 vw;
-    height: 100vh;
+
 }
 
     }
