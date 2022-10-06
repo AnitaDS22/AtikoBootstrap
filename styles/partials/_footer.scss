@@ -6,6 +6,9 @@ grid-template-areas:
 "redesicons contactoGral";
 background-color: black;
 size: 20%;
+position: absolute;
+width: 100%;
+
 
 ul {
     grid-area: redesicons;

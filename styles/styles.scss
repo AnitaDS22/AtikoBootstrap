@@ -15,7 +15,8 @@
    font-family: "Basquerville", "arial";
    font-style: bold;
    width: 100vw;
-   height: 100vh;
+   min-height: 100vh;
+   position: relative;
    overflow-x: hidden;
 
 }
@@ -23,7 +24,6 @@
    @media screen and (max-width: 478px) {
 
     #bodycompleto{ 
-        height: auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 1fr;
