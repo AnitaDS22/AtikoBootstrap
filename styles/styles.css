@@ -322,6 +322,9 @@ main .card-title:hover {
   }
 }
 
+.gallerymain {
+  height: 700px;
+}
 .gallerymain .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -341,14 +344,10 @@ main .card-title:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .gallerymain {
-    height: 100vh;
-  }
   .gallerymain .gallery {
     flex-direction: column;
     align-items: center;
     gap: 0.5px;
-    height: 100%;
   }
   .gallerymain .gallery img {
     width: 100vw;
@@ -356,9 +355,6 @@ main .card-title:hover {
   }
 }
 @media screen and (max-width: 478px) {
-  .gallerymain {
-    height: 100vh;
-  }
   .gallerymain .gallery {
     flex-direction: column;
     justify-content: center;
@@ -512,7 +508,6 @@ main .card-title:hover {
 
 @media screen and (max-width: 478px) {
   #bodycompleto {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
@@ -524,12 +519,8 @@ main .card-title:hover {
   #bodycompleto main {
     grid-area: main;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
   }
   #bodycompleto footer {
     grid-area: footer;
-    width: 100vw;
-    height: 100vh;
   }
 }/*# sourceMappingURL=styles.css.map */
