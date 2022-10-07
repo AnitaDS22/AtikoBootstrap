@@ -191,44 +191,42 @@ footer .contactoGral p:hover {
     grid-area: contactoGral;
   }
 }
-main {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: 3px;
-  size: 50%;
-}
-main #carouselExampleControls {
+/* main {
+    width: fit-content;
+    margin-bottom:3px;
+    size: 50%;
+*/
+#carouselExampleControls {
   max-height: 440px;
 }
-main .carousel-inner {
+
+.carousel-inner {
   width: 100%;
   max-height: 440px;
 }
-main .fotosCarrusel {
+
+.fotosCarrusel {
   position: relative;
 }
-main .card-title {
+
+.card-title {
   color: blanchedalmond;
   font-size: 80px;
 }
-main .card-title:hover {
+.card-title:hover {
   color: #d0485e;
 }
+
 @media screen and (max-width: 768px) {
-  main .card-title {
+  .card-title {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 476px) {
-  main .card-title {
+@media screen and (max-width: 478px) {
+  .card-title {
     font-size: 20px;
   }
 }
-
 .contactMain {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -430,9 +428,7 @@ main .card-title:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  /* height: fit-content; */
 }
 .servicesBody .textoServices {
   font-size: 3em;
@@ -502,7 +498,7 @@ main .card-title:hover {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 478px) and (orientation: landscape) {
+@media screen and (max-width: 478px) {
   .servicesBody {
     width: 100%;
   }
@@ -532,18 +528,18 @@ main .card-title:hover {
   }
   #bodycompleto header {
     grid-area: header;
+    width: 100vw;
+    height: 100vh;
   }
   #bodycompleto main {
     grid-area: main;
     justify-content: center;
     width: 100vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 100vh;
   }
   #bodycompleto footer {
     grid-area: footer;
-    width: 100 vw;
+    width: 100vw;
     height: 100vh;
   }
 }/*# sourceMappingURL=styles.css.map */

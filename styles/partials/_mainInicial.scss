@@ -1,10 +1,9 @@
 
-main {
+/* main {
     width: fit-content;
- height: fit-content;
     margin-bottom:3px;
     size: 50%;
-
+*/
 
 #carouselExampleControls {
     max-height: 440px;
@@ -37,9 +36,11 @@ color: map-get($colorespagina, colortextsecundario );
  }
 }
     
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 478px) {
+
+    
+
     .card-title{ 
         font-size: map-get($tamañospagina, fontsizetercera );
 }
 }  
-}
