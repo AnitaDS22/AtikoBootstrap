@@ -18,7 +18,7 @@
 
 .ContactForm {
     font-size: 20px;
-    width: 80%;
+    width: 100%;
     display: grid;
     padding-left: 3em;
     grid-template-columns: repeat(2, 1fr);
@@ -101,6 +101,9 @@ color: map-get($colorespagina, colortextsecundario )
         justify-content: center;
         width: fit-content;
         height: 100vh;
+
+
+
     }
     .ContactForm {
         width: 100%;
@@ -121,14 +124,18 @@ color: map-get($colorespagina, colortextsecundario )
         display: flex;
         justify-content: center;
         height: 100vh;
-       width: 100vw;
+       
 
 .formuflex {
 display: flex;
-justify-items: center;
+justify-content: center;
+max-width: 80%;
 
 
     .ContactForm {
+font-size: 15px;
+width: 100%;
+height: fit-content;
 grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
