@@ -242,9 +242,7 @@ footer .contactoGral p:hover {
   }
 }
 .contactMain {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  max-width: 80%;
 }
 .contactMain .contactTitulo {
   font-size: 70px;
@@ -257,7 +255,7 @@ footer .contactoGral p:hover {
 }
 .contactMain .ContactForm {
   font-size: 20px;
-  width: 100%;
+  width: 80%;
   display: grid;
   padding-left: 3em;
   grid-template-columns: repeat(2, 1fr);
@@ -268,6 +266,7 @@ footer .contactoGral p:hover {
   grid-area: formularioIzq;
   padding-bottom: 10px;
   padding-right: 5px;
+  size: 50%;
 }
 .contactMain .ContactForm .formularioIzq input {
   width: 500px;
@@ -285,6 +284,7 @@ footer .contactoGral p:hover {
   justify-content: center;
   padding-bottom: 10px;
   margin-left: none;
+  size: 50%;
 }
 .contactMain .ContactForm .formularioDerecho input #website {
   width: 200px;
@@ -316,7 +316,9 @@ footer .contactoGral p:hover {
   .contactMain .contactMain {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     height: 100vh;
   }
   .contactMain .ContactForm {
@@ -528,6 +530,7 @@ footer .contactoGral p:hover {
   background-image: url("../Images/bg01.jpg");
   font-family: "Basquerville", "arial";
   font-style: bold;
+  height: 100vh;
   position: relative;
   overflow-x: hidden;
   display: grid;
