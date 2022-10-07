@@ -229,6 +229,11 @@ main .card-title:hover {
   }
 }
 
+.contactMain {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
 .contactMain .contactTitulo {
   font-size: 70px;
   margin-top: 5px;
@@ -240,9 +245,7 @@ main .card-title:hover {
 }
 .contactMain .ContactForm {
   font-size: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   display: grid;
   padding-left: 3em;
   grid-template-columns: repeat(2, 1fr);
@@ -301,6 +304,8 @@ main .card-title:hover {
   .contactMain .contactMain {
     display: flex;
     justify-content: center;
+    width: 100vw;
+    height: 100vh;
   }
   .contactMain .ContactForm {
     width: 100%;
@@ -313,9 +318,17 @@ main .card-title:hover {
   }
 }
 @media screen and (max-width: 478px) {
-  .contactMain .ContactForm {
-    width: 100%;
-    height: 100%;
+  .contactMain .contactMain {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  .contactMain .contactMain .formuflex {
+    display: flex;
+    justify-items: center;
+  }
+  .contactMain .contactMain .formuflex .ContactForm {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "formularioIzq" "formularioDerecho";
@@ -505,7 +518,6 @@ main .card-title:hover {
   background-image: url("../Images/bg01.jpg");
   font-family: "Basquerville", "arial";
   font-style: bold;
-  width: 100vw;
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
