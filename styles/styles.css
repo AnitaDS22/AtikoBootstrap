@@ -59,36 +59,38 @@
   padding: 0.8em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 478px) {
   .elementosCabecera {
     display: flex;
     flex-direction: column;
     justify-items: center;
+    size: 10%;
   }
   .elementosCabecera ul {
     flex-direction: column;
     justify-content: center;
   }
-  .elementosCabecera .nav-item {
-    font-size: 15px;
+  .elementosCabecera .nav-item li {
+    font-size: 5px;
   }
   .elementosCabecera .divlogo {
     display: flex;
     justify-content: center;
   }
 }
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 768px) {
   .elementosCabecera {
     display: flex;
     flex-direction: column;
     justify-items: center;
+    size: 10%;
   }
   .elementosCabecera ul {
     flex-direction: column;
     justify-content: center;
   }
-  .elementosCabecera .nav-item {
-    font-size: 15px;
+  .elementosCabecera .nav-item li {
+    font-size: 5px;
   }
   .elementosCabecera .divlogo {
     display: flex;
@@ -101,9 +103,10 @@ footer {
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "redesicons contactoGral";
   background-color: black;
-  size: 20%;
   position: absolute;
   width: 100%;
+  height: 100vh;
+  margin-top: 1em;
 }
 footer ul {
   grid-area: redesicons;
@@ -159,10 +162,32 @@ footer .contactoGral p:hover {
   font-size: 16px;
 }
 
+@media screen and (max-width: 478px) {
+  .footerElementos {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    background-color: red;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "redesicons" "contactoGral";
+  }
+  .footerElementos ul {
+    grid-area: redesicons;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .footerElementos .contactoGral {
+    grid-area: contactoGral;
+  }
+  .footerElementos .contactoGral p {
+    font-size: 10px;
+  }
+}
 @media screen and (max-width: 768px) {
   .footerElementos {
     width: 100%;
-    background-color: black;
+    height: 100vh;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "redesicons" "contactoGral";
@@ -176,19 +201,8 @@ footer .contactoGral p:hover {
   .footerElementos .contactoGral {
     grid-area: contactoGral;
   }
-}
-@media screen and (max-width: 478px) {
-  footer {
-    display: grid;
-    background-color: red;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "redesicons" "contactoGral";
-  }
-  footer ul {
-    grid-area: redesicons;
-  }
-  footer .contactoGral {
-    grid-area: contactoGral;
+  .footerElementos .contactoGral p {
+    font-size: 10px;
   }
 }
 /* main {
@@ -514,32 +528,25 @@ footer .contactoGral p:hover {
   background-image: url("../Images/bg01.jpg");
   font-family: "Basquerville", "arial";
   font-style: bold;
-  min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "header" "main" "footer";
 }
-
-@media screen and (max-width: 478px) {
-  #bodycompleto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: "header" "main" "footer";
-  }
-  #bodycompleto header {
-    grid-area: header;
-    width: 100vw;
-    height: 100vh;
-  }
-  #bodycompleto main {
-    grid-area: main;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-  }
-  #bodycompleto footer {
-    grid-area: footer;
-    width: 100vw;
-    height: 100vh;
-  }
+#bodycompleto header {
+  grid-area: header;
+  height: 15%;
+  width: 100vw;
+}
+#bodycompleto main {
+  grid-area: main;
+  justify-content: center;
+  width: 100vw;
+}
+#bodycompleto footer {
+  grid-area: footer;
+  width: 100vw;
+  height: 30vh;
 }/*# sourceMappingURL=styles.css.map */

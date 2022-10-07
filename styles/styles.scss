@@ -14,17 +14,10 @@
     background-image: url("../Images/bg01.jpg");
    font-family: "Basquerville", "arial";
    font-style: bold;
-   min-height: 100vh;
-   position: relative;
+ position: relative;
    overflow-x: hidden;
-
-}
-
-   @media screen and (max-width: 478px) {
-
-    #bodycompleto{ 
-        display: grid;
-        grid-template-columns: 1fr;
+    display: grid;
+  grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 1fr;
         grid-template-areas: 
 "header"
@@ -34,24 +27,25 @@
 
 header {
     grid-area: header;
+    height: 15%;
     width: 100vw;
-    height: 100vh;
 }
 
 main {
     grid-area: main;
     justify-content: center;
 width: 100vw;
-height: 100vh;
+
+
 
     }
 footer {
     grid-area: footer;
     width: 100vw;
-height: 100vh;
+height: 30vh;
+
 
 
 }
 
     }
-}
