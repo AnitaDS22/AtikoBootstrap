@@ -89,11 +89,13 @@ color: map-get($colorespagina, colortextsecundario )
 
    } 
 }  
-
         
 }
 
 }
+.bajocontacto {
+
+
 
 .gifatiko {
     display: flex;
@@ -109,8 +111,9 @@ color: map-get($colorespagina, colortextsecundario )
 
         width: 1020px;
         height: 230px;
-        margin-left: 10px;
+    
     }
+}
 }
 
 @media screen and (max-width: 768px) {

@@ -8,8 +8,10 @@
 
 .textoServices{
     @extend %textcomun;
-    font-size: 3em; 
+    font-size: 2.5em; 
     justify-items: flex-start;
+    font-weight: bold;
+
 }
 
 .vimeo {
@@ -46,14 +48,14 @@ height: 100%;
 width: 100%;
 
     h5 {
-    font-size: 0.5em;
+    font-size: 1em;
     color: $colortextsecundario;
     &:hover {
         color: black;
     }
     }
 p {
-color:antiquewhite;
+color:black;
 font-size: small;
 
 &:hover {

@@ -3,7 +3,7 @@
 /*tamaños*/
 /*botones*/
 /*transiciones*/
-.servicesBody .textoServices, main .imagenabout .cardabout .aboutStory, .contactMain .contactTitulo, .contactMain .gifatiko .card-gif {
+.servicesBody .textoServices, main .imagenabout .cardabout .aboutStory, .contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
   font-family: "Basquerville", "arial";
   font-style: bold;
   color: blanchedalmond;
@@ -244,13 +244,13 @@ footer .contactoGral p:hover {
 .contactMain {
   max-width: 80%;
 }
-.contactMain .contactTitulo, .contactMain .gifatiko .card-gif {
+.contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
   font-size: 70px;
   margin-top: 5px;
   padding-bottom: 5px;
   margin-left: 40px;
 }
-.contactMain .contactTitulo:hover, .contactMain .gifatiko .card-gif:hover {
+.contactMain .contactTitulo:hover, .contactMain .bajocontacto .gifatiko .card-gif:hover {
   color: black;
 }
 .contactMain .ContactForm {
@@ -312,16 +312,15 @@ footer .contactoGral p:hover {
 .contactMain .ContactForm .formularioDerecho .botonesprincipal:hover {
   color: #d0485e;
 }
-.contactMain .gifatiko {
+.contactMain .bajocontacto .gifatiko {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 5px;
 }
-.contactMain .gifatiko img {
+.contactMain .bajocontacto .gifatiko img {
   width: 1020px;
   height: 230px;
-  margin-left: 10px;
 }
 @media screen and (max-width: 768px) {
   .contactMain .contactMain {
@@ -503,8 +502,9 @@ main .imagenabout .tituloImagen .card-title:hover {
   /* height: fit-content; */
 }
 .servicesBody .textoServices {
-  font-size: 3em;
+  font-size: 2.5em;
   justify-items: flex-start;
+  font-weight: bold;
 }
 .servicesBody .vimeo {
   display: flex;
@@ -544,14 +544,14 @@ main .imagenabout .tituloImagen .card-title:hover {
   width: 100%;
 }
 .servicesBody .cardoptionatiko .card-body h5 {
-  font-size: 0.5em;
+  font-size: 1em;
   color: #d0485e;
 }
 .servicesBody .cardoptionatiko .card-body h5:hover {
   color: black;
 }
 .servicesBody .cardoptionatiko .card-body p {
-  color: antiquewhite;
+  color: black;
   font-size: small;
 }
 .servicesBody .cardoptionatiko .card-body p:hover {
