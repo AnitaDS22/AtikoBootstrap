@@ -407,11 +407,13 @@ footer .contactoGral p:hover {
 }
 main .imagenabout {
   padding-bottom: 5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 main .imagenabout .tituloImagen {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 main .imagenabout .card-banner {
   color: blanchedalmond;
