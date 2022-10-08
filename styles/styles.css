@@ -159,7 +159,7 @@ footer .contactoGral p {
 }
 footer .contactoGral p:hover {
   color: #d0485e;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 478px) {
@@ -318,7 +318,7 @@ footer .contactoGral p:hover {
   align-items: center;
 }
 .contactMain .gifatiko img {
-  with: 616px;
+  width: 616px;
   height: 166px;
 }
 @media screen and (max-width: 768px) {
@@ -413,21 +413,45 @@ main .imagenabout {
 }
 main .imagenabout .card-img-overlay {
   display: flex;
-  justify-content: flex-end;
 }
-main .imagenabout .card-img-overlay .card-banner2 {
-  justify-content: flex-end;
+main .imagenabout .card-img-overlay .fotoarriba {
+  margin-left: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 250px;
 }
-main .imagenabout .card-img-overlay .card-banner1 {
+main .imagenabout .card-img-overlay .fotoarriba .card-banner2 {
+  font-size: 2em;
+}
+main .imagenabout .card-img-overlay .fotoarriba .card-banner2:hover {
+  color: #d0485e;
+}
+main .imagenabout .card-img-overlay .fotoarriba .parrafoAbout2 {
+  color: blanchedalmond;
+}
+main .imagenabout .card-img-overlay .fotoarriba .parrafoAbout2:hover {
+  color: black;
+}
+main .imagenabout .card-img-overlay .fotoabajo {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  width: 300px;
+}
+main .imagenabout .card-img-overlay .fotoabajo .card-banner1 {
+  font-size: 2em;
+  justify-items: flex-start;
+}
+main .imagenabout .card-img-overlay .fotoabajo .card-banner1:hover {
+  color: #d0485e;
+}
+main .imagenabout .card-img-overlay .fotoabajo .parrafoAbout1 {
+  color: blanchedalmond;
   justify-content: flex-start;
 }
-main .imagenabout .parrafoAbout2 {
-  color: blanchedalmond;
-  justify-content: flex-end;
-}
-main .imagenabout .parrafoAbout1 {
-  color: blanchedalmond;
-  justify-content: flex-start;
+main .imagenabout .card-img-overlay .fotoabajo .parrafoAbout1:hover {
+  color: black;
 }
 main .imagenabout .card-body {
   background-color: black;

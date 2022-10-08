@@ -6,30 +6,68 @@ main{
 
  .card-img-overlay {
     display: flex;
-    justify-content: flex-end;
+
+ .fotoarriba {
+    margin-left: 700px;
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start;
+    width: 250px;
+
 .card-banner2 {
-    justify-content: flex-end;
+    font-size: 2em;
+
+&:hover { 
+        color: $colortextsecundario;
+    
+     } 
 
 }
-.card-banner1{
-    justify-content: flex-start;
-}
-
-
- }   
 .parrafoAbout2{
-   color: $colorPrincipal;
-   font-family: map-get($cardtitleimportant, $key: Basquerville );
-justify-content: flex-end;
+    color: $colorPrincipal;
+    font-family: map-get($cardtitleimportant, $key: Basquerville );
+
+    &:hover { 
+        color: $colortextHover;
+    
+     }  
 
 }
+ 
+}
+
+
+.fotoabajo {
+    display: flex;
+    flex-direction: column;
+   justify-items: flex-start;
+    width: 300px;
+
+.card-banner1{
+ font-size: 2em;
+   justify-items: flex-start;
+
+   &:hover { 
+    color: $colortextsecundario;
+
+ }
+  
+}
+  
 .parrafoAbout1{
     color: $colorPrincipal;
     font-family: map-get($cardtitleimportant, $key: Basquerville );
 justify-content: flex-start;
 
-}    
+&:hover { 
+    color: $colortextHover;
 
+ } 
+
+} 
+
+ }
+}
 
 .card-body {
     @include cardloca ($bground: black, $color1: colorPrincipal);
