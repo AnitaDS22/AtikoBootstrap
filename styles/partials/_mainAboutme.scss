@@ -4,29 +4,32 @@ main{
     padding-bottom: 5px;
     height: fit-content;
 
-.tituloImagen{
+ .card-img-overlay {
     display: flex;
     justify-content: flex-end;
+.card-banner2 {
+    justify-content: flex-end;
 
-}    
+}
+.card-banner1{
+    justify-content: flex-start;
+}
 
-.card-banner { 
+
+ }   
+.parrafoAbout2{
    color: $colorPrincipal;
-   align-items: flex-end;
+   font-family: map-get($cardtitleimportant, $key: Basquerville );
+justify-content: flex-end;
 
 }
-
-.parrafoAbout{
-   color: $colorPrincipal
-
-}
-
+.parrafoAbout1{
+    color: $colorPrincipal;
+    font-family: map-get($cardtitleimportant, $key: Basquerville );
+justify-content: flex-start;
 
 }    
 
-.aboutcentral{
-background-color: none ;
-}
 
 .card-body {
     @include cardloca ($bground: black, $color1: colorPrincipal);
@@ -72,4 +75,5 @@ background-color: none;
     
     }
     }
+}
 }

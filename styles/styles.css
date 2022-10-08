@@ -3,7 +3,7 @@
 /*tamaños*/
 /*botones*/
 /*transiciones*/
-.servicesBody .textoServices, main .cardabout .aboutStory, .contactMain .contactTitulo, .contactMain .gifatiko .card-gif {
+.servicesBody .textoServices, main .imagenabout .cardabout .aboutStory, .contactMain .contactTitulo, .contactMain .gifatiko .card-gif {
   font-family: "Basquerville", "arial";
   font-style: bold;
   color: blanchedalmond;
@@ -411,21 +411,25 @@ main .imagenabout {
   height: -moz-fit-content;
   height: fit-content;
 }
-main .imagenabout .tituloImagen {
+main .imagenabout .card-img-overlay {
   display: flex;
   justify-content: flex-end;
 }
-main .imagenabout .card-banner {
+main .imagenabout .card-img-overlay .card-banner2 {
+  justify-content: flex-end;
+}
+main .imagenabout .card-img-overlay .card-banner1 {
+  justify-content: flex-start;
+}
+main .imagenabout .parrafoAbout2 {
   color: blanchedalmond;
-  align-items: flex-end;
+  justify-content: flex-end;
 }
-main .imagenabout .parrafoAbout {
+main .imagenabout .parrafoAbout1 {
   color: blanchedalmond;
+  justify-content: flex-start;
 }
-main .aboutcentral {
-  background-color: none;
-}
-main .card-body {
+main .imagenabout .card-body {
   background-color: black;
   border-radius: 10px;
   color: colorPrincipal;
@@ -435,27 +439,27 @@ main .card-body {
   width: 28em;
   height: 8em;
 }
-main .card-body img {
+main .imagenabout .card-body img {
   height: 1em;
 }
-main .cardabout {
+main .imagenabout .cardabout {
   background-color: none;
 }
-main .cardabout .aboutStory {
+main .imagenabout .cardabout .aboutStory {
   font-size: large;
 }
-main .cardabout .card-text {
+main .imagenabout .cardabout .card-text {
   color: blanchedalmond;
   font-size: large;
 }
-main .tituloImagen .card-title {
+main .imagenabout .tituloImagen .card-title {
   font-family: "Basquerville";
   color: blanchedalmond;
   font-size: 70px;
   display: flex;
   align-items: center;
 }
-main .tituloImagen .card-title:hover {
+main .imagenabout .tituloImagen .card-title:hover {
   color: black;
 }
 
