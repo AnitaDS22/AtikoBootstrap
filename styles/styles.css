@@ -3,7 +3,7 @@
 /*tamaños*/
 /*botones*/
 /*transiciones*/
-.servicesBody .textoServices, .cardabout .aboutStory, .contactMain .contactTitulo {
+.servicesBody .textoServices, main .cardabout .aboutStory, .contactMain .contactTitulo, .contactMain .gifatiko .card-gif {
   font-family: "Basquerville", "arial";
   font-style: bold;
   color: blanchedalmond;
@@ -244,13 +244,13 @@ footer .contactoGral p:hover {
 .contactMain {
   max-width: 80%;
 }
-.contactMain .contactTitulo {
+.contactMain .contactTitulo, .contactMain .gifatiko .card-gif {
   font-size: 70px;
   margin-top: 5px;
   padding-bottom: 5px;
   margin-left: 40px;
 }
-.contactMain .contactTitulo:hover {
+.contactMain .contactTitulo:hover, .contactMain .gifatiko .card-gif:hover {
   color: black;
 }
 .contactMain .ContactForm {
@@ -315,7 +315,11 @@ footer .contactoGral p:hover {
 .contactMain .gifatiko {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+.contactMain .gifatiko img {
+  with: 616px;
+  height: 166px;
 }
 @media screen and (max-width: 768px) {
   .contactMain .contactMain {
@@ -362,15 +366,15 @@ footer .contactoGral p:hover {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
+  align-items: center;
   list-style: none;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 .gallery img {
-  width: 590px;
-  height: 300px;
+  width: 500px;
+  height: 270px;
   transition: opacity 0.4s;
 }
 .gallery img:hover {
@@ -401,11 +405,25 @@ footer .contactoGral p:hover {
     font-size: 1em;
   }
 }
-.aboutcentral {
+main .imagenabout {
+  padding-bottom: 5px;
+}
+main .imagenabout .tituloImagen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .imagenabout .card-banner {
+  color: blanchedalmond;
+  align-items: flex-end;
+}
+main .imagenabout .parrafoAbout {
+  color: blanchedalmond;
+}
+main .aboutcentral {
   background-color: none;
 }
-
-.card-body {
+main .card-body {
   background-color: black;
   border-radius: 10px;
   color: colorPrincipal;
@@ -415,29 +433,27 @@ footer .contactoGral p:hover {
   width: 28em;
   height: 8em;
 }
-.card-body img {
+main .card-body img {
   height: 1em;
 }
-
-.cardabout {
+main .cardabout {
   background-color: none;
 }
-.cardabout .aboutStory {
-  font-size: xx-large;
+main .cardabout .aboutStory {
+  font-size: large;
 }
-.cardabout .card-text {
+main .cardabout .card-text {
   color: blanchedalmond;
   font-size: large;
 }
-
-.tituloImagen .card-title {
+main .tituloImagen .card-title {
   font-family: "Basquerville";
   color: blanchedalmond;
   font-size: 70px;
   display: flex;
   align-items: center;
 }
-.tituloImagen .card-title:hover {
+main .tituloImagen .card-title:hover {
   color: black;
 }
 

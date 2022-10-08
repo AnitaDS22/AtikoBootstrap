@@ -98,7 +98,16 @@ color: map-get($colorespagina, colortextsecundario )
 .gifatiko {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+
+  .card-gif {
+    @extend .contactTitulo
+  }  
+
+    img {
+        with: 616px;
+        height: 166px;
+    }
 }
 
 @media screen and (max-width: 768px) {

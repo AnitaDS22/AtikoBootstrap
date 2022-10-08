@@ -1,3 +1,28 @@
+main{
+
+.imagenabout {
+    padding-bottom: 5px;
+
+.tituloImagen{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}    
+
+.card-banner { 
+   color: $colorPrincipal;
+   align-items: flex-end;
+
+}
+
+.parrafoAbout{
+   color: $colorPrincipal
+
+}
+
+
+}    
+
 .aboutcentral{
 background-color: none ;
 }
@@ -19,7 +44,7 @@ background-color: none;
 
 .aboutStory {
     @extend %textcomun;
-    font-size: xx-large;
+    font-size: large;
     
 }
 .card-text {
@@ -46,3 +71,4 @@ background-color: none;
     
     }
     }
+}

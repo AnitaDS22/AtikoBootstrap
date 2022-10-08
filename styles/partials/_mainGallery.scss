@@ -1,14 +1,14 @@
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center;
     list-style: none;
     width: fit-content;
     
 
  img{
-    width: 590px;
-    height: 300px; 
+    width: 500px;
+    height: 270px; 
     transition: opacity 0.4s;
 
  &:hover{
