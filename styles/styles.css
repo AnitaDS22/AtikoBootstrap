@@ -20,7 +20,7 @@
   color: blanchedalmond;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 12px;
   padding-bottom: 1em;
   size: 30%;
 }
@@ -28,7 +28,7 @@
   color: blanchedalmond;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 12px;
   border: none;
 }
 .elementosCabecera ul .nav-item a {
@@ -154,7 +154,7 @@ footer .contactoGral {
 footer .contactoGral p {
   font-family: "Basquerville", "arial";
   color: blanchedalmond;
-  font-size: 15px;
+  font-size: 12px;
   transition: all 2s ease;
 }
 footer .contactoGral p:hover {
@@ -255,7 +255,7 @@ footer .contactoGral p:hover {
 }
 .contactMain .ContactForm {
   font-size: 20px;
-  width: 100%;
+  width: 80vw;
   display: grid;
   padding-left: 3em;
   grid-template-columns: repeat(2, 1fr);
@@ -269,7 +269,7 @@ footer .contactoGral p:hover {
   size: 50%;
 }
 .contactMain .ContactForm .formularioIzq input {
-  width: 500px;
+  width: 420px;
   height: 25px;
   padding-bottom: 5px;
 }
@@ -311,6 +311,11 @@ footer .contactoGral p:hover {
 }
 .contactMain .ContactForm .formularioDerecho .botonesprincipal:hover {
   color: #d0485e;
+}
+.contactMain .gifatiko {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .contactMain .contactMain {

@@ -18,7 +18,7 @@
 
 .ContactForm {
     font-size: 20px;
-    width: 100%;
+    width: 80vw;
     display: grid;
     padding-left: 3em;
     grid-template-columns: repeat(2, 1fr);
@@ -33,7 +33,7 @@
     size: 50%;
 
     input {
-        width: 500px;
+        width: 420px;
     height: 25px;
     padding-bottom: 5px;
 
@@ -92,8 +92,14 @@ color: map-get($colorespagina, colortextsecundario )
 
         
 }
+
 }
 
+.gifatiko {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 @media screen and (max-width: 768px) {
     .contactMain {
