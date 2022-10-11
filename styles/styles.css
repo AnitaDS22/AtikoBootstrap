@@ -415,6 +415,8 @@ main .imagenabout {
 main .imagenabout .card-img-overlay {
   display: flex;
   border: none;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 main .imagenabout .card-img-overlay .fotoarriba {
   margin-left: 40em;
@@ -498,6 +500,26 @@ main .tituloImagen .card-title:hover {
   color: black;
 }
 
+@media screen and (max-width: 478px) {
+  .main .imagenabout .fotoarriba {
+    margin-left: 15em;
+  }
+  .main .imagenabout .fotoarriba .card-banner2 {
+    font-size: 0.8em;
+  }
+  .main .imagenabout .fotoarriba .parrafoAbout2 {
+    font-size: 0.5em;
+  }
+  .main .imagenabout .fotoabajo {
+    margin-left: 5em;
+  }
+  .main .imagenabout .fotoabajo .card-banner1 {
+    font-size: 0.8em;
+  }
+  .main .imagenabout .fotoabajo .parrafoAbout1 {
+    font-size: 0.5em;
+  }
+}
 .servicesBody {
   color: blanchedalmond;
   display: flex;
