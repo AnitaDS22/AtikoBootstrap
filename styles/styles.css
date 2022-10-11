@@ -417,7 +417,7 @@ main .imagenabout .card-img-overlay {
   border: none;
 }
 main .imagenabout .card-img-overlay .fotoarriba {
-  margin-left: 700px;
+  margin-left: 40em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -425,7 +425,7 @@ main .imagenabout .card-img-overlay .fotoarriba {
 main .imagenabout .card-img-overlay .fotoarriba .card-banner2 {
   font-size: 2em;
   font-weight: bold;
-  width: 250px;
+  width: 20em;
 }
 main .imagenabout .card-img-overlay .fotoarriba .card-banner2:hover {
   color: #d0485e;
@@ -433,7 +433,7 @@ main .imagenabout .card-img-overlay .fotoarriba .card-banner2:hover {
 main .imagenabout .card-img-overlay .fotoarriba .parrafoAbout2 {
   color: blanchedalmond;
   font-weight: lighter;
-  width: 250px;
+  width: 20em;
 }
 main .imagenabout .card-img-overlay .fotoarriba .parrafoAbout2:hover {
   color: black;
@@ -444,13 +444,13 @@ main .imagenabout .card-img-overlay .fotoabajo {
   justify-items: center;
   width: 500px;
   height: 100vh;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 main .imagenabout .card-img-overlay .fotoabajo .card-banner1 {
   font-size: 2em;
   font-weight: 900;
   justify-items: center;
-  width: 150px;
+  width: 20em;
 }
 main .imagenabout .card-img-overlay .fotoabajo .card-banner1:hover {
   color: #d0485e;
@@ -459,7 +459,7 @@ main .imagenabout .card-img-overlay .fotoabajo .parrafoAbout1 {
   color: blanchedalmond;
   justify-content: flex-start;
   font-weight: lighter;
-  width: 200px;
+  width: 20em;
 }
 main .imagenabout .card-img-overlay .fotoabajo .parrafoAbout1:hover {
   color: black;
@@ -498,25 +498,6 @@ main .tituloImagen .card-title:hover {
   color: black;
 }
 
-@media screen and (max-width: 478px) {
-  .main .imagenabout .fotoarriba {
-    margin-left: 100px;
-    width: 100vw;
-    height: 100vh;
-  }
-  .main .imagenabout .fotoarriba .card-banner2 {
-    width: 100vw;
-    height: 100vh;
-  }
-  .main .imagenabout .fotoarriba .parrafoAbout2 {
-    width: 100vw;
-    height: 100vh;
-  }
-  .main .imagenabout .fotoabajo {
-    width: 100vw;
-    height: 100vh;
-  }
-}
 .servicesBody {
   color: blanchedalmond;
   display: flex;

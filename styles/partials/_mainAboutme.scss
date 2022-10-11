@@ -9,7 +9,7 @@ main{
     border: none;
 
  .fotoarriba {
-  margin-left: 700px;
+  margin-left: 40em;
     display: flex;
     flex-direction: column;
    justify-content: flex-start;
@@ -18,7 +18,7 @@ main{
 .card-banner2 {
     font-size: 2em;
     font-weight: bold;
-    width: 250px;
+    width: 20em;
 
 &:hover { 
         color: $colortextsecundario;
@@ -30,7 +30,7 @@ main{
     color: $colorPrincipal;
     font-family: map-get($cardtitleimportant, $key: Basquerville );
     font-weight: lighter;
-    width: 250px;
+    width: 20em;
 
     &:hover { 
         color: $colortextHover;
@@ -48,13 +48,13 @@ main{
    justify-items: center;
     width: 500px;
     height: 100vh;
-    margin-left: 40px;
+    margin-left: 20px;
 
 .card-banner1{
  font-size: 2em;
  font-weight:900;
    justify-items: center;
-   width: 150px;
+   width: 20em;
 
    &:hover { 
     color: $colortextsecundario;
@@ -68,7 +68,7 @@ main{
     font-family: map-get($cardtitleimportant, $key: Basquerville );
 justify-content: flex-start;
 font-weight: lighter;
-width: 200px;
+width: 20em;
 
 &:hover { 
     color: $colortextHover;
@@ -134,19 +134,15 @@ background-color: none;
   
 .imagenabout{
 
-.fotoarriba {
-    margin-left: 100px;
-    width: 100vw;
-    height: 100vh;
 
+.fotoarriba {
+ 
 .card-banner2 {
-    width: 100vw;
-    height: 100vh;
+
 
 }
 .parrafoAbout2{
-    width: 100vw;
-    height: 100vh;
+
 
 }
 
@@ -154,8 +150,7 @@ background-color: none;
 }
 
 .fotoabajo {
-    width: 100vw;
-    height: 100vh;
+ 
 
 }
 
