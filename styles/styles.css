@@ -3,7 +3,7 @@
 /*tamaños*/
 /*botones*/
 /*transiciones*/
-.servicesBody .textoServices, main .cardabout .aboutStory, .contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
+.servicesBody .textoServices, main .imagenabout .cardabout .aboutStory, .contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
   font-family: "Basquerville", "arial";
   font-style: bold;
   color: blanchedalmond;
@@ -423,17 +423,10 @@ main .imagenabout .card-img-overlay {
       flex-direction: column;
      justify-content: flex-start;
   */
-  /*.fotoabajo {*/
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  max-width: 100vw;
-  max-height: 100vh;
-  margin-left: 20px;
 }
 main .imagenabout .card-img-overlay .fotoarriba {
   display: flex;
-  justify-content: first baseline;
+  justify-content: flex-end, space-evenly;
 }
 main .imagenabout .card-img-overlay .card-banner2 {
   font-size: 2em;
@@ -451,25 +444,31 @@ main .imagenabout .card-img-overlay .parrafoAbout2 {
 main .imagenabout .card-img-overlay .parrafoAbout2:hover {
   color: black;
 }
-main .imagenabout .card-img-overlay .card-banner1 {
+main .imagenabout .card-img-overlay .fotoabajo {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin-left: 20px;
+}
+main .imagenabout .card-img-overlay .fotoabajo .card-banner1 {
   font-size: 2em;
   font-weight: 900;
   justify-items: center;
   width: 20em;
 }
-main .imagenabout .card-img-overlay .card-banner1:hover {
+main .imagenabout .card-img-overlay .fotoabajo .card-banner1:hover {
   color: #d0485e;
 }
-main .imagenabout .card-img-overlay .parrafoAbout1 {
+main .imagenabout .card-img-overlay .fotoabajo .parrafoAbout1 {
   color: blanchedalmond;
-  justify-content: flex-start;
   font-weight: lighter;
   width: 20em;
 }
-main .imagenabout .card-img-overlay .parrafoAbout1:hover {
+main .imagenabout .card-img-overlay .fotoabajo .parrafoAbout1:hover {
   color: black;
 }
-main .card-body {
+main .imagenabout .card-img-overlay .card-body {
   background-color: black;
   border-radius: 10px;
   color: colorPrincipal;
@@ -479,27 +478,27 @@ main .card-body {
   width: 28em;
   height: 8em;
 }
-main .card-body img {
+main .imagenabout .card-img-overlay .card-body img {
   height: 1em;
 }
-main .cardabout {
+main .imagenabout .cardabout {
   background-color: none;
 }
-main .cardabout .aboutStory {
+main .imagenabout .cardabout .aboutStory {
   font-size: large;
 }
-main .cardabout .card-text {
+main .imagenabout .cardabout .card-text {
   color: blanchedalmond;
   font-size: large;
 }
-main .tituloImagen .card-title {
+main .imagenabout .tituloImagen .card-title {
   font-family: "Basquerville";
   color: blanchedalmond;
   font-size: 70px;
   display: flex;
   align-items: center;
 }
-main .tituloImagen .card-title:hover {
+main .imagenabout .tituloImagen .card-title:hover {
   color: black;
 }
 

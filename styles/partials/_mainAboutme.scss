@@ -12,8 +12,9 @@ main{
 
  .fotoarriba {
     display: flex;
-    justify-content: first baseline;
- }   
+    justify-content: flex-end, space-evenly;
+    
+ }
     /*foto arriba
   margin-left: 40em;
     display: flex;
@@ -45,12 +46,13 @@ main{
 
 }
  
-
+ 
 
 
 .fotoabajo {
     display: flex;
- max-width: 100vw;
+    justify-content:flex-start;
+    max-width: 100vw;
     max-height: 100vh;
     margin-left: 20px;
 
@@ -70,7 +72,6 @@ main{
 .parrafoAbout1{
     color: $colorPrincipal;
     font-family: map-get($cardtitleimportant, $key: Basquerville );
-justify-content: flex-start;
 font-weight: lighter;
 width: 20em;
 
@@ -129,6 +130,8 @@ background-color: none;
     
     }
     }
+
+}
 
 }
 
