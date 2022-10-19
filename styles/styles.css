@@ -417,53 +417,56 @@ main .imagenabout .card-img-overlay {
   border: none;
   max-width: 100vw;
   max-height: 100vh;
-}
-main .imagenabout .card-img-overlay .fotoarriba {
-  margin-left: 40em;
+  /*foto arriba
+    margin-left: 40em;
+      display: flex;
+      flex-direction: column;
+     justify-content: flex-start;
+  */
+  /*.fotoabajo {*/
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-items: center;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin-left: 20px;
 }
-main .imagenabout .card-img-overlay .fotoarriba .card-banner2 {
+main .imagenabout .card-img-overlay .fotoarriba {
+  display: flex;
+  justify-content: first baseline;
+}
+main .imagenabout .card-img-overlay .card-banner2 {
   font-size: 2em;
   font-weight: bold;
   width: 20em;
 }
-main .imagenabout .card-img-overlay .fotoarriba .card-banner2:hover {
+main .imagenabout .card-img-overlay .card-banner2:hover {
   color: #d0485e;
 }
-main .imagenabout .card-img-overlay .fotoarriba .parrafoAbout2 {
+main .imagenabout .card-img-overlay .parrafoAbout2 {
   color: blanchedalmond;
   font-weight: lighter;
   width: 20em;
 }
-main .imagenabout .card-img-overlay .fotoarriba .parrafoAbout2:hover {
+main .imagenabout .card-img-overlay .parrafoAbout2:hover {
   color: black;
 }
-main .imagenabout .card-img-overlay .fotoabajo {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  width: 500px;
-  height: 100vh;
-  margin-left: 20px;
-}
-main .imagenabout .card-img-overlay .fotoabajo .card-banner1 {
+main .imagenabout .card-img-overlay .card-banner1 {
   font-size: 2em;
   font-weight: 900;
   justify-items: center;
   width: 20em;
 }
-main .imagenabout .card-img-overlay .fotoabajo .card-banner1:hover {
+main .imagenabout .card-img-overlay .card-banner1:hover {
   color: #d0485e;
 }
-main .imagenabout .card-img-overlay .fotoabajo .parrafoAbout1 {
+main .imagenabout .card-img-overlay .parrafoAbout1 {
   color: blanchedalmond;
   justify-content: flex-start;
   font-weight: lighter;
   width: 20em;
 }
-main .imagenabout .card-img-overlay .fotoabajo .parrafoAbout1:hover {
+main .imagenabout .card-img-overlay .parrafoAbout1:hover {
   color: black;
 }
 main .card-body {
@@ -501,22 +504,22 @@ main .tituloImagen .card-title:hover {
 }
 
 @media screen and (max-width: 478px) {
-  .main .imagenabout .fotoarriba {
+  .imagenabout .fotoarriba {
     margin-left: 15em;
   }
-  .main .imagenabout .fotoarriba .card-banner2 {
+  .imagenabout .fotoarriba .card-banner2 {
     font-size: 0.8em;
   }
-  .main .imagenabout .fotoarriba .parrafoAbout2 {
+  .imagenabout .fotoarriba .parrafoAbout2 {
     font-size: 0.5em;
   }
-  .main .imagenabout .fotoabajo {
+  .imagenabout .fotoabajo {
     margin-left: 5em;
   }
-  .main .imagenabout .fotoabajo .card-banner1 {
+  .imagenabout .fotoabajo .card-banner1 {
     font-size: 0.8em;
   }
-  .main .imagenabout .fotoabajo .parrafoAbout1 {
+  .imagenabout .fotoabajo .parrafoAbout1 {
     font-size: 0.5em;
   }
 }
