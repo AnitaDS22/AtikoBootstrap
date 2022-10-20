@@ -3,7 +3,7 @@
 /*tamaños*/
 /*botones*/
 /*transiciones*/
-.servicesBody .textoServices, main .imagenabout .cardabout .aboutStory, .contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
+.servicesBody .textoServices, main .cardabout .aboutStory, .contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
   font-family: "Basquerville", "arial";
   font-style: bold;
   color: blanchedalmond;
@@ -417,12 +417,6 @@ main .imagenabout .card-img-overlay {
   border: none;
   max-width: 100vw;
   max-height: 100vh;
-  /*foto arriba
-    margin-left: 40em;
-      display: flex;
-      flex-direction: column;
-     justify-content: flex-start;
-  */
 }
 main .imagenabout .card-img-overlay .fotoarriba {
   display: flex;
@@ -431,7 +425,6 @@ main .imagenabout .card-img-overlay .fotoarriba {
 main .imagenabout .card-img-overlay .card-banner2 {
   font-size: 2em;
   font-weight: bold;
-  width: 20em;
 }
 main .imagenabout .card-img-overlay .card-banner2:hover {
   color: #d0485e;
@@ -439,36 +432,37 @@ main .imagenabout .card-img-overlay .card-banner2:hover {
 main .imagenabout .card-img-overlay .parrafoAbout2 {
   color: blanchedalmond;
   font-weight: lighter;
-  width: 20em;
+  font-size: 1em;
 }
 main .imagenabout .card-img-overlay .parrafoAbout2:hover {
   color: black;
 }
-main .imagenabout .card-img-overlay .fotoabajo {
+main .imagenabout .fotoabajo {
   display: flex;
-  justify-content: flex-start;
   max-width: 100vw;
   max-height: 100vh;
   margin-left: 20px;
+  justify-items: flex-start;
 }
-main .imagenabout .card-img-overlay .fotoabajo .card-banner1 {
+main .imagenabout h1 {
   font-size: 2em;
   font-weight: 900;
   justify-items: center;
   width: 20em;
 }
-main .imagenabout .card-img-overlay .fotoabajo .card-banner1:hover {
+main .imagenabout h1:hover {
   color: #d0485e;
 }
-main .imagenabout .card-img-overlay .fotoabajo .parrafoAbout1 {
+main .imagenabout p {
   color: blanchedalmond;
   font-weight: lighter;
   width: 20em;
+  font-size: 1em;
 }
-main .imagenabout .card-img-overlay .fotoabajo .parrafoAbout1:hover {
+main .imagenabout p:hover {
   color: black;
 }
-main .imagenabout .card-img-overlay .card-body {
+main .card-body {
   background-color: black;
   border-radius: 10px;
   color: colorPrincipal;
@@ -478,50 +472,54 @@ main .imagenabout .card-img-overlay .card-body {
   width: 28em;
   height: 8em;
 }
-main .imagenabout .card-img-overlay .card-body img {
+main .card-body img {
   height: 1em;
 }
-main .imagenabout .cardabout {
+main .cardabout {
   background-color: none;
 }
-main .imagenabout .cardabout .aboutStory {
+main .cardabout .aboutStory {
   font-size: large;
 }
-main .imagenabout .cardabout .card-text {
+main .cardabout .card-text {
   color: blanchedalmond;
   font-size: large;
 }
-main .imagenabout .tituloImagen .card-title {
+main .tituloImagen .card-title {
   font-family: "Basquerville";
   color: blanchedalmond;
   font-size: 70px;
   display: flex;
   align-items: center;
 }
-main .imagenabout .tituloImagen .card-title:hover {
+main .tituloImagen .card-title:hover {
   color: black;
 }
-
 @media screen and (max-width: 478px) {
-  .imagenabout .fotoarriba {
-    margin-left: 15em;
+  main .imagenabout {
+    max-width: 100%;
   }
-  .imagenabout .fotoarriba .card-banner2 {
-    font-size: 0.8em;
+  main .imagenabout .card-banner2 {
+    justify-content: end;
+    font-size: 0.8em !important;
   }
-  .imagenabout .fotoarriba .parrafoAbout2 {
-    font-size: 0.5em;
+  main .imagenabout .parrafoAbout2 {
+    font-size: 0.6em !important;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
-  .imagenabout .fotoabajo {
+  main .fotoabajo {
     margin-left: 5em;
   }
-  .imagenabout .fotoabajo .card-banner1 {
-    font-size: 0.8em;
+  main .fotoabajo .card-banner1 {
+    font-size: 0.8em !important;
   }
-  .imagenabout .fotoabajo .parrafoAbout1 {
-    font-size: 0.5em;
+  main .fotoabajo .parrafoAbout1 {
+    font-size: 0.6em !important;
   }
 }
+
 .servicesBody {
   color: blanchedalmond;
   display: flex;
