@@ -135,15 +135,15 @@ background-color: none;
     max-width: 100%;
 
 .card-banner2 {
-    justify-content: end;
-    font-size: 0.8em !important;
+    justify-content: start !important;
+    font-size: 0.8em !important;  
    
   
 }
 
 .parrafoAbout2 {
-    font-size: 0.6em !important;
-    width: fit-content;
+    font-size: 0.5em !important;
+    width: 20em;
  
 }
 
@@ -153,11 +153,14 @@ background-color: none;
     margin-left: 5em;
  
    .card-banner1{
-font-size: 0.8em !important;
+    justify-content: start;
+    font-size: 0.8em !important; 
+    margin: 1em;
 
    } 
 .parrafoAbout1 {
-    font-size: 0.6em !important;
+    font-size: 0.5em !important;
+    width: 20em;
 }
  
 
