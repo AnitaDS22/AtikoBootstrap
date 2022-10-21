@@ -395,16 +395,23 @@ footer .contactoGral p:hover {
   }
 }
 @media screen and (max-width: 478px) {
-  .gallery {
-    max-width: 478px !important;
+  .container-fluid {
+    max-width: 478px;
+  }
+  .container-fluid .gallery1 {
+    max-width: 478px;
+  }
+  .container-fluid .gallery1 .gallery {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 1em;
-    margin-right: 1em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
-  .gallery li {
-    max-width: 1em;
+  .container-fluid .gallery1 .gallery img {
+    width: 478px;
+    margin-left: 0px;
   }
   .card-title {
     font-size: 1em;
