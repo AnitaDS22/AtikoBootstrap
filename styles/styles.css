@@ -417,24 +417,27 @@ main .imagenabout .card-img-overlay {
   border: none;
   max-width: 100vw;
   max-height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-main .imagenabout .card-img-overlay .fotoarriba {
+main .imagenabout .fotoarriba {
   display: flex;
-  justify-content: flex-end, space-evenly;
+  justify-content: space-evenly;
+  margin-right: 2em;
 }
-main .imagenabout .card-img-overlay .card-banner2 {
+main .imagenabout .card-banner2 {
   font-size: 2em;
   font-weight: bold;
 }
-main .imagenabout .card-img-overlay .card-banner2:hover {
+main .imagenabout .card-banner2:hover {
   color: #d0485e;
 }
-main .imagenabout .card-img-overlay .parrafoAbout2 {
+main .imagenabout .card-banner2 .parrafoAbout2 {
   color: blanchedalmond;
   font-weight: lighter;
   font-size: 1em;
 }
-main .imagenabout .card-img-overlay .parrafoAbout2:hover {
+main .imagenabout .card-banner2 .parrafoAbout2:hover {
   color: black;
 }
 main .imagenabout .fotoabajo {
@@ -442,15 +445,15 @@ main .imagenabout .fotoabajo {
   max-width: 100vw;
   max-height: 100vh;
   margin-left: 20px;
-  justify-items: flex-start;
+  justify-content: flex-end, space-evenly;
 }
-main .imagenabout h1 {
+main .imagenabout .card-banner1 {
   font-size: 2em;
   font-weight: 900;
   justify-items: center;
   width: 20em;
 }
-main .imagenabout h1:hover {
+main .imagenabout .card-banner1:hover {
   color: #d0485e;
 }
 main .imagenabout p {
@@ -505,13 +508,15 @@ main .tituloImagen .card-title:hover {
   }
   main .imagenabout .parrafoAbout2 {
     font-size: 0.5em !important;
-    width: 20em;
+    width: 15em !important;
+    justify-items: flex-end !important;
   }
   main .fotoabajo {
     margin-left: 5em;
   }
   main .fotoabajo .card-banner1 {
     justify-content: start;
+    justify-content: start !important;
     font-size: 0.8em !important;
     margin: 1em;
   }
