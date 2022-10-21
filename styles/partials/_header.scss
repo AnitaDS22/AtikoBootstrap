@@ -8,6 +8,13 @@
     padding-bottom: 1em;
     size: 30%;
 
+.row{
+    .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 70px;
+     }
 
     
     ul {
@@ -41,6 +48,10 @@
 }
  }
  }
+
+}
+
+
 .divlogo {
     a{
     img {
@@ -109,7 +120,8 @@
             overflow-x:hidden;
             transition: 0.5s;
         
-            }
+            
+        }
   
 
     ul {
@@ -124,7 +136,11 @@
     text-align: center;
     margin-top: 30px;
 
-
+    .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+          }
 
  li{
  font-size: 5px;

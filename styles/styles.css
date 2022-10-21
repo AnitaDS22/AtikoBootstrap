@@ -31,6 +31,12 @@
   font-size: 12px;
   border: none;
 }
+.elementosCabecera ul .nav-item .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
 .elementosCabecera ul .nav-item a {
   color: blanchedalmond;
   text-decoration: none;
@@ -106,6 +112,11 @@
     width: 100%;
     text-align: center;
     margin-top: 30px;
+  }
+  .elementosCabecera .nav-item .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
   .elementosCabecera .nav-item li {
     font-size: 5px;
