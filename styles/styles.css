@@ -420,49 +420,51 @@ main .imagenabout .card-img-overlay {
   flex-direction: column;
   flex-wrap: wrap;
 }
-main .imagenabout .fotoarriba {
+main .imagenabout .card-img-overlay .fotoarriba {
   display: flex;
-  justify-content: space-evenly;
-  margin-right: 2em;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: right !important;
+  margin-left: 60%;
 }
-main .imagenabout .card-banner2 {
+main .imagenabout .card-img-overlay .fotoarriba .card-banner2 {
   font-size: 2em;
   font-weight: bold;
+  max-width: 60%;
 }
-main .imagenabout .card-banner2:hover {
+main .imagenabout .card-img-overlay .fotoarriba .card-banner2:hover {
   color: #d0485e;
 }
-main .imagenabout .card-banner2 .parrafoAbout2 {
+main .imagenabout .card-img-overlay .fotoarriba .parrafoAbout2 {
   color: blanchedalmond;
   font-weight: lighter;
   font-size: 1em;
+  max-width: 90%;
 }
-main .imagenabout .card-banner2 .parrafoAbout2:hover {
+main .imagenabout .card-img-overlay .fotoarriba .parrafoAbout2:hover {
   color: black;
 }
-main .imagenabout .fotoabajo {
+main .imagenabout .card-img-overlay .fotoabajo {
   display: flex;
-  max-width: 100vw;
-  max-height: 100vh;
-  margin-left: 20px;
-  justify-content: flex-end, space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: flex-end;
 }
-main .imagenabout .card-banner1 {
+main .imagenabout .card-img-overlay .fotoabajo .card-banner1 {
   font-size: 2em;
-  font-weight: 900;
-  justify-items: center;
-  width: 20em;
+  font-weight: bold;
+  max-width: 30%;
 }
-main .imagenabout .card-banner1:hover {
+main .imagenabout .card-img-overlay .fotoabajo .card-banner1:hover {
   color: #d0485e;
 }
-main .imagenabout p {
+main .imagenabout .card-img-overlay .fotoabajo p {
   color: blanchedalmond;
   font-weight: lighter;
   width: 20em;
   font-size: 1em;
 }
-main .imagenabout p:hover {
+main .imagenabout .card-img-overlay .fotoabajo p:hover {
   color: black;
 }
 main .card-body {
@@ -502,12 +504,12 @@ main .tituloImagen .card-title:hover {
   main .imagenabout {
     max-width: 100%;
   }
-  main .imagenabout .card-banner2 {
+  main .imagenabout .fotoarriba .card-banner2 {
     justify-content: start !important;
     font-size: 0.8em !important;
   }
-  main .imagenabout .parrafoAbout2 {
-    font-size: 0.5em !important;
+  main .imagenabout .fotoarriba .parrafoAbout2 {
+    font-size: 0.4em !important;
     width: 15em !important;
     justify-items: flex-end !important;
   }
@@ -521,8 +523,8 @@ main .tituloImagen .card-title:hover {
     margin: 1em;
   }
   main .fotoabajo .parrafoAbout1 {
-    font-size: 0.5em !important;
-    width: 20em;
+    font-size: 0.4em !important;
+    width: 15em !important;
   }
 }
 
