@@ -131,20 +131,18 @@ clip-path: var(--clippy);
     justify-items: center;
     size: 10%;
 
-  .row {
+  .barraNav{
 
     .closebtn{
         display: block;
         cursor: pointer;
 
     }
- 
-    }
 
     ul {
         flex-direction: column;
         justify-content: center;
-    }
+    
 
 .nav-item{
     position: relative;
@@ -152,16 +150,14 @@ clip-path: var(--clippy);
     width: 100%;
     text-align: center;
     margin-top: 30px;
-    clip-path: circle(0 at center);
+    font-size: 5px;
+  /*  clip-path: circle(0 at center);
 
     .nav_input:checked + .nav-item{
        
         clip-path: circle(100% to center);
-    }
+    }*/
 
-
- li{
- font-size: 5px;
 a {
 padding: 8px;
 text-decoration: none;
@@ -176,23 +172,17 @@ transition: 0.3s;
 
 }
 
- }
-  } 
-
-  .nav_input:checked + .nav-item {
-       
-    clip-path: circle(100% to center);
 }
-
-
+} 
 
 .divlogo {
     display: flex;
     justify-content: center;
 }
 
+  }
 }
      
-}
+ }
 
  

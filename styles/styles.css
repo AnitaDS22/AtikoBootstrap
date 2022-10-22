@@ -112,31 +112,29 @@
     justify-items: center;
     size: 10%;
   }
-  .elementosCabecera .row .closebtn {
+  .elementosCabecera .barraNav .closebtn {
     display: block;
     cursor: pointer;
   }
-  .elementosCabecera ul {
+  .elementosCabecera .barraNav ul {
     flex-direction: column;
     justify-content: center;
   }
-  .elementosCabecera .nav-item {
+  .elementosCabecera .barraNav ul .nav-item {
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
-    -webkit-clip-path: circle(0 at center);
-            clip-path: circle(0 at center);
-  }
-  .elementosCabecera .nav-item .nav_input:checked + .nav-item {
-    -webkit-clip-path: circle(100% to center);
-            clip-path: circle(100% to center);
-  }
-  .elementosCabecera .nav-item li {
     font-size: 5px;
+    /*  clip-path: circle(0 at center);
+
+      .nav_input:checked + .nav-item{
+
+          clip-path: circle(100% to center);
+      }*/
   }
-  .elementosCabecera .nav-item li a {
+  .elementosCabecera .barraNav ul .nav-item a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -144,14 +142,10 @@
     display: block;
     transition: 0.3s;
   }
-  .elementosCabecera .nav-item li a:hover {
+  .elementosCabecera .barraNav ul .nav-item a:hover {
     color: #f1f1f1;
   }
-  .elementosCabecera .nav_input:checked + .nav-item {
-    -webkit-clip-path: circle(100% to center);
-            clip-path: circle(100% to center);
-  }
-  .elementosCabecera .divlogo {
+  .elementosCabecera .barraNav .divlogo {
     display: flex;
     justify-content: center;
   }
