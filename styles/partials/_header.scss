@@ -8,10 +8,34 @@
     padding-bottom: 1em;
     size: 30%;
 
-.row{
-    .closebtn {
-  display: none;
-     }
+/* .row{
+    height: 100%;
+    width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb (0,0,0);
+        overflow-x:hidden;
+        transition: 0.5s;
+        */
+
+    .barraNav {
+        position: relative;        
+        }
+
+
+
+.closebtn, .nav_input{ 
+    display: none;
+        position: absolute;
+        top: 10px;
+        right: 40px;
+        font-size: 70px;
+        color: black;
+        text-decoration: none;
+    
+    }
 
     
     ul {
@@ -22,8 +46,21 @@
     font-weight: bold;
     font-size: 12px;
     border: none;
-    
-        
+    transition: clip-path .3s;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+ 
+ &:hover {
+--clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+ }   
+  
+ &::after{
+clip-path: var(--clippy);
+
+    }   
+
+
+
         a{
     color: blanchedalmond;
     text-decoration: none;
@@ -41,6 +78,9 @@
     padding: 0.6em;
     font-size: 1.3em;  
  
+ }
+ &:focus {
+    color: black;
  }
 }
  }
@@ -66,7 +106,7 @@
     }
 }
 
- }
+ 
 
 
  @media screen and (max-width: 478px) {
@@ -107,31 +147,19 @@
     size: 10%;
 
   .row {
-.closebtn{ 
-    position: absolute;
-    top: 10px;
-    right: 40px;
-    font-size: 70px;
-    color: black;
-    text-decoration: none;
 
-}
+    .closebtn{
+        display: block;
+        cursor: pointer;
 
-  }  
-    .barraNav {
-        height: 100%;
-        width: 0;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            background-color: rgb (0,0,0);
-            overflow-x:hidden;
-            transition: 0.5s;
+    }
+    .nav_input{
         
-            
-        }
-  
+        
+    &:checked + .nav-item {
+        clip-path: circle(100% to center);
+    }
+}
 
     ul {
         flex-direction: column;
@@ -144,6 +172,9 @@
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    clip-path: circle(0 at center);
+
+
 
  li{
  font-size: 5px;
@@ -163,6 +194,11 @@ transition: 0.3s;
 
  }
   } 
+
+  
+
+
+
 .divlogo {
     display: flex;
     justify-content: center;
@@ -172,3 +208,4 @@ transition: 0.3s;
      
 }
 
+ }
