@@ -23,17 +23,6 @@
   font-size: 12px;
   padding-bottom: 1em;
   size: 30%;
-  /* .row{
-      height: 100%;
-      width: 0;
-          position: fixed;
-          z-index: 1;
-          left: 0;
-          top: 0;
-          background-color: rgb (0,0,0);
-          overflow-x:hidden;
-          transition: 0.5s;
-          */
 }
 .elementosCabecera .barraNav {
   position: relative;
@@ -127,15 +116,11 @@
     display: block;
     cursor: pointer;
   }
-  .elementosCabecera .row .nav_input:checked + .nav-item {
-    -webkit-clip-path: circle(100% to center);
-            clip-path: circle(100% to center);
-  }
-  .elementosCabecera .row ul {
+  .elementosCabecera ul {
     flex-direction: column;
     justify-content: center;
   }
-  .elementosCabecera .row .nav-item {
+  .elementosCabecera .nav-item {
     position: relative;
     top: 25%;
     width: 100%;
@@ -144,10 +129,14 @@
     -webkit-clip-path: circle(0 at center);
             clip-path: circle(0 at center);
   }
-  .elementosCabecera .row .nav-item li {
+  .elementosCabecera .nav-item .nav_input:checked + .nav-item {
+    -webkit-clip-path: circle(100% to center);
+            clip-path: circle(100% to center);
+  }
+  .elementosCabecera .nav-item li {
     font-size: 5px;
   }
-  .elementosCabecera .row .nav-item li a {
+  .elementosCabecera .nav-item li a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -155,10 +144,14 @@
     display: block;
     transition: 0.3s;
   }
-  .elementosCabecera .row .nav-item li a:hover {
+  .elementosCabecera .nav-item li a:hover {
     color: #f1f1f1;
   }
-  .elementosCabecera .row .divlogo {
+  .elementosCabecera .nav_input:checked + .nav-item {
+    -webkit-clip-path: circle(100% to center);
+            clip-path: circle(100% to center);
+  }
+  .elementosCabecera .divlogo {
     display: flex;
     justify-content: center;
   }

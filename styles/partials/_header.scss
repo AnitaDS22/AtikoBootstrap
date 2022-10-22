@@ -8,23 +8,9 @@
     padding-bottom: 1em;
     size: 30%;
 
-/* .row{
-    height: 100%;
-    width: 0;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        background-color: rgb (0,0,0);
-        overflow-x:hidden;
-        transition: 0.5s;
-        */
-
     .barraNav {
         position: relative;        
         }
-
-
 
 .closebtn, .nav_input{ 
     display: none;
@@ -58,7 +44,6 @@
 clip-path: var(--clippy);
 
     }   
-
 
 
         a{
@@ -153,13 +138,8 @@ clip-path: var(--clippy);
         cursor: pointer;
 
     }
-    .nav_input{
-        
-        
-    &:checked + .nav-item {
-        clip-path: circle(100% to center);
+ 
     }
-}
 
     ul {
         flex-direction: column;
@@ -174,6 +154,10 @@ clip-path: var(--clippy);
     margin-top: 30px;
     clip-path: circle(0 at center);
 
+    .nav_input:checked + .nav-item{
+       
+        clip-path: circle(100% to center);
+    }
 
 
  li{
@@ -195,7 +179,10 @@ transition: 0.3s;
  }
   } 
 
-  
+  .nav_input:checked + .nav-item {
+       
+    clip-path: circle(100% to center);
+}
 
 
 
@@ -208,4 +195,4 @@ transition: 0.3s;
      
 }
 
- }
+ 
