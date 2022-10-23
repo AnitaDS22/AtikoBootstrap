@@ -95,41 +95,63 @@ clip-path: var(--clippy);
 
 
  @media screen and (max-width: 478px) {
+  .elementosCabecera{
 
-    .elementosCabecera{
+
+  .barraNav{
+
+    .closebtn{
+        display: block;
+        cursor: pointer;
+
+    }
+
+    ul {
         display: flex;
         flex-direction: column;
-        justify-items: center;
-        size: 10%;
-    
-        ul {
-            flex-direction: column;
-            justify-content: center;
-        }
-    
-    .nav-item{
-        li{
-     font-size: 5px;
-        }
-    
-      } 
-    .divlogo {
-        display: flex;
         justify-content: center;
-    }
-    
-    }
+     
 
-    
+.nav-item{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 5px;
+
+
+a {
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: #818181;
+display: block;
+transition: 0.3s;
+
+&:hover {
+    color: #f1f1f1;
 }
+
+}
+}
+}
+
+
+.divlogo {
+    display: flex;
+    justify-content: center;
+}
+
+  }
+}
+     
+ }
 
  @media screen and (max-width: 768px) {
 
 .elementosCabecera{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    size: 10%;
+
 
   .barraNav{
 
