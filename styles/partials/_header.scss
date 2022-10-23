@@ -140,9 +140,10 @@ clip-path: var(--clippy);
     }
 
     ul {
+        display: flex;
         flex-direction: column;
         justify-content: center;
-    
+     
 
 .nav-item{
     position: relative;
@@ -171,9 +172,9 @@ transition: 0.3s;
 }
 
 }
-
 }
-} 
+}
+
 
 .divlogo {
     display: flex;
