@@ -17,42 +17,28 @@
 }
 
 .elementosCabecera {
+  background-color: none;
+}
+.elementosCabecera nav {
+  background-color: none !important;
+}
+.elementosCabecera ul {
+  position: relative;
   color: blanchedalmond;
+  background-color: none;
   text-decoration: none;
   font-weight: bold;
   font-size: 12px;
   padding-bottom: 1em;
   size: 30%;
 }
-.elementosCabecera .barraNav {
-  position: relative;
-}
-.elementosCabecera .closebtn, .elementosCabecera .nav_input {
-  display: none;
-  position: absolute;
-  top: 10px;
-  right: 40px;
-  font-size: 70px;
-  color: black;
-  text-decoration: none;
-}
 .elementosCabecera ul .nav-item {
+  background-color: none;
   color: blanchedalmond;
   text-decoration: none;
   font-weight: bold;
   font-size: 12px;
   border: none;
-  transition: -webkit-clip-path 0.3s;
-  transition: clip-path 0.3s;
-  transition: clip-path 0.3s, -webkit-clip-path 0.3s;
-  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-}
-.elementosCabecera ul .nav-item:hover {
-  --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-.elementosCabecera ul .nav-item::after {
-  -webkit-clip-path: var(--clippy);
-          clip-path: var(--clippy);
 }
 .elementosCabecera ul .nav-item a {
   color: blanchedalmond;
@@ -74,91 +60,7 @@
 .elementosCabecera ul .nav-item a:focus {
   color: black;
 }
-.elementosCabecera .divlogo a img {
-  width: 50px;
-  height: 50px;
-  transition-delay: padding 2s;
-}
-.elementosCabecera .divlogo a:hover {
-  background-color: antiquewhite;
-  transform: scale 2, 2;
-  padding: 0.8em;
-}
 
-@media screen and (max-width: 478px) {
-  .elementosCabecera .barraNav .nave_label .closebtn {
-    display: block;
-    cursor: pointer;
-  }
-  .elementosCabecera .barraNav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .elementosCabecera .barraNav ul .nav-item {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 5px;
-  }
-  .elementosCabecera .barraNav ul .nav-item a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  .elementosCabecera .barraNav ul .nav-item a:hover {
-    color: #f1f1f1;
-  }
-  .elementosCabecera .barraNav ul .divlogo {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 768px) {
-  .elementosCabecera .barraNav .closebtn {
-    display: block;
-    cursor: pointer;
-  }
-  .elementosCabecera .barraNav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .elementosCabecera .barraNav ul .nav-item {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 5px;
-    /*  clip-path: circle(0 at center);
-
-      .nav_input:checked + .nav-item{
-
-          clip-path: circle(100% to center);
-      }*/
-  }
-  .elementosCabecera .barraNav ul .nav-item a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  .elementosCabecera .barraNav ul .nav-item a:hover {
-    color: #f1f1f1;
-  }
-  .elementosCabecera .barraNav ul .divlogo {
-    display: flex;
-    justify-content: center;
-  }
-}
 footer {
   color: blanchedalmond;
   display: grid;
@@ -450,35 +352,33 @@ footer .contactoGral p:hover {
 @media screen and (max-width: 478px) {
   .gallery1 {
     margin: 5px;
-    display: flex;
+    display: flex !important;
     justify-content: center;
-    max-width: -webkit-min-content;
-    max-width: -moz-min-content;
-    max-width: min-content;
   }
   .gallery1 .gallery {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.3px;
     margin-left: 0;
     margin-right: 5px;
+    max-width: 80vw;
   }
   .gallery1 .gallery img {
-    size: 1em;
     margin-left: 0px;
     margin-right: 5px;
   }
 }
 .card-title {
-  font-size: 1em;
+  font-size: 2em;
 }
 
 @media screen and (max-width: 768px) {
   .gallery {
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     gap: 0.5px;
     width: 100% vw;
     height: 100% vh;
@@ -737,7 +637,7 @@ main .tituloImagen .card-title:hover {
 }
 #bodycompleto header {
   grid-area: header;
-  height: 15%;
+  height: 50%;
   width: 100vw;
 }
 #bodycompleto main {

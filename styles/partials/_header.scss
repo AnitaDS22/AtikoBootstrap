@@ -1,214 +1,54 @@
 
- 
-.elementosCabecera {
-    color: blanchedalmond;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-    padding-bottom: 1em;
-    size: 30%;
+.elementosCabecera   { 
+    background-color: none;
 
-    .barraNav {
-        position: relative;        
-        }
-
-.closebtn, .nav_input{ 
-    display: none;
-        position: absolute;
-        top: 10px;
-        right: 40px;
-        font-size: 70px;
-        color: black;
-        text-decoration: none;
-    
+    nav {
+        background-color: none !important;
     }
 
-    
     ul {
-
+    position: relative;    
+       color: blanchedalmond;
+       background-color: none;
+       text-decoration: none;
+       font-weight: bold;
+       font-size: 12px;
+       padding-bottom: 1em;
+       size: 30%;    
+    
     .nav-item { 
-        color: blanchedalmond;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-    border: none;
-    transition: clip-path .3s;
-    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
- 
- &:hover {
---clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
-
- }   
-  
- &::after{
-clip-path: var(--clippy);
-
-    }   
-
-
-        a{
+        background-color: none;
     color: blanchedalmond;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
-    border: none;
-    padding: 0.6em;
-    font-size: 1.3em;  
-    transition: padding 2s; font-size: medium 2s;
-
- &:hover {
-
-    background-color: black;
-    border: none #ccc;
-    padding: 0.6em;
-    font-size: 1.3em;  
- 
- }
- &:focus {
-    color: black;
- }
-}
- }
- }
-
-
-
-
-.divlogo {
+    font-size: 12px;
+    border: none;   
+  
     a{
-    img {
-        width: 50px;
-        height: 50px;
-        transition-delay: padding 2s;
-
-    }
-   &:hover {
-    background-color: antiquewhite;
-    transform: scale (2,2);
-    padding: 0.8em;
-
-   }
-    }
-}
-
-}
-
-
- @media screen and (max-width: 478px) {
-  .elementosCabecera{
-
-
-  .barraNav{
-
-    .nave_label {
-
-    .closebtn{
-        display: block;
-        cursor: pointer;
-
-    }
-    }
-
-    ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-     
-
-.nav-item{
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 5px;
-
-
-a {
-padding: 8px;
-text-decoration: none;
-font-size: 36px;
-color: #818181;
-display: block;
-transition: 0.3s;
-
-&:hover {
-    color: #f1f1f1;
-}
-
-}
-}
-
-
-
-.divlogo {
-    display: flex;
-    justify-content: center;
-}
-
-  }
-}
+        color: blanchedalmond;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        padding: 0.6em;
+        font-size: 1.3em;  
+        transition: padding 2s; font-size: medium 2s;
     
- }
- }
- @media screen and (max-width: 768px) {
-
-.elementosCabecera{
-
-
-  .barraNav{
-
-    .closebtn{
-        display: block;
-        cursor: pointer;
+     &:hover {
+    
+        background-color: black;
+        border: none #ccc;
+        padding: 0.6em;
+        font-size: 1.3em;  
+     
+     }
+     &:focus {
+        color: black;
+     }
 
     }
+    }
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-     
-
-.nav-item{
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 5px;
-  /*  clip-path: circle(0 at center);
-
-    .nav_input:checked + .nav-item{
-       
-        clip-path: circle(100% to center);
-    }*/
-
-a {
-padding: 8px;
-text-decoration: none;
-font-size: 36px;
-color: #818181;
-display: block;
-transition: 0.3s;
-
-&:hover {
-    color: #f1f1f1;
-}
 
 }
-}
-
-
-
-.divlogo {
-    display: flex;
-    justify-content: center;
-}
-
-  }
-}
-     
- }
-
 }
