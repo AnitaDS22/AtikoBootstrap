@@ -17,10 +17,10 @@
 }
 
 .elementosCabecera {
-  background-color: none;
-}
-.elementosCabecera nav {
   background-color: none !important;
+}
+.elementosCabecera .navbar {
+  background-color: none;
 }
 .elementosCabecera ul {
   position: relative;
@@ -48,7 +48,7 @@
   border: none;
   padding: 0.6em;
   font-size: 1.3em;
-  transition: padding 2s;
+  transition: padding 4s;
   font-size: medium 2s;
 }
 .elementosCabecera ul .nav-item a:hover {
