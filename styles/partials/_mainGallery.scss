@@ -42,20 +42,26 @@
     
 @media screen and (max-width: 478px){
 
-.container-fluid {
-   max-width: 478px;
-
 .gallery1{   
-   max-width: 478px;
+   margin: 5px;
 
    .gallery {
       flex-direction: column;
       flex-wrap: wrap;
-      align-items: center;
-      width: fit-content;
+   justify-content: center;
+      gap: 0.3px;
+   max-width: 470px;
+   margin: 5px;
+
+ ul {
+max-width: 470px;
+
+ }  
+    
 img{
-width: 478px;
+width: 470px;
 margin-left: 0px;
+margin-right: 5px;
 
 }
    
@@ -68,4 +74,3 @@ margin-left: 0px;
         font-size: 1em;
 
 }
-}  

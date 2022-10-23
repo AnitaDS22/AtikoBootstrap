@@ -87,7 +87,7 @@
 }
 
 @media screen and (max-width: 478px) {
-  .elementosCabecera .barraNav .closebtn {
+  .elementosCabecera .barraNav .nave_label .closebtn {
     display: block;
     cursor: pointer;
   }
@@ -115,7 +115,7 @@
   .elementosCabecera .barraNav ul .nav-item a:hover {
     color: #f1f1f1;
   }
-  .elementosCabecera .barraNav .divlogo {
+  .elementosCabecera .barraNav ul .divlogo {
     display: flex;
     justify-content: center;
   }
@@ -155,7 +155,7 @@
   .elementosCabecera .barraNav ul .nav-item a:hover {
     color: #f1f1f1;
   }
-  .elementosCabecera .barraNav .divlogo {
+  .elementosCabecera .barraNav ul .divlogo {
     display: flex;
     justify-content: center;
   }
@@ -458,28 +458,27 @@ footer .contactoGral p:hover {
   }
 }
 @media screen and (max-width: 478px) {
-  .container-fluid {
-    max-width: 478px;
+  .gallery1 {
+    margin: 5px;
   }
-  .container-fluid .gallery1 {
-    max-width: 478px;
-  }
-  .container-fluid .gallery1 .gallery {
+  .gallery1 .gallery {
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    justify-content: center;
+    gap: 0.3px;
+    max-width: 470px;
+    margin: 5px;
   }
-  .container-fluid .gallery1 .gallery img {
-    width: 478px;
+  .gallery1 .gallery img {
+    width: 470px;
     margin-left: 0px;
-  }
-  .card-title {
-    font-size: 1em;
+    margin-right: 5px;
   }
 }
+.card-title {
+  font-size: 1em;
+}
+
 main .imagenabout {
   padding-bottom: 5px;
   height: -webkit-fit-content;
