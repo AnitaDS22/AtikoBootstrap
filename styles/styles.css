@@ -460,6 +460,8 @@ footer .contactoGral p:hover {
 @media screen and (max-width: 478px) {
   .gallery1 {
     margin: 5px;
+    display: flex;
+    justify-content: center;
   }
   .gallery1 .gallery {
     flex-direction: column;
@@ -467,10 +469,11 @@ footer .contactoGral p:hover {
     justify-content: center;
     gap: 0.3px;
     max-width: 470px;
-    margin: 5px;
+    margin-left: 0;
+    margin-right: 5px;
   }
   .gallery1 .gallery img {
-    width: 470px;
+    size: 80%;
     margin-left: 0px;
     margin-right: 5px;
   }

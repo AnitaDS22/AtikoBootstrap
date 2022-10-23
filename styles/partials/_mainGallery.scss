@@ -44,22 +44,21 @@
 
 .gallery1{   
    margin: 5px;
+   display: flex;
+   justify-content: center;
+   max-width: min-content;
 
    .gallery {
       flex-direction: column;
       flex-wrap: wrap;
    justify-content: center;
       gap: 0.3px;
-   max-width: 470px;
-   margin: 5px;
-
- ul {
-max-width: 470px;
-
- }  
+   margin-left: 0;
+   margin-right: 5px;
+ 
     
 img{
-width: 470px;
+size: 1em;
 margin-left: 0px;
 margin-right: 5px;
 
