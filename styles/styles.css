@@ -18,14 +18,19 @@
 
 .elementosCabecera {
   background-color: none !important;
-}
-.elementosCabecera .navbar {
-  background-color: none;
+  /*position: relative;  */
+  color: blanchedalmond;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  padding-bottom: 1em;
+  size: 30%;
 }
 .elementosCabecera ul {
   position: relative;
+  display: flex;
+  flex-direction: row;
   color: blanchedalmond;
-  background-color: none;
   text-decoration: none;
   font-weight: bold;
   font-size: 12px;
@@ -57,10 +62,37 @@
   padding: 0.6em;
   font-size: 1.3em;
 }
-.elementosCabecera ul .nav-item a:focus {
-  color: black;
-}
 
+@media screen and (max-width: 478px) {
+  .elementosCabecera .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .elementosCabecera .navbar ul .nav-item {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 5px;
+  }
+  .elementosCabecera .navbar ul .nav-item a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .elementosCabecera .navbar ul .nav-item a:hover {
+    color: #f1f1f1;
+  }
+  .elementosCabecera .navbar .divlogo {
+    display: flex;
+    justify-content: center;
+  }
+}
 footer {
   color: blanchedalmond;
   display: grid;
