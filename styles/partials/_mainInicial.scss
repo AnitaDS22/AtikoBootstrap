@@ -1,9 +1,17 @@
 
+<<<<<<< HEAD
 main {
     width: 100vw;
  height: 100vh;
     margin-bottom:3px;
 
+=======
+/* main {
+    width: fit-content;
+    margin-bottom:3px;
+    size: 50%;
+*/
+>>>>>>> version2
 
 #carouselExampleControls {
     max-height: 520px;
@@ -36,6 +44,7 @@ color: map-get($colorespagina, colortextsecundario );
     font-size: map-get($tamañospagina, fontsizesecundario );
  }
 }
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 478px) {
@@ -47,3 +56,14 @@ color: map-get($colorespagina, colortextsecundario );
 }
 }
 }
+=======
+    
+@media screen and (max-width: 478px) {
+
+    
+
+    .card-title{ 
+        font-size: map-get($tamañospagina, fontsizetercera );
+}
+}  
+>>>>>>> version2

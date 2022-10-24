@@ -1,4 +1,6 @@
 .contactMain{
+    max-width: 80%;
+
  
 .contactTitulo {
     @extend %textcomun;
@@ -15,8 +17,8 @@
 }
 
 .ContactForm {
-    font-size: 20px;
-    width: fit-content;
+    font-size: 15px;
+    width: 80vw;
     display: grid;
     padding-left: 3em;
     grid-template-columns: repeat(2, 1fr);
@@ -28,9 +30,10 @@
     grid-area: formularioIzq;
     padding-bottom: 10px;
     padding-right: 5px;
+    size: 50%;
 
     input {
-        width: 500px;
+        width: 420px;
     height: 25px;
     padding-bottom: 5px;
 
@@ -50,11 +53,12 @@
     justify-content: center;
     padding-bottom: 10px;
     margin-left: none;
+    size: 50%;
 
     input {
 #website{
-width: 200px;
-        height: 70px;
+width: 150px;
+        height: 50px;
         padding-bottom: 5px; }
     }
         textarea {
@@ -85,28 +89,173 @@ color: map-get($colorespagina, colortextsecundario )
 
    } 
 }  
-
         
+}
+
+}
+.bajocontacto {
+
+
+
+.gifatiko {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+
+  .card-gif {
+    @extend .contactTitulo
+  }  
+
+    img {
+
+        width: 1020px;
+        height: 230px;
+    
+    }
+}
+}
+}
+
+
+@media screen and (max-width: 478px){
+    .contactMain {
+        max-width: 430px;
+        padding-left: 3%;
+        display: grid;
+         grid-template-rows: 1fr, 2fr, 2fr;
+         grid-template-areas: 
+         "contactTitulo"
+         "ContactForm"
+         "bajocontacto";
+
+  
+         .contactTitulo {
+            max-width: 300px;  
+            padding-left: 25%;      
+            grid-area: contactTitulo;
+            font-size: 15px;
+            
+         }
+    .ContactForm {
+font-size: 15px;
+width: 430px;
+grid-area: ContactForm;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0em;
+        grid-template-areas: 
+        "formularioIzq"
+        "formularioDerecho";
+
+
+        .formularioIzq{
+            width: 430px;
+            grid-area: formularioIzq;
+            margin-right: 10%;
+   
+
+            input {
+                width: 330px;
+            }
+            textarea {
+                width: 330px;
+            }
+            
+             }   
+             
+             .formularioDerecho {
+                width: 430px;
+                grid-area: formularioDerecho;
+                margin-right: 10%;
+
+            input {
+width: 330px;
+
+            }
+    textarea {
+width: 330px;
+
+    }
+
+    .SubmitEnviar input {
+        margin-left: 170px;
+    }
+            
+             }        
+
+
+}
+
+.bajocontacto{
+    width: 450px;
+    grid-area: bajocontacto;
+
+.gifatiko{
+    .card-gif {
+font-size: 20px;
+
+
+    }
+}
+
+
+}
+
 }
 }
 
 
 
 @media screen and (max-width: 768px) {
+ .contactMain {
+max-width: 750px;
+      height: auto;
+       display: grid;
+        grid-template-rows: 1fr, 2fr, 2fr;
+        grid-template-areas: 
+        "contactTitulo"
+        "ContactForm"
+        "bajocontacto";
+ 
+.contactTitulo {
+    grid-area: contactTitulo;
+    font-size: 30px;
+}
+    
     .ContactForm {
-        width: fit-content;
-        height: fit-content;
-        grid-template-columns: 1fr;
+        width: 750px;
+        grid-area: ContactForm;
+        display: grid;
                 grid-template-rows: repeat(2, 1fr);
                 grid-template-areas: 
                 "formularioIzq"
                 "formularioDerecho";
+
+
+ .formularioIzq{
+grid-area: formularioIzq;
+size: 30%;
+padding-left: 50%;
+padding-bottom: 0%;
+
+ }   
+ 
+ .formularioDerecho {
+    grid-area: formularioDerecho;
+    size: 30%;
+    padding-left: 50%;
+
+
+ }
         
         }
 
+.bajocontacto {
+    grid-area: bajocontacto;
 
-}
+    .gifatiko {
 
+<<<<<<< HEAD
 @media screen and (max-width: 478px){
     .ContactForm {
         width: 100%;
@@ -116,7 +265,15 @@ grid-template-columns: 1fr;
         grid-template-areas: 
         "formularioIzq"
         "formularioDerecho";
+=======
+    
+      .card-gif {
+       font-size: 30px;
+      }  
+>>>>>>> version2
 
 }
+
+ }
 }
 }

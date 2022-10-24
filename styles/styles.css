@@ -3,7 +3,7 @@
 /*tamaños*/
 /*botones*/
 /*transiciones*/
-.servicesBody .textoServices, .cardabout .aboutStory, .contactMain .contactTitulo {
+.servicesBody .textoServices, main .cardabout .aboutStory, .contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
   font-family: "Basquerville", "arial";
   font-style: bold;
   color: blanchedalmond;
@@ -16,19 +16,11 @@
   align-items: center;
 }
 
-.elementosCabecera {
-  color: blanchedalmond;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  padding-bottom: 1em;
-  size: 30%;
-}
 .elementosCabecera ul .nav-item {
   color: blanchedalmond;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 12px;
   border: none;
 }
 .elementosCabecera ul .nav-item a {
@@ -39,7 +31,7 @@
   border: none;
   padding: 0.6em;
   font-size: 1.3em;
-  transition: padding 2s;
+  transition: padding 4s;
   font-size: medium 2s;
 }
 .elementosCabecera ul .nav-item a:hover {
@@ -48,17 +40,8 @@
   padding: 0.6em;
   font-size: 1.3em;
 }
-.elementosCabecera .divlogo a img {
-  width: 50px;
-  height: 50px;
-  transition-delay: padding 2s;
-}
-.elementosCabecera .divlogo a:hover {
-  background-color: antiquewhite;
-  transform: scale 2, 2;
-  padding: 0.8em;
-}
 
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   .elementosCabecera {
     display: flex;
@@ -99,6 +82,8 @@
     justify-content: center;
   }
 }
+=======
+>>>>>>> version2
 footer {
   bottom: 0%;
   color: blanchedalmond;
@@ -106,7 +91,14 @@ footer {
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "redesicons contactoGral";
   background-color: black;
+<<<<<<< HEAD
   size: 30%;
+=======
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  margin-top: 1em;
+>>>>>>> version2
 }
 footer ul {
   grid-area: redesicons;
@@ -154,17 +146,50 @@ footer .contactoGral {
 footer .contactoGral p {
   font-family: "Basquerville", "arial";
   color: blanchedalmond;
-  font-size: 15px;
+  font-size: 12px;
   transition: all 2s ease;
 }
 footer .contactoGral p:hover {
   color: #d0485e;
-  font-size: 16px;
+  font-size: 14px;
 }
 
+@media screen and (max-width: 478px) {
+  .footerElementos {
+<<<<<<< HEAD
+    background-color: black;
+=======
+    width: 100%;
+    height: 100vh;
+>>>>>>> version2
+    display: grid;
+    background-color: #0e0a0a;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "redesicons" "contactoGral";
+  }
+  .footerElementos ul {
+    grid-area: redesicons;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .footerElementos .contactoGral {
+    grid-area: contactoGral;
+  }
+  .footerElementos .contactoGral p {
+    font-size: 10px;
+  }
+}
+<<<<<<< HEAD
+@media screen and (max-width: 478px) {
+  footer {
+    width: 100vw;
+=======
 @media screen and (max-width: 768px) {
   .footerElementos {
-    background-color: black;
+    width: 100%;
+>>>>>>> version2
+    height: 100vh;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "redesicons" "contactoGral";
@@ -178,23 +203,11 @@ footer .contactoGral p:hover {
   .footerElementos .contactoGral {
     grid-area: contactoGral;
   }
-}
-@media screen and (max-width: 478px) {
-  footer {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    background-color: red;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "redesicons" "contactoGral";
-  }
-  footer ul {
-    grid-area: redesicons;
-  }
-  footer .contactoGral {
-    grid-area: contactoGral;
+  .footerElementos .contactoGral p {
+    font-size: 10px;
   }
 }
+<<<<<<< HEAD
 main {
   width: 100vw;
   height: 100vh;
@@ -202,28 +215,41 @@ main {
 }
 main #carouselExampleControls {
   max-height: 520px;
+=======
+/* main {
+    width: fit-content;
+    margin-bottom:3px;
+    size: 50%;
+*/
+#carouselExampleControls {
+  max-height: 440px;
+>>>>>>> version2
 }
-main .carousel-inner {
+
+.carousel-inner {
   width: 100%;
   max-height: 520px;
 }
-main .fotosCarrusel {
+
+.fotosCarrusel {
   position: relative;
 }
-main .card-title {
+
+.card-title {
   color: blanchedalmond;
   font-size: 80px;
 }
-main .card-title:hover {
+.card-title:hover {
   color: #d0485e;
 }
 
 @media screen and (max-width: 768px) {
-  main .card-title {
+  .card-title {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 478px) {
+<<<<<<< HEAD
   main {
     height: 100vh;
   }
@@ -232,19 +258,27 @@ main .card-title:hover {
   }
 }
 .contactMain .contactTitulo {
+=======
+  .card-title {
+    font-size: 20px;
+  }
+}
+.contactMain {
+  max-width: 80%;
+}
+.contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
+>>>>>>> version2
   font-size: 70px;
   margin-top: 5px;
   padding-bottom: 5px;
   margin-left: 40px;
 }
-.contactMain .contactTitulo:hover {
+.contactMain .contactTitulo:hover, .contactMain .bajocontacto .gifatiko .card-gif:hover {
   color: black;
 }
 .contactMain .ContactForm {
-  font-size: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  font-size: 15px;
+  width: 80vw;
   display: grid;
   padding-left: 3em;
   grid-template-columns: repeat(2, 1fr);
@@ -255,9 +289,10 @@ main .card-title:hover {
   grid-area: formularioIzq;
   padding-bottom: 10px;
   padding-right: 5px;
+  size: 50%;
 }
 .contactMain .ContactForm .formularioIzq input {
-  width: 500px;
+  width: 420px;
   height: 25px;
   padding-bottom: 5px;
 }
@@ -272,10 +307,11 @@ main .card-title:hover {
   justify-content: center;
   padding-bottom: 10px;
   margin-left: none;
+  size: 50%;
 }
 .contactMain .ContactForm .formularioDerecho input #website {
-  width: 200px;
-  height: 70px;
+  width: 150px;
+  height: 50px;
   padding-bottom: 5px;
 }
 .contactMain .ContactForm .formularioDerecho textarea {
@@ -299,41 +335,138 @@ main .card-title:hover {
 .contactMain .ContactForm .formularioDerecho .botonesprincipal:hover {
   color: #d0485e;
 }
-@media screen and (max-width: 768px) {
+.contactMain .bajocontacto .gifatiko {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.contactMain .bajocontacto .gifatiko img {
+  width: 1020px;
+  height: 230px;
+}
+
+@media screen and (max-width: 478px) {
+  .contactMain {
+    max-width: 430px;
+    padding-left: 3%;
+    display: grid;
+    grid-template-rows: 1fr, 2fr, 2fr;
+    grid-template-areas: "contactTitulo" "ContactForm" "bajocontacto";
+  }
+  .contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
+    max-width: 300px;
+    padding-left: 25%;
+    grid-area: contactTitulo;
+    font-size: 15px;
+  }
   .contactMain .ContactForm {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    grid-template-columns: 1fr;
+    font-size: 15px;
+    width: 430px;
+    grid-area: ContactForm;
     grid-template-rows: repeat(2, 1fr);
+    gap: 0em;
     grid-template-areas: "formularioIzq" "formularioDerecho";
   }
+  .contactMain .ContactForm .formularioIzq {
+    width: 430px;
+    grid-area: formularioIzq;
+    margin-right: 10%;
+  }
+  .contactMain .ContactForm .formularioIzq input {
+    width: 330px;
+  }
+  .contactMain .ContactForm .formularioIzq textarea {
+    width: 330px;
+  }
+  .contactMain .ContactForm .formularioDerecho {
+    width: 430px;
+    grid-area: formularioDerecho;
+    margin-right: 10%;
+  }
+  .contactMain .ContactForm .formularioDerecho input {
+    width: 330px;
+  }
+  .contactMain .ContactForm .formularioDerecho textarea {
+    width: 330px;
+  }
+  .contactMain .ContactForm .formularioDerecho .SubmitEnviar input {
+    margin-left: 170px;
+  }
+  .contactMain .bajocontacto {
+    width: 450px;
+    grid-area: bajocontacto;
+  }
+  .contactMain .bajocontacto .gifatiko .card-gif {
+    font-size: 20px;
+  }
 }
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 768px) {
+  .contactMain {
+    max-width: 750px;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr, 2fr, 2fr;
+    grid-template-areas: "contactTitulo" "ContactForm" "bajocontacto";
+  }
+  .contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
+    grid-area: contactTitulo;
+    font-size: 30px;
+  }
   .contactMain .ContactForm {
+<<<<<<< HEAD
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr;
+=======
+    width: 750px;
+    grid-area: ContactForm;
+    display: grid;
+>>>>>>> version2
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "formularioIzq" "formularioDerecho";
   }
+  .contactMain .ContactForm .formularioIzq {
+    grid-area: formularioIzq;
+    size: 30%;
+    padding-left: 50%;
+    padding-bottom: 0%;
+  }
+  .contactMain .ContactForm .formularioDerecho {
+    grid-area: formularioDerecho;
+    size: 30%;
+    padding-left: 50%;
+  }
+  .contactMain .bajocontacto {
+    grid-area: bajocontacto;
+  }
+  .contactMain .bajocontacto .gifatiko .card-gif {
+    font-size: 30px;
+  }
 }
+<<<<<<< HEAD
 
 .gallerymain {
   height: 700px;
 }
 .gallerymain .gallery {
+=======
+.gallery {
+>>>>>>> version2
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
+  align-items: center;
   list-style: none;
 }
+<<<<<<< HEAD
 .gallerymain .gallery img {
   width: 590px;
   height: 300px;
+=======
+.gallery img {
+  width: 500px;
+  height: 270px;
+>>>>>>> version2
   transition: opacity 0.4s;
 }
 .gallerymain .gallery img:hover {
@@ -343,10 +476,25 @@ main .card-title:hover {
   opacity: 0.5;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   .gallerymain .gallery {
+=======
+@media screen and (max-width: 478px) {
+  .gallery1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex !important;
+    justify-content: center;
+  }
+  .gallery1 .gallery {
+    width: 470px;
+    display: flex;
+>>>>>>> version2
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+<<<<<<< HEAD
     gap: 0.5px;
   }
   .gallerymain .gallery img {
@@ -357,11 +505,39 @@ main .card-title:hover {
 @media screen and (max-width: 478px) {
   .gallerymain .gallery {
     flex-direction: column;
+=======
+    justify-content: start;
+    -moz-column-gap: 0.3px;
+         column-gap: 0.3px;
+    padding-right: 10%;
+    padding-left: 0%;
+  }
+  .gallery1 .gallery li {
+    width: 450px;
+  }
+  .gallery1 .gallery li img {
+    margin-left: 0px;
+    margin-right: 5px;
+    width: 470px;
+    height: 250px;
+  }
+}
+.card-title {
+  font-size: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+>>>>>>> version2
     justify-content: center;
     gap: 0.5px;
     width: 100vw;
     height: 100vh;
   }
+<<<<<<< HEAD
   .gallerymain .gallery img {
     width: 100%;
     height: 100%;
@@ -369,12 +545,71 @@ main .card-title:hover {
   .gallerymain .card-title {
     font-size: 1em;
   }
+=======
+>>>>>>> version2
 }
-.aboutcentral {
-  background-color: none;
+main .imagenabout {
+  padding-bottom: 5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-
-.card-body {
+main .imagenabout .card-img-overlay {
+  display: flex;
+  border: none;
+  max-width: 100vw;
+  max-height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main .imagenabout .card-img-overlay .fotoarriba {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: right !important;
+  margin-left: 60%;
+}
+main .imagenabout .card-img-overlay .fotoarriba .card-banner2 {
+  font-size: 2em;
+  font-weight: bold;
+  max-width: 60%;
+}
+main .imagenabout .card-img-overlay .fotoarriba .card-banner2:hover {
+  color: #d0485e;
+}
+main .imagenabout .card-img-overlay .fotoarriba .parrafoAbout2 {
+  color: blanchedalmond;
+  font-weight: lighter;
+  font-size: 1em;
+  max-width: 90%;
+}
+main .imagenabout .card-img-overlay .fotoarriba .parrafoAbout2:hover {
+  color: black;
+}
+main .imagenabout .card-img-overlay .fotoabajo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: flex-end;
+}
+main .imagenabout .card-img-overlay .fotoabajo .card-banner1 {
+  font-size: 2em;
+  font-weight: bold;
+  max-width: 30%;
+}
+main .imagenabout .card-img-overlay .fotoabajo .card-banner1:hover {
+  color: #d0485e;
+}
+main .imagenabout .card-img-overlay .fotoabajo p {
+  color: blanchedalmond;
+  font-weight: lighter;
+  width: 20em;
+  font-size: 1em;
+}
+main .imagenabout .card-img-overlay .fotoabajo p:hover {
+  color: black;
+}
+main .card-body {
   background-color: black;
   border-radius: 10px;
   color: colorPrincipal;
@@ -384,44 +619,97 @@ main .card-title:hover {
   width: 28em;
   height: 8em;
 }
-.card-body img {
+main .card-body img {
   height: 1em;
 }
-
-.cardabout {
+main .cardabout {
   background-color: none;
 }
-.cardabout .aboutStory {
-  font-size: xx-large;
+main .cardabout .aboutStory {
+  font-size: large;
 }
-.cardabout .card-text {
+main .cardabout .card-text {
   color: blanchedalmond;
   font-size: large;
 }
-
-.tituloImagen .card-title {
+main .tituloImagen .card-title {
   font-family: "Basquerville";
   color: blanchedalmond;
   font-size: 70px;
   display: flex;
   align-items: center;
 }
-.tituloImagen .card-title:hover {
+main .tituloImagen .card-title:hover {
   color: black;
 }
+@media screen and (max-width: 478px) {
+  main .imagenabout {
+    max-width: 100%;
+  }
+  main .imagenabout .fotoarriba {
+    justify-content: flex-start;
+  }
+  main .imagenabout .fotoarriba .card-banner2 {
+    justify-content: start !important;
+    font-size: 0.8em !important;
+  }
+  main .imagenabout .fotoarriba .parrafoAbout2 {
+    font-size: 0.5em !important;
+    width: 18em !important;
+    justify-items: flex-start !important;
+  }
+  main .fotoabajo {
+    margin-left: 2em;
+  }
+  main .fotoabajo .card-banner1 {
+    justify-content: start !important;
+    font-size: 0.8em !important;
+  }
+  main .fotoabajo .parrafoAbout1 {
+    font-size: 0.5em !important;
+    width: 18em !important;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .imagenabout {
+    max-width: 100%;
+  }
+  .imagenabout .fotoarriba {
+    justify-content: flex-start;
+  }
+  .imagenabout .fotoarriba .card-banner2 {
+    justify-content: start !important;
+    font-size: 1.4em !important;
+  }
+  .imagenabout .fotoarriba .parrafoAbout2 {
+    font-size: 0.8em !important;
+    width: 18em !important;
+    justify-items: flex-start !important;
+  }
+  .fotoabajo {
+    margin-left: 3em;
+  }
+  .fotoabajo .card-banner1 {
+    justify-content: start !important;
+    font-size: 1.4em !important;
+  }
+  .fotoabajo .parrafoAbout1 {
+    font-size: 0.8em !important;
+    width: 18em !important;
+  }
+}
 .servicesBody {
   color: blanchedalmond;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  padding: 5%;
 }
 .servicesBody .textoServices {
-  font-size: 3em;
+  font-size: 2em;
   justify-items: flex-start;
+  font-weight: bold;
 }
 .servicesBody .vimeo {
   display: flex;
@@ -433,7 +721,7 @@ main .card-title:hover {
   height: fit-content;
   background-color: black;
   padding: 10px;
-  border-radius: 40px;
+  border-radius: 15px;
 }
 .servicesBody .cardoptionatiko .card.text-bg-dark.mb-3 {
   width: -webkit-max-content;
@@ -461,7 +749,7 @@ main .card-title:hover {
   width: 100%;
 }
 .servicesBody .cardoptionatiko .card-body h5 {
-  font-size: 0.5em;
+  font-size: 0.6em;
   color: #d0485e;
 }
 .servicesBody .cardoptionatiko .card-body h5:hover {
@@ -487,7 +775,7 @@ main .card-title:hover {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 478px) and (orientation: landscape) {
+@media screen and (max-width: 478px) {
   .servicesBody {
     width: 100%;
   }
@@ -503,8 +791,18 @@ main .card-title:hover {
   background-image: url("../Images/bg01.jpg");
   font-family: "Basquerville", "arial";
   font-style: bold;
+<<<<<<< HEAD
+=======
+  height: 100vh;
+  position: relative;
+>>>>>>> version2
   overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "header" "main" "footer";
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 478px) {
   #bodycompleto {
@@ -523,4 +821,19 @@ main .card-title:hover {
   #bodycompleto footer {
     grid-area: footer;
   }
+=======
+#bodycompleto header {
+  grid-area: header;
+  width: 100vw;
+}
+#bodycompleto main {
+  grid-area: main;
+  justify-content: center;
+  width: 100vw;
+}
+#bodycompleto footer {
+  grid-area: footer;
+  width: 100vw;
+  height: 30vh;
+>>>>>>> version2
 }/*# sourceMappingURL=styles.css.map */
