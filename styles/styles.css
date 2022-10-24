@@ -266,37 +266,19 @@ footer .contactoGral p:hover {
   width: 1020px;
   height: 230px;
 }
-@media screen and (max-width: 768px) {
-  .contactMain .contactMain {
-    display: flex;
-    justify-content: center;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 100vh;
-  }
-  .contactMain .ContactForm {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "formularioIzq" "formularioDerecho";
-  }
-}
+
 @media screen and (max-width: 478px) {
-  .contactMain .contactMain {
+  .contactMain {
     display: flex;
     justify-content: center;
     height: 100vh;
   }
-  .contactMain .contactMain .formuflex {
+  .contactMain .formuflex {
     display: flex;
     justify-content: center;
     max-width: 80%;
   }
-  .contactMain .contactMain .formuflex .ContactForm {
+  .contactMain .formuflex .ContactForm {
     font-size: 15px;
     width: 100%;
     height: -webkit-fit-content;
@@ -307,7 +289,25 @@ footer .contactoGral p:hover {
     grid-template-areas: "formularioIzq" "formularioDerecho";
   }
 }
-
+@media screen and (max-width: 768px) {
+  .contactMain {
+    display: flex;
+    justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100vh;
+  }
+  .ContactForm {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "formularioIzq" "formularioDerecho";
+  }
+}
 .gallery {
   display: flex;
   flex-wrap: wrap;

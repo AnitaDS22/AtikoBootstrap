@@ -115,36 +115,13 @@ color: map-get($colorespagina, colortextsecundario )
     }
 }
 }
-
-@media screen and (max-width: 768px) {
-    .contactMain {
-        display: flex;
-        justify-content: center;
-        width: fit-content;
-        height: 100vh;
-
-
-
-    }
-    .ContactForm {
-        width: 100%;
-        height: fit-content;
-        grid-template-columns: 1fr;
-                grid-template-rows: repeat(2, 1fr);
-                grid-template-areas: 
-                "formularioIzq"
-                "formularioDerecho";
-        
-        }
-
-
 }
 
 @media screen and (max-width: 478px){
     .contactMain {
         display: flex;
         justify-content: center;
-        height: 100vh;
+
        
 
 .formuflex {
@@ -167,4 +144,49 @@ grid-template-columns: 1fr;
 }
 }
 }
+
+
+@media screen and (max-width: 768px) {
+ .contactMain {
+
+       height: auto;
+       display: grid;
+        grid-template-rows: 1fr, 2fr, 2fr;
+        grid-template-areas: 
+        "contactTitulo"
+        "ContactForm"
+        "bajocontacto";
+ 
+      
+     /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: fit-content;
+        height: 100vh;
+
+*/
+ 
+.contactTitulo {
+
+    grid-area: contactTitulo;
+}
+    
+    .ContactForm {
+        width: 100%;
+        height: 100vh;
+        grid-area: ContactForm;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-areas: 
+                "formularioIzq"
+                "formularioDerecho";
+        
+        }
+
+.bajocontacto {
+    height: fit-content;
+    grid-area: bajocontacto;
+}
+
+ }
 }
