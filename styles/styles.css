@@ -388,13 +388,14 @@ footer .contactoGral p:hover {
     justify-content: center;
   }
   .gallery1 .gallery {
-    width: 430px;
+    width: 470px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: start;
-    gap: 0.3px;
+    -moz-column-gap: 0.3px;
+         column-gap: 0.3px;
     padding-right: 10%;
     padding-left: 0%;
   }
@@ -579,10 +580,10 @@ main .tituloImagen .card-title:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* height: fit-content; */
+  padding: 5%;
 }
 .servicesBody .textoServices {
-  font-size: 2.5em;
+  font-size: 2em;
   justify-items: flex-start;
   font-weight: bold;
 }
@@ -624,14 +625,14 @@ main .tituloImagen .card-title:hover {
   width: 100%;
 }
 .servicesBody .cardoptionatiko .card-body h5 {
-  font-size: 1em;
+  font-size: 0.6em;
   color: #d0485e;
 }
 .servicesBody .cardoptionatiko .card-body h5:hover {
   color: black;
 }
 .servicesBody .cardoptionatiko .card-body p {
-  color: black;
+  color: antiquewhite;
   font-size: small;
 }
 .servicesBody .cardoptionatiko .card-body p:hover {
