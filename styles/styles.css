@@ -111,7 +111,7 @@ footer .contactoGral p:hover {
     width: 100%;
     height: 100vh;
     display: grid;
-    background-color: red;
+    background-color: #0e0a0a;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "redesicons" "contactoGral";
   }
