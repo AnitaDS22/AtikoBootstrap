@@ -1,18 +1,8 @@
 
 .elementosCabecera   { 
-    color: blanchedalmond;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-    padding-bottom: 1em;
 
     ul { 
-color: blanchedalmond;  
-       text-decoration: none;
-       font-weight: bold;
-       font-size: 12px;
-       padding-bottom: 1em;   
-    
+     
     .nav-item { 
     color: blanchedalmond;
     text-decoration: none;
@@ -38,57 +28,9 @@ color: blanchedalmond;
         font-size: 1.3em;  
      
      }
-
     }
     }
-
-
+}
 }
 
-}
 
-@media screen and (max-width: 478px) {
-    .elementosCabecera{
-
-    .navbar {
-
-       ul {
-               
-          
-          .nav-item{
-
-              top: 25%;
-              width: 100%;
-              text-align: center;
-              margin-top: 30px;
-              font-size: 5px;
-          
-          
-          a {
-          padding: 8px;
-          text-decoration: none;
-          font-size: 36px;
-          color: #818181;
-          display: block;
-          transition: 0.3s;
-          
-          &:hover {
-              color: #f1f1f1;
-          }
-          
-          }
-          }
-          
-              }
-          
-          .divlogo {
-              display: flex;
-              justify-content: center;
-          }
-    }    
-  
-
-
-    }
-
-}

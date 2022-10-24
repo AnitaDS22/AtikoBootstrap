@@ -16,40 +16,14 @@
   align-items: center;
 }
 
-.elementosCabecera {
-  background-image: url("../Images/bg01.jpg");
-  position: relative;
-  color: blanchedalmond;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 12px;
-  padding-bottom: 1em;
-  size: 30%;
-}
-.elementosCabecera .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: first baseline;
-  background-color: none;
-}
-.elementosCabecera .navbar ul {
-  position: relative;
-  color: blanchedalmond;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 12px;
-  padding-bottom: 1em;
-  size: 30%;
-}
-.elementosCabecera .navbar ul .nav-item {
-  background-color: none;
+.elementosCabecera ul .nav-item {
   color: blanchedalmond;
   text-decoration: none;
   font-weight: bold;
   font-size: 12px;
   border: none;
 }
-.elementosCabecera .navbar ul .nav-item a {
+.elementosCabecera ul .nav-item a {
   color: blanchedalmond;
   text-decoration: none;
   font-weight: bold;
@@ -60,43 +34,13 @@
   transition: padding 4s;
   font-size: medium 2s;
 }
-.elementosCabecera .navbar ul .nav-item a:hover {
+.elementosCabecera ul .nav-item a:hover {
   background-color: black;
   border: none #ccc;
   padding: 0.6em;
   font-size: 1.3em;
 }
 
-@media screen and (max-width: 478px) {
-  .elementosCabecera .navbar ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .elementosCabecera .navbar ul .nav-item {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 5px;
-  }
-  .elementosCabecera .navbar ul .nav-item a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  .elementosCabecera .navbar ul .nav-item a:hover {
-    color: #f1f1f1;
-  }
-  .elementosCabecera .navbar .divlogo {
-    display: flex;
-    justify-content: center;
-  }
-}
 footer {
   color: blanchedalmond;
   display: grid;
@@ -674,7 +618,6 @@ main .tituloImagen .card-title:hover {
 }
 #bodycompleto header {
   grid-area: header;
-  height: 50%;
   width: 100vw;
 }
 #bodycompleto main {
