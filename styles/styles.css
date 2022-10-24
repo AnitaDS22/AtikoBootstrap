@@ -664,7 +664,7 @@ main .tituloImagen .card-title:hover {
   }
 }
 #bodycompleto {
-  background-image: url("../images/bg01.jpg");
+  background-image: url(../images/bg01.jpg);
   font-family: "Basquerville", "arial";
   font-style: bold;
   height: 100vh;
