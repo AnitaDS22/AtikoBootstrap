@@ -271,16 +271,17 @@ footer .contactoGral p:hover {
   .contactMain {
     display: flex;
     justify-content: center;
-    height: 100vh;
-  }
-  .contactMain .formuflex {
+    /*
+    .formuflex {
     display: flex;
     justify-content: center;
     max-width: 80%;
+
+    */
   }
-  .contactMain .formuflex .ContactForm {
+  .contactMain .ContactForm {
     font-size: 15px;
-    width: 100%;
+    width: 470px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -291,21 +292,47 @@ footer .contactoGral p:hover {
 }
 @media screen and (max-width: 768px) {
   .contactMain {
-    display: flex;
-    justify-content: center;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 100vh;
+    max-width: 750px;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr, 2fr, 2fr;
+    grid-template-areas: "contactTitulo" "ContactForm" "bajocontacto";
+    /*  display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: fit-content;
+            height: 100vh;
+    */
   }
-  .ContactForm {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    grid-template-columns: 1fr;
+  .contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
+    size: 40%;
+    grid-area: contactTitulo;
+    font-size: 0.7em;
+  }
+  .contactMain .ContactForm {
+    width: 750px;
+    grid-area: ContactForm;
+    display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "formularioIzq" "formularioDerecho";
+  }
+  .contactMain .ContactForm .formularioIzq {
+    grid-area: formularioIzq;
+    size: 30%;
+    padding-left: 50%;
+    padding-bottom: 0%;
+  }
+  .contactMain .ContactForm .formularioDerecho {
+    grid-area: formularioDerecho;
+    size: 30%;
+    padding-left: 50%;
+  }
+  .contactMain .bajocontacto {
+    grid-area: bajocontacto;
+  }
+  .contactMain .bajocontacto .gifatiko .card-gif {
+    font-size: 30px;
   }
 }
 .gallery {
