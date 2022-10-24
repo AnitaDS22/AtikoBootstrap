@@ -16,6 +16,14 @@
   align-items: center;
 }
 
+.elementosCabecera {
+  color: blanchedalmond;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 1em;
+  size: 30%;
+}
 .elementosCabecera ul .nav-item {
   color: blanchedalmond;
   text-decoration: none;
@@ -41,64 +49,16 @@
   font-size: 1.3em;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
-  .elementosCabecera {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .elementosCabecera ul {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .elementosCabecera .nav-item {
-    font-size: 15px;
-  }
-  .elementosCabecera .divlogo {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 478px) {
-  .elementosCabecera {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-  }
-  .elementosCabecera ul {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .elementosCabecera .nav-item {
-    font-size: 15px;
-  }
-  .elementosCabecera .divlogo {
-    display: flex;
-    justify-content: center;
-  }
-}
-=======
->>>>>>> version2
 footer {
-  bottom: 0%;
   color: blanchedalmond;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "redesicons contactoGral";
   background-color: black;
-<<<<<<< HEAD
-  size: 30%;
-=======
   position: absolute;
   width: 100%;
   height: 100vh;
   margin-top: 1em;
->>>>>>> version2
 }
 footer ul {
   grid-area: redesicons;
@@ -156,12 +116,8 @@ footer .contactoGral p:hover {
 
 @media screen and (max-width: 478px) {
   .footerElementos {
-<<<<<<< HEAD
-    background-color: black;
-=======
     width: 100%;
     height: 100vh;
->>>>>>> version2
     display: grid;
     background-color: #0e0a0a;
     grid-template-rows: repeat(2, 1fr);
@@ -180,15 +136,9 @@ footer .contactoGral p:hover {
     font-size: 10px;
   }
 }
-<<<<<<< HEAD
-@media screen and (max-width: 478px) {
-  footer {
-    width: 100vw;
-=======
 @media screen and (max-width: 768px) {
   .footerElementos {
     width: 100%;
->>>>>>> version2
     height: 100vh;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -207,23 +157,13 @@ footer .contactoGral p:hover {
     font-size: 10px;
   }
 }
-<<<<<<< HEAD
-main {
-  width: 100vw;
-  height: 100vh;
-  margin-bottom: 3px;
-}
-main #carouselExampleControls {
-  max-height: 520px;
-=======
 /* main {
     width: fit-content;
     margin-bottom:3px;
     size: 50%;
 */
 #carouselExampleControls {
-  max-height: 440px;
->>>>>>> version2
+  max-height: 520px;
 }
 
 .carousel-inner {
@@ -244,21 +184,11 @@ main #carouselExampleControls {
 }
 
 @media screen and (max-width: 768px) {
-  .card-title {
+  main .card-title {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 478px) {
-<<<<<<< HEAD
-  main {
-    height: 100vh;
-  }
-  main .card-title {
-    font-size: 20px;
-  }
-}
-.contactMain .contactTitulo {
-=======
+@media screen and (max-width: 768px) and (max-width: 478px) {
   .card-title {
     font-size: 20px;
   }
@@ -267,7 +197,6 @@ main #carouselExampleControls {
   max-width: 80%;
 }
 .contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
->>>>>>> version2
   font-size: 70px;
   margin-top: 5px;
   padding-bottom: 5px;
@@ -414,15 +343,9 @@ main #carouselExampleControls {
     font-size: 30px;
   }
   .contactMain .ContactForm {
-<<<<<<< HEAD
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr;
-=======
     width: 750px;
     grid-area: ContactForm;
     display: grid;
->>>>>>> version2
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "formularioIzq" "formularioDerecho";
   }
@@ -444,42 +367,24 @@ main #carouselExampleControls {
     font-size: 30px;
   }
 }
-<<<<<<< HEAD
-
-.gallerymain {
-  height: 700px;
-}
-.gallerymain .gallery {
-=======
 .gallery {
->>>>>>> version2
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
 }
-<<<<<<< HEAD
-.gallerymain .gallery img {
-  width: 590px;
-  height: 300px;
-=======
 .gallery img {
   width: 500px;
   height: 270px;
->>>>>>> version2
   transition: opacity 0.4s;
 }
-.gallerymain .gallery img:hover {
+.gallery img:hover {
   text-decoration: none;
   filter: brightness(0.9);
   cursor: pointer;
   opacity: 0.5;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
-  .gallerymain .gallery {
-=======
 @media screen and (max-width: 478px) {
   .gallery1 {
     width: 100vw;
@@ -490,22 +395,9 @@ main #carouselExampleControls {
   .gallery1 .gallery {
     width: 470px;
     display: flex;
->>>>>>> version2
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-<<<<<<< HEAD
-    gap: 0.5px;
-  }
-  .gallerymain .gallery img {
-    width: 100vw;
-    height: 100vh;
-  }
-}
-@media screen and (max-width: 478px) {
-  .gallerymain .gallery {
-    flex-direction: column;
-=======
     justify-content: start;
     -moz-column-gap: 0.3px;
          column-gap: 0.3px;
@@ -531,22 +423,11 @@ main #carouselExampleControls {
     display: flex;
     flex-direction: column;
     align-items: center;
->>>>>>> version2
     justify-content: center;
     gap: 0.5px;
-    width: 100vw;
-    height: 100vh;
+    width: 100% vw;
+    height: 100% vh;
   }
-<<<<<<< HEAD
-  .gallerymain .gallery img {
-    width: 100%;
-    height: 100%;
-  }
-  .gallerymain .card-title {
-    font-size: 1em;
-  }
-=======
->>>>>>> version2
 }
 main .imagenabout {
   padding-bottom: 5px;
@@ -788,40 +669,17 @@ main .tituloImagen .card-title:hover {
   }
 }
 #bodycompleto {
-  background-image: url("../Images/bg01.jpg");
+  background-image: url("../images/bg01.jpg");
   font-family: "Basquerville", "arial";
   font-style: bold;
-<<<<<<< HEAD
-=======
   height: 100vh;
   position: relative;
->>>>>>> version2
   overflow-x: hidden;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr 1fr;
   grid-template-areas: "header" "main" "footer";
 }
-<<<<<<< HEAD
-
-@media screen and (max-width: 478px) {
-  #bodycompleto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: "header" "main" "footer";
-  }
-  #bodycompleto header {
-    grid-area: header;
-  }
-  #bodycompleto main {
-    grid-area: main;
-    justify-content: center;
-  }
-  #bodycompleto footer {
-    grid-area: footer;
-  }
-=======
 #bodycompleto header {
   grid-area: header;
   width: 100vw;
@@ -835,5 +693,4 @@ main .tituloImagen .card-title:hover {
   grid-area: footer;
   width: 100vw;
   height: 30vh;
->>>>>>> version2
 }/*# sourceMappingURL=styles.css.map */
