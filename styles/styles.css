@@ -269,25 +269,57 @@ footer .contactoGral p:hover {
 
 @media screen and (max-width: 478px) {
   .contactMain {
-    display: flex;
-    justify-content: center;
-    /*
-    .formuflex {
-    display: flex;
-    justify-content: center;
-    max-width: 80%;
-
-    */
+    max-width: 430px;
+    padding-left: 3%;
+    display: grid;
+    grid-template-rows: 1fr, 2fr, 2fr;
+    grid-template-areas: "contactTitulo" "ContactForm" "bajocontacto";
+  }
+  .contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
+    max-width: 300px;
+    padding-left: 25%;
+    grid-area: contactTitulo;
+    font-size: 15px;
   }
   .contactMain .ContactForm {
     font-size: 15px;
-    width: 470px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    grid-template-columns: 1fr;
+    width: 430px;
+    grid-area: ContactForm;
     grid-template-rows: repeat(2, 1fr);
+    gap: 0em;
     grid-template-areas: "formularioIzq" "formularioDerecho";
+  }
+  .contactMain .ContactForm .formularioIzq {
+    width: 430px;
+    grid-area: formularioIzq;
+    margin-right: 10%;
+  }
+  .contactMain .ContactForm .formularioIzq input {
+    width: 330px;
+  }
+  .contactMain .ContactForm .formularioIzq textarea {
+    width: 330px;
+  }
+  .contactMain .ContactForm .formularioDerecho {
+    width: 430px;
+    grid-area: formularioDerecho;
+    margin-right: 10%;
+  }
+  .contactMain .ContactForm .formularioDerecho input {
+    width: 330px;
+  }
+  .contactMain .ContactForm .formularioDerecho textarea {
+    width: 330px;
+  }
+  .contactMain .ContactForm .formularioDerecho .SubmitEnviar input {
+    margin-left: 170px;
+  }
+  .contactMain .bajocontacto {
+    width: 450px;
+    grid-area: bajocontacto;
+  }
+  .contactMain .bajocontacto .gifatiko .card-gif {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -297,18 +329,10 @@ footer .contactoGral p:hover {
     display: grid;
     grid-template-rows: 1fr, 2fr, 2fr;
     grid-template-areas: "contactTitulo" "ContactForm" "bajocontacto";
-    /*  display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            width: fit-content;
-            height: 100vh;
-    */
   }
   .contactMain .contactTitulo, .contactMain .bajocontacto .gifatiko .card-gif {
-    size: 40%;
     grid-area: contactTitulo;
-    font-size: 0.7em;
+    font-size: 30px;
   }
   .contactMain .ContactForm {
     width: 750px;
