@@ -430,6 +430,9 @@ main .imagenabout {
   height: -moz-fit-content;
   height: fit-content;
 }
+main .imagenabout img {
+  max-width: 1200px;
+}
 main .imagenabout .card-img-overlay {
   display: flex;
   border: none;
