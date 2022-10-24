@@ -1,27 +1,19 @@
 
 .elementosCabecera   { 
-    background-color: none !important;
-/*position: relative;  */  
     color: blanchedalmond;
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
     padding-bottom: 1em;
-    size: 30%; 
 
-    ul {
-    position: relative; 
-    display: flex;
-    flex-direction: row;
-       color: blanchedalmond;
+    ul { 
+color: blanchedalmond;  
        text-decoration: none;
        font-weight: bold;
        font-size: 12px;
-       padding-bottom: 1em;
-       size: 30%;    
+       padding-bottom: 1em;   
     
     .nav-item { 
-        background-color: none;
     color: blanchedalmond;
     text-decoration: none;
     font-weight: bold;
@@ -53,21 +45,18 @@
 
 }
 
-
 }
+
 @media screen and (max-width: 478px) {
     .elementosCabecera{
 
     .navbar {
 
-        ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+       ul {
                
           
           .nav-item{
-              position: relative;
+
               top: 25%;
               width: 100%;
               text-align: center;
