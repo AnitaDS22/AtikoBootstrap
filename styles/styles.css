@@ -382,23 +382,30 @@ footer .contactoGral p:hover {
 
 @media screen and (max-width: 478px) {
   .gallery1 {
-    margin: 5px;
+    width: 100vw;
+    height: 100vh;
     display: flex !important;
     justify-content: center;
   }
   .gallery1 .gallery {
+    width: 430px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    justify-content: start;
     gap: 0.3px;
-    margin-left: 0;
-    margin-right: 5px;
-    max-width: 80vw;
+    padding-right: 10%;
+    padding-left: 0%;
   }
-  .gallery1 .gallery img {
+  .gallery1 .gallery li {
+    width: 450px;
+  }
+  .gallery1 .gallery li img {
     margin-left: 0px;
     margin-right: 5px;
+    width: 470px;
+    height: 250px;
   }
 }
 .card-title {
