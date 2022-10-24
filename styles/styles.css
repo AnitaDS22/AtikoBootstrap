@@ -597,7 +597,7 @@ main .tituloImagen .card-title:hover {
   height: fit-content;
   background-color: black;
   padding: 10px;
-  border-radius: 40px;
+  border-radius: 15px;
 }
 .servicesBody .cardoptionatiko .card.text-bg-dark.mb-3 {
   width: -webkit-max-content;
