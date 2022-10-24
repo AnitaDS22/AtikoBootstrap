@@ -120,26 +120,49 @@ color: map-get($colorespagina, colortextsecundario )
 
 @media screen and (max-width: 478px){
     .contactMain {
-        display: flex;
-        justify-content: center;
+        max-width: 450px;
+        height: auto;
+        display: grid;
+         grid-template-rows: 1fr, 2fr, 2fr;
+         grid-template-areas: 
+         "contactTitulo"
+         "ContactForm"
+         "bajocontacto";
+  
+         .contactTitulo {
+            grid-area: contactTitulo;
+            font-size: 15px;
+            
 
-       
-/*
-.formuflex {
-display: flex;
-justify-content: center;
-max-width: 80%;
-
-*/
     .ContactForm {
 font-size: 15px;
-width: 470px;
-height: fit-content;
-grid-template-columns: 1fr;
+width: 450px;
+grid-area: ContactForm;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
         "formularioIzq"
         "formularioDerecho";
+
+        .formularioIzq{
+            width: 430px;
+            grid-area: formularioIzq;
+            size: 20%;
+            padding-left: 5%;
+            padding-bottom: 0%;
+            
+             }   
+             
+             .formularioDerecho {
+                width: 430px;
+                grid-area: formularioDerecho;
+                size: 20%;
+                padding-left: 5%;
+            
+            
+             }        
+
+
+
 
 }
 }
@@ -158,21 +181,9 @@ max-width: 750px;
         "ContactForm"
         "bajocontacto";
  
-      
-    /*  display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: fit-content;
-        height: 100vh;
-*/
-
- 
 .contactTitulo {
-size: 40%;
-
     grid-area: contactTitulo;
-    font-size: 0.7em;
+    font-size: 30px;
 }
     
     .ContactForm {
